@@ -1,0 +1,54 @@
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\TrackIRUnity.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Admin\Desktop\Julio Cesar Morales Ramos -Servicio\piratas\Editando Enero 2016 por Octavio\Proyecto1\obj\Debug\Assembly-CSharp-firstpass.pdb
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\nunit.framework.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\TrackIRUnity.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEditor.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.Purchasing.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.Timeline.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.UI.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.Cecil.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\ExCSS.Unity.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.DataContract.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.CecilTools.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEditor.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.UI.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.TestRunner.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\nunit.framework.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.Timeline.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+D:\JULIO\Juego piratas\pruebas\Prueba 2\obj\Debug\Assembly-CSharp-firstpass.csprojAssemblyReference.cache
+D:\JULIO\Juego piratas\pruebas\Prueba 2\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
+D:\JULIO\Juego piratas\pruebas\Prueba 2\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\JULIO\Juego piratas\pruebas\Prueba 2\obj\Debug\Assembly-CSharp-firstpass.pdb

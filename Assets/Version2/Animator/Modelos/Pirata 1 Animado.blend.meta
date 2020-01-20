@@ -1,0 +1,1806 @@
+fileFormatVersion: 2
+guid: 97ede002f200b464fb97f2debcb2bc7e
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Abdomen
+    100002: Antebrazo_derecho
+    100004: Antebrazo_izquierdo
+    100006: Antebrazo_izquierdo_001
+    100008: Armature
+    100010: Brazo_derecho
+    100012: Brazo_izquierdo
+    100014: Cabeza
+    100016: Circle
+    100018: General
+    100020: Mano_derecha
+    100022: Mano_derecha_001
+    100024: Mano_izquierda
+    100026: Pantorrilla_derecha
+    100028: Pantorrilla_derecha_001
+    100030: Pantorrilla_derecha_003
+    100032: Pantorrilla_izquierda
+    100034: Pantorrilla_izquierda_001
+    100036: Pantorrilla_izquierda_002
+    100038: Pecho
+    100040: Pie_derecho
+    100042: Pie_izquierdo
+    100044: Pierna_derecha
+    100046: Pierna_izquierda
+    100048: //RootNode
+    400000: Abdomen
+    400002: Antebrazo_derecho
+    400004: Antebrazo_izquierdo
+    400006: Antebrazo_izquierdo_001
+    400008: Armature
+    400010: Brazo_derecho
+    400012: Brazo_izquierdo
+    400014: Cabeza
+    400016: Circle
+    400018: General
+    400020: Mano_derecha
+    400022: Mano_derecha_001
+    400024: Mano_izquierda
+    400026: Pantorrilla_derecha
+    400028: Pantorrilla_derecha_001
+    400030: Pantorrilla_derecha_003
+    400032: Pantorrilla_izquierda
+    400034: Pantorrilla_izquierda_001
+    400036: Pantorrilla_izquierda_002
+    400038: Pecho
+    400040: Pie_derecho
+    400042: Pie_izquierdo
+    400044: Pierna_derecha
+    400046: Pierna_izquierda
+    400048: //RootNode
+    4300000: Circle
+    7400000: Default Take
+    7400002: ArmatureAction
+    7400004: ArmatureAction_001
+    7400006: ArmatureAction_002
+    7400008: ArmatureAction_003
+    7400010: ArmatureAction_004
+    7400012: ArmatureAction_005
+    7400014: ArmatureAction_006
+    7400016: ArmatureAction_007
+    7400018: ArmatureAction_008
+    7400020: ArmatureAction_009
+    7400022: ArmatureAction_010
+    7400024: ArmatureAction_011
+    7400026: ArmatureAction_012
+    7400028: ArmatureAction_013
+    7400030: ArmatureAction_014
+    7400032: ArmatureAction_015
+    7400034: ArmatureAction_016
+    7400036: ArmatureAction_017
+    7400038: ArmatureAction_018
+    7400040: ArmatureAction_019
+    7400042: ArmatureAction_020
+    9500000: //RootNode
+    13700000: Circle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_001
+      takeName: ArmatureAction_001
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_002
+      takeName: ArmatureAction_002
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_003
+      takeName: ArmatureAction_003
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_004
+      takeName: ArmatureAction_004
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_005
+      takeName: ArmatureAction_005
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_006
+      takeName: ArmatureAction_006
+      firstFrame: 1
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_007
+      takeName: ArmatureAction_007
+      firstFrame: 1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_008
+      takeName: ArmatureAction_008
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_009
+      takeName: ArmatureAction_009
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_010
+      takeName: ArmatureAction_010
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_011
+      takeName: ArmatureAction_011
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_012
+      takeName: ArmatureAction_012
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_013
+      takeName: ArmatureAction_013
+      firstFrame: 0
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_014
+      takeName: ArmatureAction_014
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_015
+      takeName: ArmatureAction_015
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_016
+      takeName: ArmatureAction_016
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_017
+      takeName: ArmatureAction_017
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_018
+      takeName: ArmatureAction_018
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_019
+      takeName: ArmatureAction_019
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction_020
+      takeName: ArmatureAction_020
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/General
+        weight: 1
+      - path: Armature/General/Abdomen
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho
+        weight: 1
+      - path: Armature/General/Abdomen/Pecho/Cabeza
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo
+        weight: 1
+      - path: Armature/General/Antebrazo_izquierdo_001/Antebrazo_izquierdo/Brazo_izquierdo/Mano_izquierda
+        weight: 1
+      - path: Armature/General/Mano_derecha_001
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho
+        weight: 1
+      - path: Armature/General/Mano_derecha_001/Antebrazo_derecho/Brazo_derecho/Mano_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pantorrilla_derecha_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_derecha_003/Pierna_derecha/Pantorrilla_derecha/Pie_derecho
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pantorrilla_izquierda_001
+        weight: 1
+      - path: Armature/General/Pantorrilla_izquierda_002/Pierna_izquierda/Pantorrilla_izquierda/Pie_izquierdo
+        weight: 1
+      - path: Circle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 22c104a9ad469ce4bab3d4ecb7802c33
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bala: {fileID: 400000, guid: 513affe4a90a95c4ba08ddd0a51bf667, type: 2}
+  - highlightMaterial: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
