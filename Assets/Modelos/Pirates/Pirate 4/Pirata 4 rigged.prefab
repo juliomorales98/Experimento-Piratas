@@ -962,6 +962,7 @@ GameObject:
   - component: {fileID: 114703695066459270}
   - component: {fileID: 120075647969621314}
   - component: {fileID: 114644646499540142}
+  - component: {fileID: 114320827163544046}
   m_Layer: 0
   m_Name: Pirata 4 rigged
   m_TagString: Player
@@ -4768,6 +4769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95196141935047616}
+  pirateName: {fileID: 0}
   axes: 1
   sensitivityX: 2
   sensitivityY: 2
@@ -4864,6 +4866,17 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+--- !u!114 &114320827163544046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362244071801748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9025adff5564d3c448a0e3bc4373bbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114323282594100010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4952,6 +4965,7 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: 78b1ae2be4c32f943b0240b6f49a2a8f, type: 2}
   line: {fileID: 120075647969621314}
   highlightMaterial: {fileID: 0}
+  pirateName: {fileID: 0}
 --- !u!114 &114999467526252342
 MonoBehaviour:
   m_ObjectHideFlags: 1

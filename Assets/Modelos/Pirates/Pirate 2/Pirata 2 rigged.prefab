@@ -1540,6 +1540,7 @@ GameObject:
   - component: {fileID: 114657027055603110}
   - component: {fileID: 120060589948527284}
   - component: {fileID: 114139021686704418}
+  - component: {fileID: 114215722302358454}
   m_Layer: 0
   m_Name: Pirata 2 rigged
   m_TagString: Player
@@ -4696,6 +4697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95754739331738822}
+  pirateName: {fileID: 0}
   axes: 1
   sensitivityX: 2
   sensitivityY: 2
@@ -4717,6 +4719,17 @@ MonoBehaviour:
   lastPosition: {x: 0, y: 0, z: 0}
   myTransform: {fileID: 0}
   isMoving: 0
+--- !u!114 &114215722302358454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620014431605860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9025adff5564d3c448a0e3bc4373bbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114405793048706468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4890,6 +4903,7 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: 46e274b7fab6ae44c8c0c3c435e3e8cb, type: 2}
   line: {fileID: 120060589948527284}
   highlightMaterial: {fileID: 0}
+  pirateName: {fileID: 0}
 --- !u!114 &114831167483056546
 MonoBehaviour:
   m_ObjectHideFlags: 1

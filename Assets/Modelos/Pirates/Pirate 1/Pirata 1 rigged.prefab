@@ -1330,6 +1330,7 @@ GameObject:
   - component: {fileID: 114416171234413868}
   - component: {fileID: 120990134651265416}
   - component: {fileID: 114577056826959008}
+  - component: {fileID: 114555642264206690}
   m_Layer: 0
   m_Name: Pirata 1 rigged
   m_TagString: Player
@@ -4853,6 +4854,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d31b8562fd89aa54b9083c7845b3b0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114555642264206690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577481971361922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9025adff5564d3c448a0e3bc4373bbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114577056826959008

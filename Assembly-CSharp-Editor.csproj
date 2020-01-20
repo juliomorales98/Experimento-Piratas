@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{120019EF-B3D7-C13A-A629-A8296BCE8630}</ProjectGuid>
+    <ProjectGuid>{20CC0926-BBE9-3AF8-B443-608852377D22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -62,10 +62,10 @@
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>F:/JULIO/Juego piratas/pruebas/Prueba 2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>F:/JULIO/Juego piratas/pruebas/Prueba 2/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity 2017.20/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -134,7 +134,7 @@
  <HintPath>C:/Program Files/Unity 2017.20/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="TrackIRUnity">
- <HintPath>F:/JULIO/Juego piratas/pruebas/Prueba 2/Assets/Plugins/TrackIRUnity.dll</HintPath>
+ <HintPath>C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Assets/Plugins/TrackIRUnity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Admin/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -154,9 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D4FD2082-F448-2AC0-F9D3-B1E8A6E4227E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{3A4F4F91-9C0F-023C-8E57-F0F079A973A4}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{FBD497FE-BEB9-D295-522D-F030589CF3EC}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

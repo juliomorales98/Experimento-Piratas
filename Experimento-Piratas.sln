@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimento-Piratas", "Assembly-CSharp.csproj", "{FBD497FE-BEB9-D295-522D-F030589CF3EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimento-Piratas", "Assembly-CSharp-firstpass.csproj", "{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimento-Piratas", "Assembly-CSharp-Editor.csproj", "{20CC0926-BBE9-3AF8-B443-608852377D22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBD497FE-BEB9-D295-522D-F030589CF3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD497FE-BEB9-D295-522D-F030589CF3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD497FE-BEB9-D295-522D-F030589CF3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD497FE-BEB9-D295-522D-F030589CF3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CC0926-BBE9-3AF8-B443-608852377D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CC0926-BBE9-3AF8-B443-608852377D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CC0926-BBE9-3AF8-B443-608852377D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CC0926-BBE9-3AF8-B443-608852377D22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

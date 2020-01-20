@@ -70,15 +70,15 @@ function OnGUI ()
 		   //---------------------------------------------------------------------------------------------------------------------\\
 
 			GUI.BeginGroup (Rect (0,0,Screen.width,Screen.height));//Contenedor de todos los cuadros
-			GUI.Box (Rect (0,0,Screen.width,Screen.height),"");//Cuadro físico de todos los recuadros
+			GUI.Box (Rect (0,0,Screen.width,Screen.height),"");//Cuadro fï¿½sico de todos los recuadros
 
-			//------------------------------------------------------Título------------------------------------------------------------------\\
+			//------------------------------------------------------Tï¿½tulo------------------------------------------------------------------\\
 			var style : GUIStyle = new GUIStyle();
 			style.fontSize = 20;
 			GUI.Label(Rect(Screen.width * .5 - 75,Screen.height * 0.01,150,30), "Plan de Construccion", style);
 
 			//------------------------------------------------------Chat------------------------------------------------------------------\\
-			window = Rect(Screen.height * .01, Screen.height * .1, Screen.width * .20, Screen.height * .9);//Damos tamaño a la ventana del chat
+			window = Rect(Screen.height * .01, Screen.height * .1, Screen.width * .20, Screen.height * .9);//Damos tamaï¿½o a la ventana del chat
 			window = GUI.Window (5, window, GlobalChatWindow, "");
 			
 			//------------------------------------------------------Instrucciones------------------------------------------------------------------\\
@@ -98,7 +98,7 @@ function OnGUI ()
 			GUI.DrawTexture (Rect (Screen.width * .63,Screen.height * .3,Screen.width*.35,Screen.width*.3), imagenMapa);//Cuadro donde se muestra el mapa
 
 
-			if(GUI.Button(Rect(Screen.width * .62 - 100,Screen.height * .9,200,40), "Comenzar experimento")){//Vamos a la ventana de selección de caractér para inciar el juego
+			if(GUI.Button(Rect(Screen.width * .62 - 100,Screen.height * .9,200,40), "Comenzar experimento")){//Vamos a la ventana de selecciï¿½n de caractï¿½r para inciar el juego
 				
 				GUI.Label(Rect(Screen.width/4+10,Screen.height/2-25,285,150), "Iniciando juego!");
 				Application.LoadLevel((Application.loadedLevel+1));
@@ -431,7 +431,7 @@ function ApplyGlobalChatText (name : String, msg : String)
 	scrollPosition.y = 1000000;	
 }
 
-//Añadir mensajes de juego
+//Aï¿½adir mensajes de juego
 function addGameChatMessage(str : String){
 	ApplyGlobalChatText("", str);
 	if(Network.connections.length>0){

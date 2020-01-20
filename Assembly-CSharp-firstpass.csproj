@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D4FD2082-F448-2AC0-F9D3-B1E8A6E4227E}</ProjectGuid>
+    <ProjectGuid>{928AE5E1-FEA4-FA64-2BC6-DCD3ED69E694}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -94,7 +94,7 @@
  <HintPath>C:/Program Files/Unity 2017.20/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="TrackIRUnity">
- <HintPath>F:/JULIO/Juego piratas/pruebas/Prueba 2/Assets/Plugins/TrackIRUnity.dll</HintPath>
+ <HintPath>C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Assets/Plugins/TrackIRUnity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/Admin/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
