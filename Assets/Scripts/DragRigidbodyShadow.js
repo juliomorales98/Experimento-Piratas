@@ -235,7 +235,9 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
     //esperar 2 segundos y despues se vuelve Kinematic el cubo para que no se mueva por los golpes de otros objetos
     yield WaitForSeconds(2);
     //	networkView.RPC("sendFisica", RPCMode.Others , cubo,1);
-    cubo.isKinematic = true;
+
+    //Quitamos esta línea para que las físicas continuen funcionando despues de dos segundos.
+    //cubo.isKinematic = true;
 
 }
 
