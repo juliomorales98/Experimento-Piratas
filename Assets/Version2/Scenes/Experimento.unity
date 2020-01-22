@@ -451,7 +451,7 @@ Light:
   m_SpotAngle: 142.9
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -949,11 +949,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8f36ce7b4cd95c7479ba6300abe7265f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.37
+      value: 15.28
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8f36ce7b4cd95c7479ba6300abe7265f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.78
+      value: -1.81
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8f36ce7b4cd95c7479ba6300abe7265f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -981,11 +981,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8f36ce7b4cd95c7479ba6300abe7265f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 158.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8f36ce7b4cd95c7479ba6300abe7265f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 100
+      value: 104.6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 8f36ce7b4cd95c7479ba6300abe7265f, type: 3}
       propertyPath: m_TagString
@@ -6321,7 +6321,7 @@ Light:
   m_SpotAngle: 142.9
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6522,8 +6522,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009056854}
-  m_LocalRotation: {x: -0.009109089, y: -0.9878275, z: 0.06349689, w: -0.14171124}
-  m_LocalPosition: {x: -13.180848, y: -22.082684, z: 10.944366}
+  m_LocalRotation: {x: -0.022238007, y: 0.82385904, z: 0.032401793, w: 0.56543076}
+  m_LocalPosition: {x: -1.3616774, y: 2.512186, z: 0.5267558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6645,7 +6645,7 @@ Light:
   m_SpotAngle: 142.9
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
