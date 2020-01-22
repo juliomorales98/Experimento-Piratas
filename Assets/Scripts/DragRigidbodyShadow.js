@@ -1,6 +1,8 @@
 //TODO: Stop rotation of the rigidbody on click, so cam and model stay in rotational-sync
 
+import UnityEngine;
 import UnityEngine.UI;
+
 
 
 
@@ -69,7 +71,7 @@ function Update() {
         return;
     }
 
-    //If we are pirate 2 and we hit Rojo 3
+    //If we are pirate 2 and we hit Rojo 3 or Verde7
     if(pirateName.text == "Pirata 2"){
        Debug.Log(hit.rigidbody);
        if(hit !=null && (hit.rigidbody.name == "Rojo3" || hit.rigidbody.name == "Verde7")) {
@@ -125,6 +127,13 @@ function Update() {
     springJoint.maxDistance = distance;
     springJoint.connectedBody = hit.rigidbody;
 
+    
+    //Validamos que el objeto esté dentro de un rango determinado
+    if(hit.distance >= 16){
+        Debug.Log("Objeto demasiado lejos");
+        return;
+    }
+    
     DragObject(hit.distance, hit.point, mainCamera.ScreenPointToRay(Input.mousePosition).direction);
 }
 
@@ -134,6 +143,7 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
     var oldDrag = springJoint.connectedBody.drag;
     var oldAngularDrag = springJoint.connectedBody.angularDrag;
 
+    
 
     springJoint.connectedBody.drag = drag;
     springJoint.connectedBody.angularDrag = angularDrag;

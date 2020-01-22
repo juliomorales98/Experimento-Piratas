@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Modelos\Letreros\RotateBillboard.cs" />
      <Compile Include="Assets\Scripts\camara.cs" />
      <Compile Include="Assets\Scripts\ControlBasico.cs" />
      <Compile Include="Assets\Scripts\ControlBasico2.cs" />
