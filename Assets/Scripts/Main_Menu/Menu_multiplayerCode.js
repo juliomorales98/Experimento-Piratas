@@ -46,14 +46,20 @@ function Awake() {
         Debug.Log("This machine has a private IP address");
     }
 
-	/* //If you dont want to use the Unity masterserver..
-	Network.natFacilitatorIP = myMasterServerIP;
+	 //If you dont want to use the Unity masterserver..
+	/*Network.natFacilitatorIP = myMasterServerIP;
 	Network.natFacilitatorPort = 11111;//Change this
 	MasterServer.ipAddress = myMasterServerIP;
 	MasterServer.port = 22222;//Change this
 	Network.connectionTesterIP = myMasterServerIP;
-	Network.connectionTesterPort = 33333;//Change this
-	*/
+    Network.connectionTesterPort = 33333;//Change this*/
+    
+    /*var server_ip : String = "148.202.58.110";
+    MasterServer.ipAddress = server_ip;
+    MasterServer.port = serverPort;*/
+    //Network.natFacilitatorIP = server_ip;
+    //Network.natFacilitatorPort =  50005;
+	
 
 
 }
@@ -76,6 +82,9 @@ function Start() {//must be in start because of coroutine
 
 function OnFailedToConnectToMasterServer(info: NetworkConnectionError) {
     //Yikes
+    /*Debug.Log("Falló al conectarse al master");
+    Network.InitializeServer(1, 20000, false);
+    FailedConnRetry(info);*/
 }
 
 function OnFailedToConnect(info: NetworkConnectionError) {
