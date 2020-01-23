@@ -202,7 +202,9 @@ bd231cef33fe5bcf13f2a527d8510ae5 Assembly-UnityScript.dll:.Flotar
 5612e93e8903ccc92edf710d88995e72 Assembly-CSharp.dll:.ControlBasico2
 05524b8f659e7bfe5756d1335fec24ba Assembly-UnityScript.dll:.Animaciones
 ecfe1b3ab85e341ba71c6616e6a3b6a5 Assembly-UnityScript.dll:.mover
+ee0ca0ad641dfe8c8b0a2e12ddc8cca5 Assembly-CSharp.dll:.setGrayMaterials
 563daf171b5d1c7c75b1108951401223 Assembly-UnityScript-firstpass.dll:.CharacterMotor
 3a14d94c7e558a36310f225209aaa961 Assembly-UnityScript.dll:.ViewChecker
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RotateBillboard
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
-ee0ca0ad641dfe8c8b0a2e12ddc8cca5 Assembly-CSharp.dll:.setGrayMaterials
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
