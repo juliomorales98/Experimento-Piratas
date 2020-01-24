@@ -34,14 +34,14 @@ public class setGrayMaterials : MonoBehaviour {
 			Si no es el pirata 1, asignamos el color rojo a las figuras 0-8 en el arreglo
 			y verde a las figuras 9-14.
 			*/
-			for(int i = 0; i < 9; i++){
+			for(int i = 0; i < 3; i++){
 				render = figuras[i].GetComponent<Renderer>();
 				render.enabled = true;
 
 				render.sharedMaterial = materials[1];//asignamos rojo
 			}
 
-			for(int i = 9; i < 15; i++){
+			for(int i = 3; i < 7; i++){
 				render = figuras[i].GetComponent<Renderer>();
 				render.enabled = true;
 

@@ -74,8 +74,8 @@ function Update() {
     //If we are pirate 2 and we hit Rojo 3 or Verde7
     if(pirateName.text == "Pirata 2"){
        Debug.Log(hit.rigidbody);
-       if(hit !=null && (hit.rigidbody.name == "Rojo3" || hit.rigidbody.name == "Verde7")) {
-        Debug.Log("Verde7 o Rojo 3, no se puede cargar");
+       if(hit !=null && (hit.rigidbody.name == "Proa_Prefab" || hit.rigidbody.name == "Popa_Prefab")) {
+        Debug.Log("No se puede cargar Proa ni Popa con este pirata");
         return;
        }
         
