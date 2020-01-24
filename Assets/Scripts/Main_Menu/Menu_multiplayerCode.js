@@ -3,7 +3,7 @@
 #pragma implicit
 #pragma downcast
 
-public var gameName = "Example4";
+public var gameName = "Conexion1";
 public var serverPort = 35001;
 
 public var hostData: HostData[];
@@ -54,13 +54,13 @@ function Awake() {
 	Network.connectionTesterIP = myMasterServerIP;
     Network.connectionTesterPort = 33333;//Change this*/
     
-    /*var server_ip : String = "148.202.58.110";
+    /*var server_ip : String = "127.0.0.1";
     MasterServer.ipAddress = server_ip;
     MasterServer.port = serverPort;*/
     //Network.natFacilitatorIP = server_ip;
     //Network.natFacilitatorPort =  50005;
 	
-
+    //Network.InitializeServer(2, serverPort, false);
 
 }
 
@@ -68,7 +68,7 @@ function Start() {//must be in start because of coroutine
 
     yield WaitForSeconds(0.5);
     var tries: int = 0;
-    while (tries <= 10) {
+    while (tries <= 50) {
         if (hostData && hostData.length > 0) {
             //Waiting for hostData
         } else {
@@ -82,9 +82,9 @@ function Start() {//must be in start because of coroutine
 
 function OnFailedToConnectToMasterServer(info: NetworkConnectionError) {
     //Yikes
-    /*Debug.Log("Falló al conectarse al master");
+    Debug.Log("Falló al conectarse al master");
     Network.InitializeServer(1, 20000, false);
-    FailedConnRetry(info);*/
+    FailedConnRetry(info);
 }
 
 function OnFailedToConnect(info: NetworkConnectionError) {
