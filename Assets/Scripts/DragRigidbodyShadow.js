@@ -71,11 +71,12 @@ function Update() {
         return;
     }
 
-    //If we are pirate 2 and we hit Rojo 3 or Verde7
+    //If we are pirate 2 and we hit a big piece
     if(pirateName.text == "Pirata 2"){
        Debug.Log(hit.rigidbody);
-       if(hit !=null && (hit.rigidbody.name == "Proa_Prefab" || hit.rigidbody.name == "Popa_Prefab")) {
-        Debug.Log("No se puede cargar Proa ni Popa con este pirata");
+       if(hit !=null && (hit.rigidbody.name == "Proa_Prefab" || hit.rigidbody.name == "Popa_Prefab"
+       || hit.rigidbody.name == "CubiertaDesdePopa_Prefab" || hit.rigidbody.name == "CubiertaDesdeProa_Prefab")) {
+        Debug.Log("No se pueden cargar piezas grandes con este pirata");
         return;
        }
         
@@ -193,10 +194,20 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
 
         //rigidbody.constraints = RigidbodyConstraints.FreezeRotation;//This is new and junk! God damn it, it dont work!!
         yield;
+
+        //Agregamos línea para poner como kinematic la pieza y salimos del while
+        var setPiece = false;
+        if(Input.GetMouseButton(1)){
+            springJoint.connectedBody.isKinematic = true;
+            setPiece = true;
+            break;
+        }
     }
 
     //Al dejar de presionar el mouse se deshabilita la linea
     line.enabled = false;
+
+    
     //Se envia RPC para deshabilitar la linea
     GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
     if (Network.isClient) {
@@ -209,18 +220,13 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
         script.DraggingBox(name, springJoint.connectedBody.name);*/
     }
 
-    //rigidbody.constraints = RigidbodyConstraints.Nones;//This is also new and junk!
+    
 
+    //Si se acomodó la pieza no se le ponen valores de caída.
+    if(setPiece)
+        return;
 
-
-    //works fine whitout this
-    /*	if (Mathf.Abs(mousePos.x - Input.mousePosition.x) <= 2 && Mathf.Abs(mousePos.y - Input.mousePosition.y) <= 2 && Time.time - startTime < .2 && springJoint.connectedBody)
-        {
-            dir.y = 0;
-            dir.Normalize();
-            springJoint.connectedBody.AddForceAtPosition(dir * pushForce, hitpoint, ForceMode.VelocityChange);
-            ToggleLight( springJoint.connectedBody.gameObject );
-        }	*/
+    
 
     springJoint.connectedBody.freezeRotation = false;
     var cubo: Rigidbody;
@@ -232,12 +238,7 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
         springJoint.connectedBody.drag = 0;
         springJoint.connectedBody = null;
     }
-    //esperar 2 segundos y despues se vuelve Kinematic el cubo para que no se mueva por los golpes de otros objetos
-    yield WaitForSeconds(2);
-    //	networkView.RPC("sendFisica", RPCMode.Others , cubo,1);
-
-    //Quitamos esta línea para que las físicas continuen funcionando despues de dos segundos.
-    //cubo.isKinematic = true;
+    
 
 }
 
