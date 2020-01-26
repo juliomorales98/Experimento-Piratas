@@ -23,7 +23,7 @@ public var Verde7 : Transform;
 public var Verde8 : Transform;
 public var Verde9 : Transform;
 
-public var fileName : String = "C:\\LogJuego.txt";
+public var fileName : String = "LogJuego.txt";
 var fs : StreamWriter;
 var stream : FileStream;
 var filePermissions : FileIOPermission;

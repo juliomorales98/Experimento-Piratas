@@ -47,18 +47,18 @@ function Awake() {
     }
 
 	 //If you dont want to use the Unity masterserver..
-	/*Network.natFacilitatorIP = myMasterServerIP;
+	Network.natFacilitatorIP = "127.0.0.1";
 	Network.natFacilitatorPort = 11111;//Change this
-	MasterServer.ipAddress = myMasterServerIP;
-	MasterServer.port = 22222;//Change this
-	Network.connectionTesterIP = myMasterServerIP;
-    Network.connectionTesterPort = 33333;//Change this*/
+	MasterServer.ipAddress = "127.0.0.1";
+	MasterServer.port = 5000;//Change this
+	Network.connectionTesterIP = "127.0.0.1";
+    Network.connectionTesterPort = 5000;//Change this
     
     /*var server_ip : String = "127.0.0.1";
     MasterServer.ipAddress = server_ip;
-    MasterServer.port = serverPort;*/
-    //Network.natFacilitatorIP = server_ip;
-    //Network.natFacilitatorPort =  50005;
+    MasterServer.port = 5000;*/
+    /*Network.natFacilitatorIP = server_ip;
+    Network.natFacilitatorPort =  50005;*/
 	
     //Network.InitializeServer(2, serverPort, false);
 
