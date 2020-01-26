@@ -63,9 +63,14 @@
      <Compile Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterTile.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Barebones\MSF ReleaseNotes.txt" />
+     <None Include="Assets\Barebones\MSF README.txt" />
+     <None Include="Assets\Barebones\Resources\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Barebones\Credits.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Barebones\Demos\RoomsDemo\Scenes\Scenes Information.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>A:/Unity/Editors/2017.2.0f3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -101,6 +106,15 @@
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/Julio/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="LiteDB">
+ <HintPath>A:/Experimento-Piratas/Assets/Barebones/MsfDatabaseImplementations/LiteDBV2/Plugins/LiteDB.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>A:/Experimento-Piratas/Assets/Barebones/Networking/Plugins/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="BarebonesLogger">
+ <HintPath>A:/Experimento-Piratas/Assets/Barebones/Plugins/BarebonesLogger.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

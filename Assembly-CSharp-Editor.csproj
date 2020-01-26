@@ -51,6 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Barebones\Demos\QuickSetup\Editor\MsfQuickBuild.cs" />
+     <Compile Include="Assets\Barebones\Msf\Editor\HelpBoxDrawer.cs" />
+     <Compile Include="Assets\Barebones\Msf\Editor\SceneFieldPropertyDrawer.cs" />
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\PlanarReflectionEditor.cs" />
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\SpecularLightingEditor.cs" />
@@ -58,9 +61,14 @@
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\WaterEditorUtility.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Barebones\MSF ReleaseNotes.txt" />
+     <None Include="Assets\Barebones\MSF README.txt" />
+     <None Include="Assets\Barebones\Resources\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Barebones\Credits.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Barebones\Demos\RoomsDemo\Scenes\Scenes Information.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>A:/Experimento-Piratas/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
@@ -153,6 +161,15 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>C:/Users/Julio/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="LiteDB">
+ <HintPath>A:/Experimento-Piratas/Assets/Barebones/MsfDatabaseImplementations/LiteDBV2/Plugins/LiteDB.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>A:/Experimento-Piratas/Assets/Barebones/Networking/Plugins/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="BarebonesLogger">
+ <HintPath>A:/Experimento-Piratas/Assets/Barebones/Plugins/BarebonesLogger.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
