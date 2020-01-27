@@ -41,7 +41,7 @@ namespace Barebones.MasterServer
         public void ConnectToServer(){
             var ConnectionToMaster = FindObjectOfType<ConnectionToMaster>();
             //ConnectionToMaster.Awake();
-            ConnectionToMaster.StartMio();
+            ConnectionToMaster.ConnectToRemoteServer();
             Debug.Log("Terminó Script");
         }
         public void OnGuestAccessClick()

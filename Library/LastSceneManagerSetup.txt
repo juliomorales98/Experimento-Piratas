@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Barebones/Demos/QuickSetup/Scenes/Client.unity
+- path: Assets/Barebones/Demos/QuickSetup/Scenes/GameServer.unity
   isLoaded: 1
   isActive: 1

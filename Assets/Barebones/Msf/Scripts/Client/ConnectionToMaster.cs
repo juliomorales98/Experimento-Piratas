@@ -26,9 +26,9 @@ namespace Barebones.MasterServer
         public bool ReadMasterServerAddressFromCmd = true;
 
         [Tooltip("Address to the server")]
-        //public string ServerIp = "127.0.0.1";
+        public string ServerIp = "127.0.0.1";
         public InputField ServerIpText;
-        public string ServerIp;
+        //public string ServerIp;
 
         [Tooltip("Port of the server")]
         public int ServerPort = 5000;
@@ -79,16 +79,24 @@ namespace Barebones.MasterServer
             }
         }
 
-        public void StartMio()
+        public void Start()
         {   
-            //Awake();
-            ServerIp = ServerIpText.text;
+            //Awake();            
+
             Debug.Log("Ip = " + ServerIp);
             if (ConnectOnStart)
             {
                 StartCoroutine(StartConnection());
                 //StartConnection();
             }
+        }
+
+        public void ConnectToRemoteServer(){
+            if(ServerIpText != null){
+                ServerIp = ServerIpText.text;
+                Start();
+            }
+                
         }
 
         public virtual IClientSocket GetConnection()
