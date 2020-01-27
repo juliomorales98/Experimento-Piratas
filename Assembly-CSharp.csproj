@@ -291,6 +291,7 @@
      <Compile Include="Assets\Scripts\ControlBasico2.cs" />
      <Compile Include="Assets\Scripts\Experimento\CheckTimeOut.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\DeActivateGO.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\WriteReadConf.cs" />
      <Compile Include="Assets\Scripts\MovePoint2.cs" />
      <Compile Include="Assets\Scripts\RendererExtensions.cs" />
      <Compile Include="Assets\Scripts\ScriptsConexion\Manipulador.cs" />
