@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Barebones/Demos/QuickSetup/Scenes/GameServer.unity
+- path: Assets/Version2/Scenes/Experimento.unity
   isLoaded: 1
   isActive: 1
