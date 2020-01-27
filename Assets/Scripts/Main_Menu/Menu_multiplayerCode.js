@@ -83,8 +83,8 @@ function Start() {//must be in start because of coroutine
 function OnFailedToConnectToMasterServer(info: NetworkConnectionError) {
     //Yikes
     Debug.Log("Falló al conectarse al master");
-    Network.InitializeServer(1, 20000, false);
-    FailedConnRetry(info);
+    //Network.InitializeServer(1, 20000, false);
+    //FailedConnRetry(info);
 }
 
 function OnFailedToConnect(info: NetworkConnectionError) {

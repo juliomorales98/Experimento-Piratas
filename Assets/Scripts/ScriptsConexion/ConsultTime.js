@@ -23,6 +23,8 @@ var seconds;
 private var startTime : float;
 var textTime : String;
 
+var finalizado : boolean = false;
+
 function Awake(){	
 	showTime=false;	
 	window = Rect(Screen.width-98, Screen.height-310, width, height);
@@ -47,6 +49,10 @@ function Update () {
 	textTime = String.Format("{0:00}:{1:00}",minutes,seconds);
 
 	timeText.text = "Tiempo(minutos):"+textTime;
+
+	if(minutes >= 1){
+		finalizado = true;
+	}
 	
 }
 //Mostramos en tiempo o no el tiempo
@@ -76,5 +82,13 @@ function OnGUI ()
 			showTime=false;			
 	}*/		
 	//}
+
+	if(finalizado){
+		/*GUI.Label(Rect (Screen.width * 0.4,0,188,20),"Tiempo Terminado, será regresado al menú principal...");	
+		Network.Disconnect();
+		Application.LoadLevel(0);*/
+	}
 }
+
+
 
