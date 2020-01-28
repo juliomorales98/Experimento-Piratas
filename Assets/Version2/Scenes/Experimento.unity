@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 10}
   - component: {fileID: 11}
   - component: {fileID: 12}
+  - component: {fileID: 14}
   - component: {fileID: 13}
   m_Layer: 0
   m_Name: Scripts Generales
@@ -262,6 +263,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeText: {fileID: 1508695179}
+  ioscript: {fileID: 14}
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d04273b43f960a4ba00405888f22530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempo: {fileID: 0}
+  parametros: []
 --- !u!1 &1066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7223,7 +7238,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009056854}
   m_LocalRotation: {x: -0.016188055, y: -0.014400362, z: 0.00023317561, w: -0.9997652}
-  m_LocalPosition: {x: 29.644207, y: -10.522285, z: -28.795536}
+  m_LocalPosition: {x: 676.47833, y: -363.39658, z: -974.1153}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

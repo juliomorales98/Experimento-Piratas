@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 ///<summary>
 ///Está revisando si ya han pasado 10 minutos y, si es así
@@ -13,13 +14,28 @@ public class CheckTimeOut : MonoBehaviour {
 
 	public Text TimeText;
 
+	public IOConfig ioscript;
+
+	private int tiempoMaximo;
+
+	void Start(){
+
+		ioscript.ReadConf();
+		tiempoMaximo = Int32.Parse(ioscript.parametros[0]);
+		Debug.Log("Tiempo Máximo del juego: " + tiempoMaximo.ToString());
+	}
+	
 	void OnGUI(){
-		if(TimeText.text[17] == '1'){
+		int tiempoActual = Int32.Parse(TimeText.text[16].ToString() + TimeText.text[17].ToString());
+
+		if(tiempoActual == tiempoMaximo){
+
 			GUIStyle style =new GUIStyle();
 			style.fontSize = 22;
 			style.normal.textColor = Color.white;
 			GUI.Label(new Rect (Screen.width * 0.35f,Screen.height * 0.2f,500,20),"Tiempo Terminado, será regresado al menú principal...",style);
 			StartCoroutine(DisconnectFromGame());
+			
 		}
 	}
 	
