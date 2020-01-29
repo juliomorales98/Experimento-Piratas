@@ -335,7 +335,7 @@ function OnGUI ()
 			GUI.EndGroup();
 		}	
 	}
-	if ((Event.current.type == EventType.keyDown && Event.current.character == "\n" && inputField.Length <= 0) && !showChat)
+	if ((Event.current.type == EventType.KeyDown && Event.current.character == "\n" && inputField.Length <= 0) && !showChat)
 	{
 		if(lastUnfocus+0.25<Time.time)
 		{
@@ -372,7 +372,7 @@ function GlobalChatWindow (id :int)
 	}
 	// Fin del Scroll.
     GUILayout.EndScrollView ();
-	if (Event.current.type == EventType.keyDown && Event.current.character == "\n" && inputField.Length > 0)
+	if (Event.current.type == EventType.KeyDown && Event.current.character == "\n" && inputField.Length > 0)
 	{
 		HitEnter(inputField);
 		Debug.Log("Presionaste enter: ");
