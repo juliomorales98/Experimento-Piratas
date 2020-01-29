@@ -81,7 +81,8 @@ public class ConnectionToServer : MonoBehaviour {
             }
         }
         public void ConnectToServer(int op){
-            if(op == 2){
+            //Si op es 0 es que será el host
+            if(op == 1){
                 //Nos vamos a conectar a un servidor en otra compu
                 //por lo que cambiamos la ip
                 ServerIp = ServerIpText.text;

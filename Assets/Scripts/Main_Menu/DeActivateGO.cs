@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class DeActivateGO : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public GameObject HostGUI;
+	public GameObject ClientGUI;
+
 	
-	// Update is called once per frame
-	void Update () {
+
+	void Start(){
 		
+		//Desactivamos ambas GUI
+		HostGUI.SetActive(false);
+		ClientGUI.SetActive(false);
+	}
+	public void ActivateHostGUI(){
+
+		HostGUI.SetActive(true);
+		ClientGUI.SetActive(false);
+	}
+
+	public void ActivateClientGUI(){
+
+		HostGUI.SetActive(false);
+		ClientGUI.SetActive(true);
 	}
 }

@@ -8,10 +8,15 @@ public class IOConfig : MonoBehaviour {
 
 	private string path = "conf.txt";
 
-	public InputField tiempo; 
+	public InputField time; 
+	public InputField name;
+	public InputField remoteIP;
+	public Text localIP;
 
-	public List<string> parametros = new List<string>();
-	public void WriteConf(){
+	
+
+	public List<string> parametres = new List<string>();
+	public void WriteConf(int op){
 
 		//Primero validamos si existe y lo eliminamos si es cierto
 		if(File.Exists(path)){
@@ -21,7 +26,20 @@ public class IOConfig : MonoBehaviour {
 		//Escribimos la configuración
 		StreamWriter writer = new StreamWriter(path, true);
 
-		writer.WriteLine(tiempo.text);
+		writer.WriteLine(name.text);
+
+		if(op == 0){
+			//Escribimos parametros de host 			
+			writer.WriteLine("127.0.0.1");
+			writer.WriteLine(time.text);
+
+		}else if(op == 1){
+			//Escribimos para client			
+			writer.WriteLine(remoteIP.text);
+			
+		}
+
+		
 		writer.Close();
 
 		
@@ -41,19 +59,19 @@ public class IOConfig : MonoBehaviour {
 		
 
 		while( (cadena = reader.ReadLine()) != null){
-			parametros.Add(cadena);
+			parametres.Add(cadena);
 		}
 
 		reader.Close();
 
 		//Si falta algún parámetro
-		if(parametros.Count < 1){
+		if(parametres.Count < 1){
 			Debug.Log("Archivo dañado, no se reconocen los parámetros");
 			return;
 		}
 
 		//Primer parámetro es la duración del experimento, por lo que debería de tratarse de un int
-		Debug.Log(parametros[0]);
+		Debug.Log(parametres[0]);
 
 	}
 }

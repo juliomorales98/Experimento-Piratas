@@ -21,7 +21,7 @@ public class CheckTimeOut : MonoBehaviour {
 	void Start(){
 
 		ioscript.ReadConf();
-		tiempoMaximo = Int32.Parse(ioscript.parametros[0]);
+		tiempoMaximo = Int32.Parse(ioscript.parametres[2]);
 		Debug.Log("Tiempo Máximo del juego: " + tiempoMaximo.ToString());
 	}
 	
