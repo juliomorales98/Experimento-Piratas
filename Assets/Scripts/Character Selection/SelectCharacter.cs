@@ -16,14 +16,10 @@ public class SelectCharacter : MonoBehaviour {
 		}
 
 		playerSelected.text = "";
-		info.text = "";
+		info.text = "Selecciona un pirata.";
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+	
 	public void StartExperiment(){
 		if(playerSelected.text == ""){
 			Debug.Log("No se ha seleccionado ningún pirata");
@@ -36,15 +32,15 @@ public class SelectCharacter : MonoBehaviour {
 	void OnGUI(){
 		if(playerSelected.text != ""){
 			if(playerSelected.text == "Pirata 1"){
-				info.text = "Problemas de visión";
+				info.text = "Las piezas del barco aparecen todas del mismo color. Esto no le permite saber cómo intercalarlas.";
 			}else if(playerSelected.text == "Pirata 2"){
-				info.text = "Problemas con su manita";
+				info.text = "No se le permite cargar objetos pesados (Proa, cubierta desde proa, popa y cubierta desde popa).";
 
 			}else if(playerSelected.text == "Pirata 3"){
-				info.text = "Problemas de sobrepeso";
+				info.text = "Al navegar su avatar avanza más lentamente que el de los demás (le toma el doble de tiempo trasladarse).";
 
 			}else if(playerSelected.text == "Pirata 4"){
-				info.text = "Problemas con el habla";
+				info.text = "Su micrófono está desconectado, de tal forma que los otros jugadores no escuchan su voz.";
 
 			}
 		}
