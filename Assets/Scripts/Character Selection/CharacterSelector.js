@@ -10,6 +10,8 @@ var character2Glow : GameObject;
 var character3Glow : GameObject;
 var character4Glow : GameObject;
 
+var characterText : Text;
+
 function Start()
 {
 character1Glow.GetComponent.<Renderer>().enabled = false;  // We're going to make sure all of the highlighted glows are OFF at scene start.
@@ -53,6 +55,8 @@ function SelectedCharacter1() {
 				character2Glow.GetComponent.<Renderer>().enabled = false;
 				character3Glow.GetComponent.<Renderer>().enabled = false;
 				character4Glow.GetComponent.<Renderer>().enabled = false; 
+
+				characterText.text = "Pirata 1";
 }
 
 function SelectedCharacter2() {
@@ -62,6 +66,8 @@ function SelectedCharacter2() {
 				character1Glow.GetComponent.<Renderer>().enabled = false;
 				character3Glow.GetComponent.<Renderer>().enabled = false;
 				character4Glow.GetComponent.<Renderer>().enabled = false;
+
+				characterText.text = "Pirata 2";
 }
 
 function SelectedCharacter3() {
@@ -71,6 +77,8 @@ function SelectedCharacter3() {
 				character1Glow.GetComponent.<Renderer>().enabled = false;
 				character2Glow.GetComponent.<Renderer>().enabled = false;
 				character4Glow.GetComponent.<Renderer>().enabled = false;
+
+				characterText.text = "Pirata 3";
 }
 
 function SelectedCharacter4() {
@@ -80,6 +88,8 @@ function SelectedCharacter4() {
 				character3Glow.GetComponent.<Renderer>().enabled = false;
 				character2Glow.GetComponent.<Renderer>().enabled = false;
 				character1Glow.GetComponent.<Renderer>().enabled = false;
+
+				characterText.text = "Pirata 4";
 }
 
 public static function getSelected()

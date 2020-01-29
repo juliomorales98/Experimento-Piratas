@@ -287,6 +287,7 @@
      <Compile Include="Assets\Barebones\Utils\Scripts\SafeCoroutine.cs" />
      <Compile Include="Assets\Modelos\Letreros\RotateBillboard.cs" />
      <Compile Include="Assets\Scripts\camara.cs" />
+     <Compile Include="Assets\Scripts\Character Selection\SelectCharacter.cs" />
      <Compile Include="Assets\Scripts\ControlBasico.cs" />
      <Compile Include="Assets\Scripts\ControlBasico2.cs" />
      <Compile Include="Assets\Scripts\Experimento\CheckTimeOut.cs" />

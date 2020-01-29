@@ -125,7 +125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &7
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,7 +1804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1162741098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2901,7 +2901,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1997314772}
         m_MethodName: WriteConf
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2956,10 +2956,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d04273b43f960a4ba00405888f22530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: {fileID: 0}
-  name: {fileID: 0}
-  remoteIP: {fileID: 0}
-  localIP: {fileID: 0}
+  time: {fileID: 1615124243}
+  name: {fileID: 358745837}
+  remoteIP: {fileID: 1096057999}
+  localIP: {fileID: 1301706498}
   parametres: []
 --- !u!1 &2048911403
 GameObject:
