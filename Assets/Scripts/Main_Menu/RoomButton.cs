@@ -21,7 +21,7 @@ public class RoomButton : MonoBehaviour {
 
 	public void SetRoom(string nameInput, int sizeInput, int countInput){
 		roomName = nameInput;
-		//roomSize = sizeInput;
+		sizeInput = 4;
 		playerCount = countInput;
 		nameText.text = nameInput;
 		sizeText.text = countInput + "/" + sizeInput;

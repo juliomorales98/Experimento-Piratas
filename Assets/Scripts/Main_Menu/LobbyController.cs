@@ -50,6 +50,12 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		playerNameInput.text = PhotonNetwork.NickName; //Ponemos el nombre en el campo text
 	}
 
+	public void PlayerNameUpdate(string nameInput){
+
+		PhotonNetwork.NickName = nameInput;
+		PlayerPrefs.SetString("NickName", nameInput);
+	}
+
 	public void JoinLobbyOnClick(){
 		mainPanel.SetActive(false);
 		lobbyPanel.SetActive(true);
