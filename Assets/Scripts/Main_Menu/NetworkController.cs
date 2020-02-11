@@ -17,5 +17,6 @@ public class NetworkController : MonoBehaviourPunCallbacks {
 	public override void OnConnectedToMaster(){
 		Debug.Log("Estamos conectados a " + PhotonNetwork.CloudRegion);
 		connectButton.SetActive(true);
+		PhotonNetwork.AutomaticallySyncScene = true;
 	}
 }
