@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using Photon.Realtime;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SelectCharacter : MonoBehaviour {
+public class SelectCharacter : MonoBehaviourPunCallbacks {
 
 	public Text playerSelected;
 	public Text info;
@@ -26,7 +28,7 @@ public class SelectCharacter : MonoBehaviour {
 			return;
 		}
 
-		SceneManager.LoadScene(2);
+		PhotonNetwork.LoadLevel(2);
 	}
 
 	void OnGUI(){
