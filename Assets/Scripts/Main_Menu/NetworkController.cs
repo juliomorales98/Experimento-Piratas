@@ -7,15 +7,22 @@ using UnityEngine.UI;
 public class NetworkController : MonoBehaviourPunCallbacks {
 
 	[SerializeField]
-	public GameObject connectButton;
+	public GameObject connectButton;	
 	
 	void Start () {
-		PhotonNetwork.ConnectUsingSettings();
-	}
-	
+		//Validamos si estamos conectados
+		if( PhotonNetwork.CloudRegion != null){
+			//Significa que estamos conectados, por lo que primero nos desconectamos del actual servidor
+			PhotonNetwork.Disconnect();
+			Debug.Log("Nos desconectamos del anterior servidor");
+		}
+
+		//Nos conectamos a el mejor servidor según photon
+		PhotonNetwork.ConnectUsingSettings();		
+	}	
 	
 	public override void OnConnectedToMaster(){
-		Debug.Log("Estamos conectados a " + PhotonNetwork.CloudRegion);
+		Debug.Log("Nos conectamos a " + PhotonNetwork.CloudRegion);
 		connectButton.SetActive(true);
 		PhotonNetwork.AutomaticallySyncScene = true;
 	}

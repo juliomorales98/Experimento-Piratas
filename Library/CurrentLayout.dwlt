@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 334, y: 271}
   m_MaxSize: {x: 14004, y: 10021}
   vertical: 0
-  controlID: 5575
+  controlID: 98
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -116,10 +116,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 948
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 18006, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 32
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,8 +138,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 948
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 33
+  controlID: 10
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 34
+  controlID: 11
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,8 +301,8 @@ MonoBehaviour:
     y: 0
     width: 1299
     height: 672
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -349,19 +349,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Experimento
+    - Assets/Scripts/Main_Menu
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Experimento
+  - Assets/Scripts/Main_Menu
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Admin\Documents\ServicioSocialJulioMorales\Experimento-Piratas
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 258}
-    m_SelectedIDs: 722e0000
-    m_LastClickedID: 11890
-    m_ExpandedIDs: e8290000022a0000442c0000363300004e360000ffffff7f
+    m_SelectedIDs: 4e2b0000
+    m_LastClickedID: 11086
+    m_ExpandedIDs: 00000000ea290000042a0000482c00003a33000052360000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,7 +389,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000ea290000042a0000482c00003a33000052360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -522,7 +522,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 959}
     m_SelectedIDs: 4e360000
     m_LastClickedID: 13902
-    m_ExpandedIDs: 00000000e8290000022a0000382a0000ec2a00006e2b0000902b0000d02b0000d62b00001e2c0000302c0000322c0000442c0000e22c00002c2d00004a2d00001e2e0000282e00000c2f0000402f000006300000243000007c310000a43100003a320000b4320000ca3200001c33000024330000363300004e33000058340000f834000082350000b0350000303600004e360000de3700004c380000e43b0000e63b0000e83b0000ea3b0000ec3b0000ee3b0000f03b0000f23b0000f43b0000f63b0000f83b0000fa3b0000ffffff7f
+    m_ExpandedIDs: 00000000ea290000042a0000482c00003a33000052360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -550,7 +550,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8290000382a0000ec2a00006e2b0000902b0000d02b00001e2c0000302c0000322c0000442c0000e22c00002c2d00004a2d00001e2e0000282e00000c2f0000402f000006300000243000007c310000a43100003a320000b43200001c33000024330000363300004e330000f834000082350000b0350000303600004e360000de3700004c380000e43b0000e63b0000e83b0000ea3b0000ec3b0000ee3b0000f03b0000f23b0000f43b0000f63b0000f83b0000fa3b0000
+    m_ExpandedIDs: 00000000ea290000042a0000482c00003a33000052360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,28 +668,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 100a0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 1a4bf6ffb44bf6ff6a4ef6ff1e4ff6ff3c4ff6ffa25df6ff365ef6ffec60f6ffa061f6ffbe61f6ff045bf7ff40f8f7ffb4faf7ffb6faf7ffd4fef7ffca12f8ffc8c8f8ff3ccbf8ff3ecbf8ff6ccbf8ffc2e0f8ff662cf9ffda2ef9ffdc2ef9ff0c2ff9ff826bf9ffdc71f9ff9272f9ff007cf9ffc07cf9ffc87cf9ffd4a5f9ff74e9f9ff2eeaf9ffe4ecf9ff98edf9ffb6edf9fff245faff7c46faff2049faff8670faff3683faff729afaffc22bfbfff62bfbff6a2efbffec2efbff8440fbffca60fbfffe60fbff7263fbfff463fbff6889fbff98d0fbff4ed1fbff04d4fbffb8d4fbffd6d4fbfff6eefbffaceffbff62f2fbff16f3fbff34f3fbff54f4fcffe4f4fcff7af7fcffc60afdff1015fdffbe1cfdffce60fdff5e61fdfff263fdffb082fdff66b0fdffd8b2fdffeeb2fdff32c7fdff72dafdff02dbfdff74ddfdff8addfdff58effdffe035feff6236feff1839feffcc39feffea39feff4e97ffff84d2ffffd2dbffff22f6ffff8cfbffff00000000c83c0000fc3e0000729a0000989a0000629d00005ca200006052010016550100d87101008e740100fae10100c85b0200ee5b0200185d0200525d02002e5e0200
+    m_ExpandedIDs: e2efffff8cfbffff00000000364f00006a4f0000c44f0000e64f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Image
-      m_OriginalName: Image
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -534188
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Experimento
+  - Main_Menu
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.031798434, y: -0.019483617, z: 0.00061999593, w: -0.9993042}
     speed: 2
-    m_Value: {x: -0.031798437, y: -0.019483618, z: 0.000619996, w: -0.99930423}
+    m_Value: {x: -0.031798434, y: -0.019483615, z: 0.0006199959, w: -0.9993041}
   m_Size:
     m_Target: 2892.094
     speed: 2
