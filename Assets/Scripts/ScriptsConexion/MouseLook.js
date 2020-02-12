@@ -34,6 +34,8 @@ var rotationY : float = 0;
 
 var originalRotation : Quaternion;
 
+
+
 function Update ()
 {
 	if(!Screen.lockCursor){
@@ -75,6 +77,8 @@ function Update ()
 	
 function Start ()
 {
+	Cursor.visible = false;
+	Cursor.lockState = CursorLockMode.Locked;
 	// Make the rigid body not change rotation
 	if (GetComponent.<Rigidbody>()){
 		GetComponent.<Rigidbody>().freezeRotation = true;

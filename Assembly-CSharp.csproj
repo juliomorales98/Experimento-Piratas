@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\ControlBasico.cs" />
      <Compile Include="Assets\Scripts\ControlBasico2.cs" />
      <Compile Include="Assets\Scripts\Experimento\CheckTimeOut.cs" />
+     <Compile Include="Assets\Scripts\Experimento\GameController.cs" />
      <Compile Include="Assets\Scripts\Experimento\GameSetup.cs" />
      <Compile Include="Assets\Scripts\IOConfig.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\DeActivateGO.cs" />

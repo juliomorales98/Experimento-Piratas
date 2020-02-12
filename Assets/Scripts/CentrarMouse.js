@@ -5,7 +5,7 @@ function Start(){
 	Cursor.visible=false;
 }
 function Update () {
-		var screenX=Screen.width;
+		/*var screenX=Screen.width;
 		var screenY=Screen.height;
 		var posX=Input.mousePosition.x/screenX;
 		var posY=Input.mousePosition.y/screenY;
@@ -24,7 +24,7 @@ function Update () {
 		if(lockCamera)
 			Cursor.lockState = CursorLockMode.Locked; //Para que el cursor quede al centro de la pantalla
 		else
-			Cursor.lockState = CursorLockMode.None; //Modo libre
+			Cursor.lockState = CursorLockMode.None; //Modo libre*/
 
 
 	

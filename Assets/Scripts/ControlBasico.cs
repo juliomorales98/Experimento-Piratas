@@ -55,11 +55,11 @@ public class ControlBasico : MonoBehaviour
             pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
         }
 
-        if (!GetComponent<NetworkView>().isMine)
+        /*if (!GetComponent<NetworkView>().isMine)
         {
             GetComponentInChildren<Camera>().enabled = false;
             this.enabled = false;
-        }
+        }*/
 
         // obtener si presionan adelante o a un lado
         
@@ -79,8 +79,8 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("vuelta", true);
             anim.SetFloat("direccion", lado);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", true);
-            GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", lado);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", true);
+            //GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", lado);
         }
         else
         {
@@ -88,8 +88,8 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("vuelta", false);
             anim.SetFloat("direccion", temp);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", false);
-            GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", temp);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", false);
+            //GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", temp);
         }
 
         //si presionan adelante puede caminar
@@ -102,15 +102,15 @@ public class ControlBasico : MonoBehaviour
            
 
             //This is new and experimental
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", false);//changed all the rpcs in this server to server instead of others
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "atras", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "camina", true);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", false);//changed all the rpcs in this server to server instead of others
+           // GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "atras", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "camina", true);
 
             
             if (lado > 0.1 || lado < 0.1)
             {
                 anim.SetFloat("direccion", lado);
-                GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", lado);
+                //GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", lado);
             }
         }
         else if (adelante == 0)
@@ -119,14 +119,14 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("atras", false);
 
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "camina", false);//also changed, see comment above
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "atras", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "camina", false);//also changed, see comment above
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "atras", false);
         }
         else
         {
             //	Debug.Log ("Caminar hacia atras");
             anim.SetBool("atras", true);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "atras", true);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "atras", true);
 
         }
         if (axes == RotationAxes.MouseXAndY)
@@ -158,10 +158,10 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("izq", false);
             anim.SetBool("der", false);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", true);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", true);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
         }
         else if (ratony < 100)
         {
@@ -170,10 +170,10 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("izq", false);
             anim.SetBool("der", false);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", true);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", true);
+           // GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
         }
         else if (ratonx < 250)
         {
@@ -182,10 +182,10 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("izq", true);
             anim.SetBool("der", false);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", true);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", true);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
         }
         else if (ratonx > Screen.width - 250)
         {
@@ -194,10 +194,10 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("izq", false);
             anim.SetBool("der", true);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", true);
+           // GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", true);
         }
         else
         {
@@ -206,13 +206,13 @@ public class ControlBasico : MonoBehaviour
             anim.SetBool("izq", false);
             anim.SetBool("der", false);
 
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
-            GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "abajo", false);
+           // GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "arriba", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
+            //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
         }
     }
-
+/*
     [RPC]
     void animationBool(string animationName, bool state)
     {
@@ -224,5 +224,5 @@ public class ControlBasico : MonoBehaviour
     {   
         
         anim.SetFloat(animationName, direction);
-    }
+    }*/
 }

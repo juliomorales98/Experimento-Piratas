@@ -92,14 +92,14 @@ function Update() {
         //	networkView.RPC("sendFisica", RPCMode.Others , hit.rigidbody, 0);
     }
 
-    if (Network.isClient) {
+    /*if (Network.isClient) {
         GameObject.FindGameObjectWithTag("General").GetComponent(NetworkView).RPC("ClickedBox", RPCMode.Others, name, hitt.rigidbody.gameObject.name);
     }
     else {
         var scriptObject: GameObject = GameObject.FindWithTag("General");
         var script: Logger = scriptObject.gameObject.GetComponent("Logger").scriptObject; //THIS IS THE PROBLEM LINE! Reference is null
 
-    }
+    }*/
 
     if (!springJoint) {
 
@@ -158,7 +158,7 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
         var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction * 15, Color.yellow);
         springJoint.transform.position = ray.GetPoint(distance);
-        if (GetComponent.<NetworkView>().isMine) {
+        /*if (GetComponent.<NetworkView>().isMine) {
             if (Input.GetKey(KeyCode.Z)) {
                 //llamar a la funcion rotacion
                 Rotacion(1, springJoint.connectedBody);
@@ -166,7 +166,7 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
             if (Input.GetKey(KeyCode.X)) {
                 //llamar a la funcion rotacion
                 Rotacion(2, springJoint.connectedBody);
-            }
+            }*/
 
 
             springJoint.connectedBody.isKinematic = false;
@@ -185,12 +185,14 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
             //line.SetPosition(1, springJoint.transform.position);
             line.SetPosition(1, springJoint.connectedBody.position);
             //se envia RPC para que los demas vean la linea
-            GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 1, hand.position, springJoint.connectedBody.position);
-        }
-        else {
+            //GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 1, hand.position, springJoint.connectedBody.position);
+            sendLine(1, hand.position, springJoint.connectedBody.position);
+        //}
+        //else {
             //se envia RPC con 0 para deshabilitar la linea
-            GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
-        }
+            //GetComponent.<NetworkView>().RPC(" ", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+            
+            //}
 
         //rigidbody.constraints = RigidbodyConstraints.FreezeRotation;//This is new and junk! God damn it, it dont work!!
         yield;
@@ -209,7 +211,8 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
 
     
     //Se envia RPC para deshabilitar la linea
-    GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+    //GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+    sendLine(0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
     if (Network.isClient) {
         GameObject.FindGameObjectWithTag("General").GetComponent(NetworkView).RPC("DraggingBox", RPCMode.Others, name, springJoint.connectedBody.name);
     }
@@ -290,7 +293,7 @@ function Rotacion(numero: int, body: Rigidbody) {
 
 }
 
-@RPC
+//@RPC
 function sendLine(habilitado: int, inicio: Vector3, fin: Vector3) {
     if (habilitado == 1)
         line.enabled = true;

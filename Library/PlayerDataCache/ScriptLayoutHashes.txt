@@ -376,3 +376,4 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
+aa698f44b7206ddad081a8796228de8f Assembly-CSharp.dll:.GameController
