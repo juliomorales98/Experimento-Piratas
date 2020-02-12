@@ -12,6 +12,6 @@ public class GameSetup : MonoBehaviour {
 	// Update is called once per frame
 	private void CreatePlayer(){
 		Debug.Log("Jugador conectado");
-		//PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PhotonPlayer"),Vector3.zero, Quaternion.identity);
+		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PhotonPlayer1"),new Vector3(-1.3f,6.4f,9.8f), Quaternion.identity);
 	}
 }
