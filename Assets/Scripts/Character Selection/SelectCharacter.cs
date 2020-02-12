@@ -19,6 +19,9 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 
 		playerSelected.text = "";
 		info.text = "Selecciona un pirata.";
+
+		//Quitamos el sync scenes para que cada quien escoja a su ritmo
+		PhotonNetwork.AutomaticallySyncScene = false;
 	}
 	
 	
@@ -28,6 +31,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 			return;
 		}
 
+		
 		PhotonNetwork.LoadLevel(2);
 	}
 

@@ -6,6 +6,7 @@ public class GameSetup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//PhotonNetwork.AutomaticallySyncScene = true;//activamos de nuevo la sincronización de escenas.
 		CreatePlayer();
 	}
 	
