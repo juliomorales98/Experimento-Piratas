@@ -43,7 +43,7 @@ public class ControlBasico : MonoBehaviour
         if (GetComponent<Rigidbody>())
             GetComponent<Rigidbody>().freezeRotation = true;
 
-        pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
+        //pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
     }
 
 
@@ -51,9 +51,9 @@ public class ControlBasico : MonoBehaviour
     void Update()
     {
         //Sabemos que pirata está utilizando
-         if(pirateName == null){
-            pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
-        }
+        // if(pirateName == null){
+         //   pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
+        //}
 
         /*if (!GetComponent<NetworkView>().isMine)
         {

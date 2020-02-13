@@ -36,6 +36,7 @@ b027659a510ae8d01d6d5f31baf9827a PhotonUnityNetworking.Utilities.dll:Photon.Pun.
 6fa0ccad6751149817f91b2be8066f02 Assembly-UnityScript.dll:.Skins
 b646916c78b48f3208cda1a75aff4d8f Assembly-CSharp.dll:.ChatGui
 b0e6f931f4c3163843d44b8ebc9f254a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.LayoutElementMatchSize
+aa698f44b7206ddad081a8796228de8f Assembly-CSharp.dll:.GameController
 fd956d751291ce189c887237eca762dc Assembly-UnityScript.dll:.VolteaMouse
 ee6b4e460fd10c8a967019ff6962c4f7 Assembly-UnityScript.dll:.camara
 7457d71eaa39c4c44837922c7cb3b7c4 Assembly-UnityScript.dll:.CharacterSelect
@@ -49,7 +50,7 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 0231349cd256aae30a08cd21f492168d Assembly-CSharp.dll:.ControlBasico
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.CullingHandler
 d48366e0260992bf99b8e01d243db3ce Assembly-UnityScript.dll:.BajoElAgua
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameSetup
+4a258c360189f4cdaed12db1ba251a9a Assembly-CSharp.dll:.GameSetup
 1ca5c8dc66d7df193309010a6f864080 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Hub.DemoHubManager
 b8261af541f1825b68eab5eb406ae7c5 Assembly-UnityScript.dll:.ConsultTime
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -133,6 +134,7 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 d79de92723477d704d7beb523a6d339a Assembly-UnityScript-firstpass.dll:.ThirdPersonController
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Hub.ToDemoHubButton
 977c873f67252ed523aa425f8e3d6284 PhotonUnityNetworking.dll:Photon.Pun.PhotonHandler
+20f60d981c32663fea72ce8599ffcdb8 Assembly-UnityScript.dll:.SetPirateName
 8f8fefea81b93c7c0bbdfff54b0b51b5 Assembly-CSharp.dll:.LobbyController
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.Block
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -376,4 +378,3 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
-aa698f44b7206ddad081a8796228de8f Assembly-CSharp.dll:.GameController

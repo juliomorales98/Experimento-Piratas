@@ -45,7 +45,7 @@ function Awake()
 		var nombrePirata : String;
 		switch(savedPlayer)
 		{
-			case 0:; case 1:
+			case 0: case 1:
 				playerPref = playerPref1;
 				nombrePirata = "Pirata 1";
 				break;
