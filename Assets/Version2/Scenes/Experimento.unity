@@ -7790,6 +7790,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ea279a176d38dd4a949e9a3ae36e84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 1123}
+  - {fileID: 1122}
+  - {fileID: 1120}
+  - {fileID: 201212986}
+  - {fileID: 335793356}
+  - {fileID: 50280280}
+  - {fileID: 1208796354}
+  - {fileID: 1485063635}
+  - {fileID: 355215619}
   pirata: {fileID: 701293596}
 --- !u!114 &1963285263
 MonoBehaviour:
@@ -8049,8 +8059,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009056854}
-  m_LocalRotation: {x: -0.008514167, y: 0.7221571, z: 0.0088900775, w: 0.6916196}
-  m_LocalPosition: {x: -56.67376, y: -10.464316, z: 19.393414}
+  m_LocalRotation: {x: -0.10417986, y: 0.1323615, z: 0.013990755, w: 0.9856121}
+  m_LocalPosition: {x: -4.9698534, y: -5.214364, z: 22.088081}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
