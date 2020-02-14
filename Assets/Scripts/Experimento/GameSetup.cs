@@ -22,14 +22,14 @@ public class GameSetup : MonoBehaviour {
 	void Start () {
 		//PhotonNetwork.AutomaticallySyncScene = true;//activamos de nuevo la sincronización de escenas.
 		Debug.Log("Entró a game setup");
-		//CreatePlayer();
+		CreatePlayer();
 	}
 
 	void Update(){
-		if(pirata.text != "Nombre Pirata" && !instanciado){
+		/*if(pirata.text != "Nombre Pirata" && !instanciado){
 			CreatePlayer();
 			instanciado = true;
-		}
+		}*/
 	}
 	
 	// Update is called once per frame

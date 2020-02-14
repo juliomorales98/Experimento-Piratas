@@ -17,14 +17,15 @@ public class PhotonPlayer : MonoBehaviour {
 	// Use this for initialization
 
 	void Start(){
-		pirata = GameObject.Find("Pirate Name").GetComponent<Text>();
+		//pirata = GameObject.Find("Pirate Name").GetComponent<Text>();
+		CreateAvatar();
 	}
 
 	void Update () {
-		if(pirata.text != "Nombre Pirata" && !instanciado){
+		/*if(pirata.text != "Nombre Pirata" && !instanciado){
 			CreateAvatar();
 			instanciado = true;
-		}
+		}*/
 	}
 	
 	// Update is called once per frame
@@ -33,7 +34,7 @@ public class PhotonPlayer : MonoBehaviour {
 		int spawnPicker = Random.Range(0,GameSetup.GS.spawnPoints.Length);
 		if(PV.IsMine){		
 		
-			 myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs",pirata.text),
+			 myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PhotonAvatar"),
 			GameSetup.GS.spawnPoints[spawnPicker].position,GameSetup.GS.spawnPoints[spawnPicker].rotation,
 			0);
 

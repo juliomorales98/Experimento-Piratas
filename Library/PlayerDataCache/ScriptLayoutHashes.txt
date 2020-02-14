@@ -4,7 +4,7 @@ C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Build/ex
 SceneListBegin?
 Assets/Version2/Scenes/Main_Menu.unity
 Assets/Version2/Scenes/CharacterSelection.unity
-Assets/Version2/Scenes/Experimento.unity
+Assets/Experimento.unity
 SceneListEnd?
 8e75c7ff572e377afe5aec0a3c77276b Assembly-UnityScript-firstpass.dll:.ThirdPersonCamera
 501888fb5d0cecdd7c7e87c84035d44e PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.PlayerListCell
@@ -182,6 +182,7 @@ d7c3cc9e6aeec9a00634f6abffbe35e2 PhotonUnityNetworking.Utilities.dll:Photon.Pun.
 6a057fcd882a2eb3ba81f932c22e6801 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.PunCockpitEmbed
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
+a63e663e10ce8822a854240d26822a31 Assembly-CSharp.dll:.PhotonPlayer
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -378,4 +379,4 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
-a63e663e10ce8822a854240d26822a31 Assembly-CSharp.dll:.PhotonPlayer
+df07e5cbd4f21193b74ae95a62cc842b Assembly-CSharp.dll:.PlayerMovement
