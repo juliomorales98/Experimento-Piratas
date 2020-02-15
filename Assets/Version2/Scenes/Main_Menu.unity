@@ -1666,7 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9661aa30d1875b344952640766e5adc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiPlayerSceneIndex: 2
+  multiPlayerSceneIndex: 1
   lobbyPanel: {fileID: 1132230544}
   roomPanel: {fileID: 2044180582}
   startButton: {fileID: 463525837}
