@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Photon.Pun;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 public class ControlBasico : MonoBehaviour
@@ -26,8 +27,11 @@ public class ControlBasico : MonoBehaviour
     //	private ThirdPersonCamera camera;
 
 
+    private PhotonView PV;
 
-    void start()
+    private Camera miCamara;
+
+    void Start()
     {
         //Inicializacion de valores de la animacion
         anim.SetBool("camina", false);
@@ -40,10 +44,13 @@ public class ControlBasico : MonoBehaviour
         anim.SetBool("atras", false);
 
 
-        if (GetComponent<Rigidbody>())
-            GetComponent<Rigidbody>().freezeRotation = true;
+        /*if (GetComponent<Rigidbody>())
+            GetComponent<Rigidbody>().freezeRotation = true;*/
 
         //pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
+
+        PV = GetComponent<PhotonView>();
+        miCamara = transform.GetChild(0).GetComponent<Camera>();
     }
 
 
@@ -63,6 +70,10 @@ public class ControlBasico : MonoBehaviour
 
         // obtener si presionan adelante o a un lado
         
+        if(PV.IsMine){
+			miCamara.enabled = false;
+			miCamara.enabled = true;
+
             adelante = Input.GetAxis("Vertical");
         
             
@@ -211,6 +222,8 @@ public class ControlBasico : MonoBehaviour
             //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "izq", false);
             //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "der", false);
         }
+		}
+        
     }
 /*
     [RPC]

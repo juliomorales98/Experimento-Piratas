@@ -2163,6 +2163,7 @@ GameObject:
   - component: {fileID: 114499475847624304}
   - component: {fileID: 23412910368265586}
   - component: {fileID: 114578047910574906}
+  - component: {fileID: 114448377795347660}
   m_Layer: 0
   m_Name: Pirata 4
   m_TagString: Player
@@ -2973,7 +2974,7 @@ Transform:
   m_Children:
   - {fileID: 4687731604592802}
   m_Father: {fileID: 4473882358087394}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4216033981402680
 Transform:
@@ -3581,7 +3582,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4473882358087394}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4460177189105834
 Transform:
@@ -3649,13 +3650,13 @@ Transform:
   m_LocalPosition: {x: -11.155647, y: 10.738773, z: 17.323833}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4458523497522862}
   - {fileID: 4590269252041332}
   - {fileID: 4573182687207594}
   - {fileID: 4688486989514370}
-  - {fileID: 4911767612498832}
   - {fileID: 4184400209335496}
+  - {fileID: 4911767612498832}
   - {fileID: 4215360823265112}
-  - {fileID: 4458523497522862}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3919,7 +3920,7 @@ Transform:
   m_Children:
   - {fileID: 4378224891973494}
   m_Father: {fileID: 4473882358087394}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4576740943268216
 Transform:
@@ -3989,7 +3990,7 @@ Transform:
   - {fileID: 4617362989619510}
   - {fileID: 4003073031198172}
   m_Father: {fileID: 4473882358087394}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4595042614903362
 Transform:
@@ -4206,7 +4207,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 4473882358087394}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4688652437441424
 Transform:
@@ -4562,7 +4563,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 4473882358087394}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4916036263239894
 Transform:
@@ -4953,6 +4954,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944abae335374db49ae06ba2e91b8a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114448377795347660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1918414099414110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!114 &114462659400454232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5021,10 +5036,10 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 0
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 114448377795347660}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

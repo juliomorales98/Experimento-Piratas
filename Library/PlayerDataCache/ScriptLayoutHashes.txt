@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-A:/Experimento-Piratas/Build/experimento.exe
+C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Build/experimento.exe
 SceneListBegin?
 Assets/Version2/Scenes/Main_Menu.unity
 Assets/Experimento.unity
