@@ -22,7 +22,7 @@ function Start() {
 	
 		name = transform.parent.name;
 		GetComponent(Camera).enabled = true;
-		GetComponent(AudioListener).enabled = true;
+		//GetComponent(AudioListener).enabled = true;
 	//	transform.parent.GetComponent("Control Basico").active = true;
 	//	this.gameObject.SetActive(false);
 	}
