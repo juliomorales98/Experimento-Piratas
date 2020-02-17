@@ -31,6 +31,8 @@ public class ControlBasico : MonoBehaviour
 
     private Camera miCamara;
 
+    private PhotonAnimatorView photonAnimator;
+
     void Start()
     {
         //Inicializacion de valores de la animacion
@@ -51,6 +53,7 @@ public class ControlBasico : MonoBehaviour
 
         PV = GetComponent<PhotonView>();
         miCamara = transform.GetChild(0).GetComponent<Camera>();
+        photonAnimator = GetComponent<PhotonAnimatorView>();
     }
 
 
@@ -89,6 +92,7 @@ public class ControlBasico : MonoBehaviour
         {
             anim.SetBool("vuelta", true);
             anim.SetFloat("direccion", lado);
+            
 
             //GetComponent<NetworkView>().RPC("animationBool", RPCMode.Others, "vuelta", true);
             //GetComponent<NetworkView>().RPC("animationFloat", RPCMode.Others, "direccion", lado);

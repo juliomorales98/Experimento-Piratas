@@ -2212,7 +2212,6 @@ GameObject:
   - component: {fileID: 20588284415062938}
   - component: {fileID: 124949283824977552}
   - component: {fileID: 92698650925411316}
-  - component: {fileID: 81241567039257412}
   - component: {fileID: 114724992006945984}
   - component: {fileID: 114787382313813812}
   - component: {fileID: 148260540270382626}
@@ -4849,13 +4848,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1860043769561122}
   m_Mesh: {fileID: 4300000, guid: 298a731b82f401c4c953fcbca0c6a6b0, type: 3}
---- !u!81 &81241567039257412
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1877751054735692}
-  m_Enabled: 1
 --- !u!92 &92698650925411316
 Behaviour:
   m_ObjectHideFlags: 1
@@ -5040,6 +5032,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 114274688390799638}
+  - {fileID: 0}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
