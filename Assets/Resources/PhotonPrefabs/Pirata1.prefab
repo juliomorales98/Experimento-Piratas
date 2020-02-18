@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 114221440578384120}
   - component: {fileID: 114280013385464962}
   - component: {fileID: 23688088334288630}
+  - component: {fileID: 114562790234344794}
   m_Layer: 0
   m_Name: Pirata1
   m_TagString: Untagged
@@ -4737,6 +4738,18 @@ MonoBehaviour:
   rotationX: 0
   rotationY: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &114562790234344794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1160478222029104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f8631ba183b4a948b4147f8e710d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
 --- !u!114 &114607346716992202
 MonoBehaviour:
   m_ObjectHideFlags: 1
