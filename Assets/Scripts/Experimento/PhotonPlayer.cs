@@ -20,7 +20,7 @@ public class PhotonPlayer : MonoBehaviour {
 		int spawnPicker = Random.Range(0,GameSetup.GS.spawnPoints.Length);
 		if(PV.IsMine){		
 		
-			PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata3"),
+			PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata1"),
 			GameSetup.GS.spawnPoints[spawnPicker].position,GameSetup.GS.spawnPoints[spawnPicker].rotation,
 			0);
 

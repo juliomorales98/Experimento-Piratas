@@ -396,11 +396,12 @@ GameObject:
   - component: {fileID: 4793491259041148}
   - component: {fileID: 95935009821916464}
   - component: {fileID: 143420470565954380}
+  - component: {fileID: 23688088334288630}
+  - component: {fileID: 114280013385464962}
+  - component: {fileID: 114562790234344794}
   - component: {fileID: 114316563237068554}
   - component: {fileID: 114221440578384120}
-  - component: {fileID: 114280013385464962}
-  - component: {fileID: 23688088334288630}
-  - component: {fileID: 114562790234344794}
+  - component: {fileID: 114390645833058076}
   - component: {fileID: 114802947004255958}
   m_Layer: 0
   m_Name: Pirata1
@@ -4715,9 +4716,51 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 114221440578384120}
+  - {fileID: 114390645833058076}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &114390645833058076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1160478222029104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 1
+    SynchronizeType: 1
+    Name: direccion
+  - Type: 4
+    SynchronizeType: 1
+    Name: camina
+  - Type: 4
+    SynchronizeType: 1
+    Name: abajo
+  - Type: 4
+    SynchronizeType: 1
+    Name: arriba
+  - Type: 4
+    SynchronizeType: 1
+    Name: izq
+  - Type: 4
+    SynchronizeType: 1
+    Name: der
+  - Type: 4
+    SynchronizeType: 1
+    Name: vuelta
+  - Type: 4
+    SynchronizeType: 1
+    Name: atras
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!114 &114493866328675456
 MonoBehaviour:
   m_ObjectHideFlags: 1
