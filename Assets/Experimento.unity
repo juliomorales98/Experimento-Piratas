@@ -3537,6 +3537,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1172445828314604, guid: 913adf1290d96514dbc614c236cca9d2, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148167598948996358, guid: 913adf1290d96514dbc614c236cca9d2, type: 2}
     - {fileID: 114340695564800284, guid: 913adf1290d96514dbc614c236cca9d2, type: 2}
@@ -3803,6 +3807,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1903928065376740, guid: a86d172896f4a684ab8418fe74a42bcf, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148092626386183672, guid: a86d172896f4a684ab8418fe74a42bcf, type: 2}
     - {fileID: 114098536806679472, guid: a86d172896f4a684ab8418fe74a42bcf, type: 2}
@@ -4053,6 +4061,10 @@ Prefab:
     - target: {fileID: 1222936415324446, guid: da370d90f349fbd4ab86e7ba59f3023c, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222936415324446, guid: da370d90f349fbd4ab86e7ba59f3023c, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148341888707259928, guid: da370d90f349fbd4ab86e7ba59f3023c, type: 2}
@@ -5246,6 +5258,10 @@ Prefab:
     - target: {fileID: 1094562463866604, guid: 9c977ebf611ce824c91983b49fd3fd15, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094562463866604, guid: 9c977ebf611ce824c91983b49fd3fd15, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148522751456851726, guid: 9c977ebf611ce824c91983b49fd3fd15, type: 2}
@@ -6770,6 +6786,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1849273412149566, guid: 84e839d815a29214c986a29a6c7fd583, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148426176558630360, guid: 84e839d815a29214c986a29a6c7fd583, type: 2}
     - {fileID: 114640653823755454, guid: 84e839d815a29214c986a29a6c7fd583, type: 2}
@@ -7367,6 +7387,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1920489422955764, guid: c58871dbac3ec1a45a6b625dd66bc04b, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148959601012567138, guid: c58871dbac3ec1a45a6b625dd66bc04b, type: 2}
     - {fileID: 114408064072221302, guid: c58871dbac3ec1a45a6b625dd66bc04b, type: 2}
@@ -7908,6 +7932,10 @@ Prefab:
     - target: {fileID: 1153291494797280, guid: d872e8c1b1f223b4d8f725db2e6b3b28, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153291494797280, guid: d872e8c1b1f223b4d8f725db2e6b3b28, type: 2}
+      propertyPath: m_TagString
+      value: Barco_Pieza
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 148319141267526002, guid: d872e8c1b1f223b4d8f725db2e6b3b28, type: 2}

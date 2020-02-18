@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 114280013385464962}
   - component: {fileID: 23688088334288630}
   - component: {fileID: 114562790234344794}
+  - component: {fileID: 114802947004255958}
   m_Layer: 0
   m_Name: Pirata1
   m_TagString: Untagged
@@ -4749,7 +4750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb1f8631ba183b4a948b4147f8e710d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10
 --- !u!114 &114607346716992202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4771,6 +4771,18 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &114802947004255958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1160478222029104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca9d74faeb7dde4ab0ab1e11a50e3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grayMaterial: {fileID: 2100000, guid: 70ba14f8e8d400344b324d60c4f57145, type: 2}
 --- !u!124 &124661856414853674
 Behaviour:
   m_ObjectHideFlags: 1

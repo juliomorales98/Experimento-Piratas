@@ -9,7 +9,7 @@ public class PhotonPlayer : MonoBehaviour {
 
 	private PhotonView PV;
 
-	public GameObject myAvatar;
+	private GameObject myAvatar;
 
 	private Text pirata;
 
@@ -27,7 +27,7 @@ public class PhotonPlayer : MonoBehaviour {
 		int spawnPicker = Random.Range(0,GameSetup.GS.spawnPoints.Length);
 		if(PV.IsMine){		
 		
-			 myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata 4"),
+			 myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata3"),
 			GameSetup.GS.spawnPoints[spawnPicker].position,GameSetup.GS.spawnPoints[spawnPicker].rotation,
 			0);
 
