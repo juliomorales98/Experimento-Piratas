@@ -9,6 +9,12 @@ public class DragObject : MonoBehaviour {
     private float mZCoord;
 
 	private Vector3 originalRotation;
+
+    private bool pieceSet;
+
+    void Start(){
+        pieceSet = false;
+    }
     
     public void MovePiece(){
         originalRotation = new Vector3(transform.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,transform.rotation.eulerAngles.z);
@@ -19,6 +25,17 @@ public class DragObject : MonoBehaviour {
 
 		//Quitamos las rotaciones para que no se aloque
 		transform.eulerAngles = originalRotation;
+
+        
+    }
+
+    public void RotatePiece(int op){
+        
+    }
+
+    public void SetKinematic(bool var){
+        gameObject.GetComponent<Rigidbody>().isKinematic = var;
+        pieceSet = var;
     }
 
     private Vector3 GetMouseAsWorldPoint(){

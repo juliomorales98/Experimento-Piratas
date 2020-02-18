@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-A:/Experimento-Piratas/Build/experimento.exe
+C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Build/experimento.exe
 SceneListBegin?
 Assets/Version2/Scenes/Main_Menu.unity
 Assets/Experimento.unity
@@ -22,6 +22,7 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 b027659a510ae8d01d6d5f31baf9827a PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PhotonStatsGui
 6fa0ccad6751149817f91b2be8066f02 Assembly-UnityScript.dll:.Skins
 b646916c78b48f3208cda1a75aff4d8f Assembly-CSharp.dll:.ChatGui
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DragObject
 b0e6f931f4c3163843d44b8ebc9f254a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.LayoutElementMatchSize
 aa698f44b7206ddad081a8796228de8f Assembly-CSharp.dll:.GameController
 fd956d751291ce189c887237eca762dc Assembly-UnityScript.dll:.VolteaMouse
@@ -61,6 +62,7 @@ d79de92723477d704d7beb523a6d339a Assembly-UnityScript-firstpass.dll:.ThirdPerson
 8f8fefea81b93c7c0bbdfff54b0b51b5 Assembly-CSharp.dll:.LobbyController
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.Block
 5dc04e627cc0a846ca76ba5fc502cf7b PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.SendRateOnSerializeField
+ab232dc3d94359ca42eabb9c72cbbb82 Assembly-CSharp.dll:.ObjectClicker
 8522a63b29f58cdb856046ee8a832464 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.TabViewManager
 58bb83f23a38f1962bddf96033a5bc5d PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.AsteroidsGameManager
 4c7dc8a4e3b464fa5ee10bb13be20d08 Assembly-UnityScript.dll:.gameGUI
@@ -379,4 +381,3 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DragObject

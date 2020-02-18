@@ -18,31 +18,32 @@ public class ObjectClicker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		RaycastHit hit;
 
-		if(Input.GetMouseButtonDown(0)){
-			RaycastHit hit;
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		
+		if(Physics.Raycast(ray,out hit, 100.0f)){			
 
-			if(Physics.Raycast(ray,out hit, 100.0f)){
-				if(hit.transform){
-										
-					if(hit.transform.GetComponent<Rigidbody>()){
-						
-						MoveObject(hit);
-					}
+			if(hit.transform){	
+
+				//Para hacer el drag					
+				if(Input.GetMouseButtonDown(0)){
+
+					 if (Input.GetKey(KeyCode.Z)) {Debug.Log("Presionó Z");}
+
+					hit.transform.GetComponent<DragObject>().MovePiece();
+					hit.transform.GetComponent<DragObject>().SetKinematic(false);		
 				}
-			}
-		}
-		
-	}
 
-	private void MoveObject(RaycastHit hit){
+				//Para hacer que no se mueva ya
+				if(Input.GetMouseButton(1)){
+					hit.transform.GetComponent<DragObject>().SetKinematic(true);
+					
+					Input.GetMouseButtonDown(0).Equals(false);
+				}				
+			}			
+		}		
 		
-		hit.transform.GetComponent<DragObject>().MovePiece();
-		
-	}
-	private void PrintName(GameObject go){
-		Debug.Log(go.name);
 	}
 }
