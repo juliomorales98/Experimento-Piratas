@@ -8,11 +8,7 @@ public class GameSetup : MonoBehaviour {
 
 	public Transform[] spawnPoints;
 
-	[SerializeField]
-	private Text pirata;
-	// Use this for initialization
-
-	private bool instanciado = false;
+	
 
 	private void OnEnable(){
 		if(GameSetup.GS == null){
@@ -26,19 +22,12 @@ public class GameSetup : MonoBehaviour {
 	}
 
 	void Update(){
-		/*if(pirata.text != "Nombre Pirata" && !instanciado){
-			CreatePlayer();
-			instanciado = true;
-		}*/
+		
 	}
 	
 	// Update is called once per frame
 	private void CreatePlayer(){
 		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PhotonNetworkPlayer"),new Vector3(-1.3f,6.4f,9.8f), Quaternion.identity);
 		
-	}
-	
-	public Text getPirataName(){
-		return pirata;
 	}
 }

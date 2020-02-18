@@ -10,10 +10,10 @@ public class DragObject : MonoBehaviour {
 
 	private Vector3 originalRotation;
 
-    private bool pieceSet;
+   
 
     void Start(){
-        pieceSet = false;
+        
     }
     
     public void MovePiece(){
@@ -35,7 +35,7 @@ public class DragObject : MonoBehaviour {
 
     public void SetKinematic(bool var){
         gameObject.GetComponent<Rigidbody>().isKinematic = var;
-        pieceSet = var;
+        
     }
 
     private Vector3 GetMouseAsWorldPoint(){

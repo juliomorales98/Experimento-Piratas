@@ -9,13 +9,6 @@ public class PhotonPlayer : MonoBehaviour {
 
 	private PhotonView PV;
 
-	private GameObject myAvatar;
-
-	private Text pirata;
-
-	private bool instanciado = false;
-	// Use this for initialization
-
 	void Start(){
 		
 		CreateAvatar();
@@ -27,7 +20,7 @@ public class PhotonPlayer : MonoBehaviour {
 		int spawnPicker = Random.Range(0,GameSetup.GS.spawnPoints.Length);
 		if(PV.IsMine){		
 		
-			 myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata3"),
+			PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata3"),
 			GameSetup.GS.spawnPoints[spawnPicker].position,GameSetup.GS.spawnPoints[spawnPicker].rotation,
 			0);
 

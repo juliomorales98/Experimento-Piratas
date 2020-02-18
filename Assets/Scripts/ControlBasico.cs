@@ -31,7 +31,7 @@ public class ControlBasico : MonoBehaviour
 
     private Camera miCamara;
 
-    private PhotonAnimatorView photonAnimator;
+   
 
     void Start()
     {
@@ -53,7 +53,7 @@ public class ControlBasico : MonoBehaviour
 
         PV = GetComponent<PhotonView>();
         miCamara = transform.GetChild(0).GetComponent<Camera>();
-        photonAnimator = GetComponent<PhotonAnimatorView>();
+        
     }
 
 
