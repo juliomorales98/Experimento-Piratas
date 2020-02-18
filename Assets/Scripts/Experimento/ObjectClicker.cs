@@ -4,22 +4,13 @@ using UnityEngine;
 
 public class ObjectClicker : MonoBehaviour {
 
-	public float force = 10;
-	private Vector3 mOffset;
-
-    private float mZCoord;
-
-	private Vector3 originalRotation;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
+	private Vector3 mOffset;
+    private float mZCoord;
+	private Vector3 originalRotation;		
+	
 	void Update () {
 		RaycastHit hit;
-
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 		

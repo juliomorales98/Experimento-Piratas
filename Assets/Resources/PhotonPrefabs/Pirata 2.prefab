@@ -1830,6 +1830,7 @@ GameObject:
   - component: {fileID: 23187191346649170}
   - component: {fileID: 114060196372039568}
   - component: {fileID: 114864156533086188}
+  - component: {fileID: 114605146211928298}
   m_Layer: 0
   m_Name: Pirata 2
   m_TagString: Untagged
@@ -4703,6 +4704,17 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &114605146211928298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774967933043858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1f8631ba183b4a948b4147f8e710d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114785814903833186
 MonoBehaviour:
   m_ObjectHideFlags: 1
