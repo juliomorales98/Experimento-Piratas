@@ -260,6 +260,38 @@ public class DragRigidBodyLine : MonoBehaviour {
 			body.transform.rotation *= Quaternion.AngleAxis(4, new Vector3(1, 0, 0));
 	}
 
+	private static void ToggleLight(GameObject go){
+		//var theLight: Light = go.GetComponentInChildren(Light);
+		Light theLight = go.GetComponentInChildren<Light>();
+
+		if (!theLight)
+			return;
+
+		theLight.enabled = !theLight.enabled;
+		var illumOn = theLight.enabled;
+
+		MeshRenderer[] renderers = go.GetComponentsInChildren<MeshRenderer>();
+
+		foreach (MeshRenderer r in renderers) {
+			if (r.gameObject.layer == 1) {
+				r.material.shader = Shader.Find(illumOn ? "Self-Illumin/Diffuse" : "Diffuse");
+			}
+		}
+	}
+
+	void OnPostRender(){
+		if (highlightObject == null)
+        return;
+
+		var go = highlightObject;
+		highlightMaterial.SetPass(0);
+		MeshFilter[] meshes = go.GetComponentsInChildren<MeshFilter>();
+		
+		foreach(MeshFilter m  in meshes) {
+			Graphics.DrawMeshNow(m.sharedMesh, m.transform.position, m.transform.rotation);
+		}
+	}
+
 	[PunRPC]
 	private void sendLine(int habilitado, Vector3 inicio, Vector3 fin){
 		if (habilitado == 1)
