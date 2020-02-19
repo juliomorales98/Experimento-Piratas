@@ -1833,6 +1833,7 @@ GameObject:
   - component: {fileID: 114636717475455854}
   - component: {fileID: 120668049413059042}
   - component: {fileID: 114104147312304798}
+  - component: {fileID: 114817442555727166}
   m_Layer: 0
   m_Name: Pirata 2
   m_TagString: Untagged
@@ -4800,6 +4801,17 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+--- !u!114 &114817442555727166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774967933043858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9025adff5564d3c448a0e3bc4373bbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114864156533086188
 MonoBehaviour:
   m_ObjectHideFlags: 1

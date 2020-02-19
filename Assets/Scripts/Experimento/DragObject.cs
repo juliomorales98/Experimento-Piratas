@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DragObject : MonoBehaviour {
 
@@ -24,6 +25,20 @@ public class DragObject : MonoBehaviour {
                     //Debug.Log("No puede cargar esta pieza.");
                     return false;
                 }
+            }else if(g.name == "PlayerPosition"){
+                //Distancia entre 2 puntos en el espacio
+
+                float playerX = float.Parse(g.transform.GetChild(0).GetComponent<Text>().text);
+                float playerY = float.Parse(g.transform.GetChild(1).GetComponent<Text>().text);
+                float playerZ = float.Parse(g.transform.GetChild(2).GetComponent<Text>().text);
+                
+                float distance = Vector3.Distance(new Vector3(playerX,playerY,playerZ),transform.position);
+                Debug.Log("Distance= " + distance);
+
+                if(distance >= 16)
+                    return false;
+                
+                
             }
         }
 
