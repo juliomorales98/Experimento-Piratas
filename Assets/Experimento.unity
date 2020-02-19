@@ -239,19 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca9d74faeb7dde4ab0ab1e11a50e3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pirateName: {fileID: 701293596}
-  figuras:
-  - {fileID: 892157349}
-  - {fileID: 1797724669}
-  - {fileID: 1554563962}
-  - {fileID: 966104436}
-  - {fileID: 1740725267}
-  - {fileID: 201629225}
-  - {fileID: 1366489608}
-  materials:
-  - {fileID: 2100000, guid: 3dc4c793552867840a98d1ec25f6d793, type: 2}
-  - {fileID: 2100000, guid: a4a9fa806ca38824d8500ab460b6dd30, type: 2}
-  - {fileID: 2100000, guid: 05c78f9d9db38bc41bb8c15b5e03312d, type: 2}
+  grayMaterial: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,8 +1604,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 250042444}
-  m_LocalRotation: {x: 0.087172285, y: 0.89959055, z: 0.21045254, w: -0.37262255}
-  m_LocalPosition: {x: 3.2390888, y: -9.613765, z: 17.479967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 365.56256, y: -307.77228, z: -792.7575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8467,7 +8455,6 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1193652802}
   - {fileID: 233741012}
-  pirata: {fileID: 701293596}
 --- !u!1 &1974633638
 GameObject:
   m_ObjectHideFlags: 0

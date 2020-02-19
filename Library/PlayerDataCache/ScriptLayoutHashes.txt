@@ -183,6 +183,7 @@ d7c3cc9e6aeec9a00634f6abffbe35e2 PhotonUnityNetworking.Utilities.dll:Photon.Pun.
 6a057fcd882a2eb3ba81f932c22e6801 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.PunCockpitEmbed
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
+cd503a42be4ebaae4789453203d1d9dc Assembly-CSharp.dll:.DragRigidBodyLine
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PhotonPlayer
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -249,6 +250,7 @@ bdabaa7ade8c0d93222207f74a10d53a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.IsConnectedProperty
 6286792f36ea7890f499f71e9704b41e PhotonUnityNetworking.dll:Photon.Pun.ServerSettings
 e7f268767823a8cd19911699aa31f1ea PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.GameVersionProperty
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePiece
 fb2ac97018c2c9b8b721d1a47fc40206 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.PunBasics.Launcher
 8f8366f0522d35b7b7e9eebf3181bf1c PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm
 2b1d0da300b926cf06210da11d914c76 Assembly-CSharp.dll:Photon.Chat.UtilityScripts.TextButtonTransition

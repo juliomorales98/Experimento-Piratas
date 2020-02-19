@@ -18,7 +18,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 	[SerializeField] private Material mat;
 	[SerializeField] private LineRenderer line;
 	[SerializeField] private Material highlightMaterial;
-	[SerializeField] private Text pirateName;
+	[SerializeField] private string pirateName;
 
 	private GameObject highlightObject;
 	private SpringJoint springJoint;
@@ -26,6 +26,8 @@ public class DragRigidBodyLine : MonoBehaviour {
 	private PhotonView PV;
 
 	private bool setPiece;
+
+	private bool draging;
 
 	void Start(){
 		spring = 0.0f;
@@ -41,17 +43,20 @@ public class DragRigidBodyLine : MonoBehaviour {
 
 		line.SetWidth(0.05f, 0.05f);
 
-		pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
-
+		//pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
+		pirateName = gameObject.name;
 		PV = GetComponent<PhotonView>();
+
+		draging = false;
+		
 	}
 
 	void Update(){
 		Camera mainCamera = FindCamera();
 
-		if(pirateName == null){
+		/*if(pirateName == null){
 			pirateName = GameObject.Find("Pirate Name").GetComponent<Text>();
-		}
+		}*/
 
 		highlightObject = null;
 		if (springJoint != null && springJoint.connectedBody != null) {
@@ -72,6 +77,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 		// Make sure the user pressed the mouse down
 		if (!Input.GetMouseButtonDown(0)) {
 			//line.enabled = false;
+			draging = false;
 			return;
 		}
 
@@ -83,7 +89,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 			return;
 		}
 
-		if(pirateName.text == "Pirata 2"){
+		if(pirateName == "Pirata 2(Clone)"){
 			Debug.Log(hit.rigidbody);
 			if(hit.rigidbody != null && (hit.rigidbody.name == "Proa_Prefab" || hit.rigidbody.name == "Popa_Prefab"
 			|| hit.rigidbody.name == "CubiertaDesdePopa_Prefab" || hit.rigidbody.name == "CubiertaDesdeProa_Prefab")) {
@@ -101,7 +107,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 			//si el cubo es Kinematic se le quita eso para poderlo mover con el mouse
 			hit.rigidbody.isKinematic = false;
 			//	networkView.RPC("sendFisica", RPCMode.Others , hit.rigidbody, 0);
-			PV.RPC("sendFisica", RpcTarget.All, hit.rigidbody, 0);
+			//PV.RPC("sendFisica", RpcTarget.All, hit.rigidbody, 0);
 		}
 
 		if (!springJoint) {
@@ -113,7 +119,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 			springJoint = go.AddComponent(typeof(SpringJoint)) as SpringJoint;
 			body.isKinematic = true;
 			//	networkView.RPC("sendFisica", RPCMode.Others , body,1);
-			PV.RPC("sendFisica", RpcTarget.All , body,1);
+			//PV.RPC("sendFisica", RpcTarget.All , body,1);
 			//Debug.Log("se creo la variable go" + body.transform.position);
 		}
 
@@ -160,7 +166,11 @@ public class DragRigidBodyLine : MonoBehaviour {
 		var mainCamera = FindCamera();
 		springJoint.connectedBody.freezeRotation = true;
 
-		while (Input.GetMouseButton(0)) {
+		if(Input.GetMouseButton(0)){
+			draging = true;
+		}
+
+		if (draging == true) {
 			//se habilita la linea para que sea visible
 			line.enabled = true;
 			//	var line : LineRenderer;
@@ -181,7 +191,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 
 				springJoint.connectedBody.isKinematic = false;
             	//		networkView.RPC("sendFisica", RPCMode.Others , springJoint.connectedBody,0);
-            	PV.RPC("sendFisica", RpcTarget.All , springJoint.connectedBody,0);
+            	//PV.RPC("sendFisica", RpcTarget.All , springJoint.connectedBody,0);
             	springJoint.connectedBody.useGravity = true;
             	if(Input.GetKey(KeyCode.C))
                 {
@@ -212,7 +222,8 @@ public class DragRigidBodyLine : MonoBehaviour {
 			if(Input.GetMouseButton(1)){
 				springJoint.connectedBody.isKinematic = true;
 				setPiece = true;
-				break;
+				draging = false;
+				//break;
 			}
 		}
 
@@ -254,7 +265,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 	private void Rotacion(int numero, Rigidbody body){
 		body.isKinematic = true;
 		//networkView.RPC("sendFisica", RPCMode.Others , body,1);
-		PV.RPC("sendFisica", RpcTarget.All , body,1);
+		//PV.RPC("sendFisica", RpcTarget.All , body,1);
 		if (numero == 1)
 			body.transform.rotation *= Quaternion.AngleAxis(4, new Vector3(0, 1, 0));
 		else

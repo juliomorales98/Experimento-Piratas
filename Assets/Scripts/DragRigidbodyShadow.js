@@ -76,7 +76,7 @@ function Update() {
     }
 
     //If we are pirate 2 and we hit a big piece
-    if(pirateName.text == "Pirata 2"){
+    /*if(pirateName.text == "Pirata 2"){
        Debug.Log(hit.rigidbody);
        if(hit !=null && (hit.rigidbody.name == "Proa_Prefab" || hit.rigidbody.name == "Popa_Prefab"
        || hit.rigidbody.name == "CubiertaDesdePopa_Prefab" || hit.rigidbody.name == "CubiertaDesdeProa_Prefab")) {
@@ -84,7 +84,7 @@ function Update() {
         return;
        }
         
-    }
+    }*/
 
     // We need to hit a rigidbody that is not kinematic
     if (!hit.rigidbody) {
@@ -193,7 +193,7 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
             //se envia RPC para que los demas vean la linea
             //GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 1, hand.position, springJoint.connectedBody.position);
             PV.RPC("sendLine", RpcTarget.AllBuffered, 1, hand.position, springJoint.connectedBody.position);
-            sendLine(1, hand.position, springJoint.connectedBody.position);
+            //sendLine(1, hand.position, springJoint.connectedBody.position);
         }
         else {
             //se envia RPC con 0 para deshabilitar la linea
@@ -221,7 +221,7 @@ function DragObject(distance: float, hitpoint: Vector3, dir: Vector3) {
     //Se envia RPC para deshabilitar la linea
     //GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
     PV.RPC("sendLine", RpcTarget.AllBuffered, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
-    sendLine(0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+    //sendLine(0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
     if (Network.isClient) {
         GameObject.FindGameObjectWithTag("General").GetComponent(NetworkView).RPC("DraggingBox", RPCMode.Others, name, springJoint.connectedBody.name);
     }
