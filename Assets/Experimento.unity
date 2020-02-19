@@ -1605,7 +1605,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 250042444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 365.56256, y: -307.77228, z: -792.7575}
+  m_LocalPosition: {x: 517.83594, y: -352.734, z: -987.92004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8455,6 +8455,8 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1193652802}
   - {fileID: 233741012}
+  playerName: {fileID: 1556806019}
+  pirateName: {fileID: 701293596}
 --- !u!1 &1974633638
 GameObject:
   m_ObjectHideFlags: 0

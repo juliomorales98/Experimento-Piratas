@@ -9,7 +9,8 @@ public class GameSetup : MonoBehaviour {
 	public Transform[] spawnPoints;
 
 	
-
+	[SerializeField] private Text playerName;
+	[SerializeField] private Text pirateName;
 	private void OnEnable(){
 		if(GameSetup.GS == null){
 			GameSetup.GS = this;
@@ -18,6 +19,8 @@ public class GameSetup : MonoBehaviour {
 	void Start () {
 		//PhotonNetwork.AutomaticallySyncScene = true;//activamos de nuevo la sincronización de escenas.
 		Debug.Log("Entró a game setup");
+		playerName.text = PhotonNetwork.LocalPlayer.NickName.ToString();
+		pirateName.text = "Pirata " + SelectCharacter.SC.characterSelected.ToString();
 		CreatePlayer();
 		Debug.Log("Se seleccionó " + SelectCharacter.SC.characterSelected.ToString());
 	}

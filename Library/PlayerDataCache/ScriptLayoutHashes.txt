@@ -3,6 +3,7 @@ PlayerPath?
 C:/Users/Admin/Documents/ServicioSocialJulioMorales/Experimento-Piratas/Build/experimento.exe
 SceneListBegin?
 Assets/Version2/Scenes/Main_Menu.unity
+Assets/Version2/Scenes/CharacterSelection.unity
 Assets/Experimento.unity
 SceneListEnd?
 8e75c7ff572e377afe5aec0a3c77276b Assembly-UnityScript-firstpass.dll:.ThirdPersonCamera
@@ -50,7 +51,7 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 0231349cd256aae30a08cd21f492168d Assembly-CSharp.dll:.ControlBasico
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.CullingHandler
 d48366e0260992bf99b8e01d243db3ce Assembly-UnityScript.dll:.BajoElAgua
-37a8ca02f5f774df7d02876280b2816b Assembly-CSharp.dll:.GameSetup
+2d15401e4cbef3a3b0bc1b3d8447d5e4 Assembly-CSharp.dll:.GameSetup
 1ca5c8dc66d7df193309010a6f864080 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Hub.DemoHubManager
 b8261af541f1825b68eab5eb406ae7c5 Assembly-UnityScript.dll:.ConsultTime
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -369,7 +370,7 @@ e4d8d0426924417c1d988bac856764b4 PhotonUnityNetworking.Utilities.dll:Photon.Pun.
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomExpectedUsersProperty
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomIsOfflineProperty
 98653f885c8a07cefc431a59e5193539 Assembly-CSharp.dll:.setGrayMaterials
-a88d60f8c86fecfc9240c7b3430ec2ac Assembly-CSharp.dll:.SelectCharacter
+9309def6b215ae7deda657bb870784fb Assembly-CSharp.dll:.SelectCharacter
 d9a45f500670681f30ff59a69a580fa0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.WorldGenerator
 563daf171b5d1c7c75b1108951401223 Assembly-UnityScript-firstpass.dll:.CharacterMotor
 647c55fbaf51d7e66eed7cb525fded3d PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.Spaceship
