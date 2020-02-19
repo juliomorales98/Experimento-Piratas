@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\ControlBasico2.cs" />
      <Compile Include="Assets\Scripts\Experimento\CheckTimeOut.cs" />
      <Compile Include="Assets\Scripts\Experimento\DragObject.cs" />
+     <Compile Include="Assets\Scripts\Experimento\DragRigidBodyLine.cs" />
      <Compile Include="Assets\Scripts\Experimento\GameController.cs" />
      <Compile Include="Assets\Scripts\Experimento\GameSetup.cs" />
      <Compile Include="Assets\Scripts\Experimento\ObjectClicker.cs" />
