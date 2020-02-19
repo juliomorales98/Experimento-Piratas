@@ -8,7 +8,7 @@ public class DragObject : MonoBehaviour {
 
     private float mZCoord;
 
-	private Vector3 originalRotation;
+	private Vector3 myRotation;
 
    
 
@@ -17,24 +17,33 @@ public class DragObject : MonoBehaviour {
     }
     
     public void MovePiece(){
-        originalRotation = new Vector3(transform.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,transform.rotation.eulerAngles.z);
+       // myRotation = new Vector3(transform.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,transform.rotation.eulerAngles.z);
 
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
 
 		//Quitamos las rotaciones para que no se aloque
-		transform.eulerAngles = originalRotation;
+		//transform.eulerAngles = myRotation;
 
         
     }
 
     public void RotatePiece(int op){
         
+        if(op == 1){
+            gameObject.GetComponent<Rigidbody>().transform.rotation *= Quaternion.AngleAxis(4, new Vector3(1, 0, 0));
+        }else if (op == 2){
+            gameObject.GetComponent<Rigidbody>().transform.rotation *= Quaternion.AngleAxis(4, new Vector3(0, 1, 0));
+        }
+        
+        
     }
 
     public void SetKinematic(bool var){
         gameObject.GetComponent<Rigidbody>().isKinematic = var;
+        gameObject.GetComponent<Rigidbody>().useGravity = !var;
+        
         
     }
 
@@ -50,10 +59,8 @@ public class DragObject : MonoBehaviour {
         return Camera.main.ScreenToWorldPoint(mousePoint);
     }
 
-
-
     void OnMouseDrag(){
         transform.position = GetMouseAsWorldPoint() + mOffset;
-		transform.eulerAngles = originalRotation;
+		//transform.eulerAngles = myRotation;
     }
 }

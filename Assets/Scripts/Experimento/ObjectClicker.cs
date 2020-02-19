@@ -7,8 +7,15 @@ public class ObjectClicker : MonoBehaviour {
 	
 	private Vector3 mOffset;
     private float mZCoord;
-	private Vector3 originalRotation;		
+	private Vector3 originalRotation;	
+
+	private bool rotating;	
+	private Vector3 toAddRotation;
 	
+	void Start(){
+		rotating = false;
+		toAddRotation = new Vector3(0,0,0);
+	}
 	void Update () {
 		RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -21,7 +28,7 @@ public class ObjectClicker : MonoBehaviour {
 				//Para hacer el drag					
 				if(Input.GetMouseButtonDown(0)){
 
-					 if (Input.GetKey(KeyCode.Z)) {Debug.Log("Presionó Z");}
+					 //if (Input.GetKey(KeyCode.Z)) {Debug.Log("Presionó Z");}
 
 					hit.transform.GetComponent<DragObject>().MovePiece();
 					hit.transform.GetComponent<DragObject>().SetKinematic(false);		
@@ -32,7 +39,17 @@ public class ObjectClicker : MonoBehaviour {
 					hit.transform.GetComponent<DragObject>().SetKinematic(true);
 					
 					Input.GetMouseButtonDown(0).Equals(false);
-				}				
+				}
+
+				if(Input.GetKey(KeyCode.Q)){
+					
+					hit.transform.GetComponent<DragObject>().RotatePiece(1);
+					hit.transform.GetComponent<DragObject>().SetKinematic(false);
+
+				}if(Input.GetKey(KeyCode.E)){
+					hit.transform.GetComponent<DragObject>().RotatePiece(2);
+					hit.transform.GetComponent<DragObject>().SetKinematic(false);
+				}
 			}			
 		}		
 		
