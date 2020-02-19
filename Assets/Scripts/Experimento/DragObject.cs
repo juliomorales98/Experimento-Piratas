@@ -9,24 +9,12 @@ public class DragObject : MonoBehaviour {
     private float mZCoord;
 
 	private Vector3 myRotation;
-
-   
-
-    void Start(){
-        
-    }
     
     public void MovePiece(){
-       // myRotation = new Vector3(transform.rotation.eulerAngles.x,transform.rotation.eulerAngles.y,transform.rotation.eulerAngles.z);
-
+       
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         
-        mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
-
-		//Quitamos las rotaciones para que no se aloque
-		//transform.eulerAngles = myRotation;
-
-        
+        mOffset = gameObject.transform.position - GetMouseAsWorldPoint();        
     }
 
     public void RotatePiece(int op){
@@ -61,6 +49,5 @@ public class DragObject : MonoBehaviour {
 
     void OnMouseDrag(){
         transform.position = GetMouseAsWorldPoint() + mOffset;
-		//transform.eulerAngles = myRotation;
     }
 }

@@ -19,8 +19,22 @@ public class PhotonPlayer : MonoBehaviour {
 		PV = GetComponent<PhotonView>();
 		int spawnPicker = Random.Range(0,GameSetup.GS.spawnPoints.Length);
 		if(PV.IsMine){		
-		
-			PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","Pirata1"),
+			string pirata = "";
+			switch(SelectCharacter.SC.characterSelected){
+				case 1: 
+					pirata = "Pirata1";
+					break;
+				case 2: 
+					pirata = "Pirata 2";
+					break;
+				case 3: 
+					pirata = "Pirata3";
+					break;
+				case 4: 
+					pirata = "Pirata 4";
+					break;	
+			}
+			PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs",pirata),
 			GameSetup.GS.spawnPoints[spawnPicker].position,GameSetup.GS.spawnPoints[spawnPicker].rotation,
 			0);
 

@@ -19,6 +19,7 @@ public class GameSetup : MonoBehaviour {
 		//PhotonNetwork.AutomaticallySyncScene = true;//activamos de nuevo la sincronización de escenas.
 		Debug.Log("Entró a game setup");
 		CreatePlayer();
+		Debug.Log("Se seleccionó " + SelectCharacter.SC.characterSelected.ToString());
 	}
 
 	void Update(){

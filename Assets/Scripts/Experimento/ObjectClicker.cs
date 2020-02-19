@@ -28,8 +28,6 @@ public class ObjectClicker : MonoBehaviour {
 				//Para hacer el drag					
 				if(Input.GetMouseButtonDown(0)){
 
-					 //if (Input.GetKey(KeyCode.Z)) {Debug.Log("Presionó Z");}
-
 					hit.transform.GetComponent<DragObject>().MovePiece();
 					hit.transform.GetComponent<DragObject>().SetKinematic(false);		
 				}
