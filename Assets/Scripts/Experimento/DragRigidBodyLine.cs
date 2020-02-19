@@ -101,6 +101,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 			//si el cubo es Kinematic se le quita eso para poderlo mover con el mouse
 			hit.rigidbody.isKinematic = false;
 			//	networkView.RPC("sendFisica", RPCMode.Others , hit.rigidbody, 0);
+			PV.RPC("sendFisica", RpcTarget.All, hit.rigidbody, 0);
 		}
 
 		if (!springJoint) {
@@ -112,7 +113,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 			springJoint = go.AddComponent(typeof(SpringJoint)) as SpringJoint;
 			body.isKinematic = true;
 			//	networkView.RPC("sendFisica", RPCMode.Others , body,1);
-			//PV.RPC("sendFisica", RpcTarget.AllBuffered , body,1);
+			PV.RPC("sendFisica", RpcTarget.All , body,1);
 			//Debug.Log("se creo la variable go" + body.transform.position);
 		}
 
@@ -180,7 +181,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 
 				springJoint.connectedBody.isKinematic = false;
             	//		networkView.RPC("sendFisica", RPCMode.Others , springJoint.connectedBody,0);
-            	//PV.RPC("sendFisica", RpcTarget.AllBuffered , springJoint.connectedBody,0);
+            	PV.RPC("sendFisica", RpcTarget.All , springJoint.connectedBody,0);
             	springJoint.connectedBody.useGravity = true;
             	if(Input.GetKey(KeyCode.C))
                 {
@@ -194,12 +195,12 @@ public class DragRigidBodyLine : MonoBehaviour {
 				line.SetPosition(1, springJoint.connectedBody.position);
 				//se envia RPC para que los demas vean la linea
 				//GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 1, hand.position, springJoint.connectedBody.position);
-				PV.RPC("sendLine", RpcTarget.AllBuffered, 1, hand.position, springJoint.connectedBody.position);
-				sendLine(1, hand.position, springJoint.connectedBody.position);
+				PV.RPC("sendLine", RpcTarget.All, 1, hand.position, springJoint.connectedBody.position);
+				//sendLine(1, hand.position, springJoint.connectedBody.position);
 			}else {
 				//se envia RPC con 0 para deshabilitar la linea
 				//GetComponent.<NetworkView>().RPC(" ", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
-				PV.RPC("sendLine", RpcTarget.AllBuffered, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+				PV.RPC("sendLine", RpcTarget.All, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
 				
             }
 
@@ -220,8 +221,8 @@ public class DragRigidBodyLine : MonoBehaviour {
 
 		//Se envia RPC para deshabilitar la linea
 		//GetComponent.<NetworkView>().RPC("sendLine", RPCMode.Others, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
-		PV.RPC("sendLine", RpcTarget.AllBuffered, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
-		sendLine(0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+		PV.RPC("sendLine", RpcTarget.All, 0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
+		//sendLine(0, new Vector3(0, 0, 0), new Vector3(0, 0, 0));
 		if (Network.isClient) {
 			//GameObject.FindGameObjectWithTag("General").GetComponent(NetworkView).RPC("DraggingBox", RPCMode.Others, name, springJoint.connectedBody.name);
 		}
@@ -253,7 +254,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 	private void Rotacion(int numero, Rigidbody body){
 		body.isKinematic = true;
 		//networkView.RPC("sendFisica", RPCMode.Others , body,1);
-		//PV.RPC("sendFisica", RpcTarget.AllBuffered , body,1);
+		PV.RPC("sendFisica", RpcTarget.All , body,1);
 		if (numero == 1)
 			body.transform.rotation *= Quaternion.AngleAxis(4, new Vector3(0, 1, 0));
 		else
@@ -286,7 +287,7 @@ public class DragRigidBodyLine : MonoBehaviour {
 		var go = highlightObject;
 		highlightMaterial.SetPass(0);
 		MeshFilter[] meshes = go.GetComponentsInChildren<MeshFilter>();
-		
+
 		foreach(MeshFilter m  in meshes) {
 			Graphics.DrawMeshNow(m.sharedMesh, m.transform.position, m.transform.rotation);
 		}
