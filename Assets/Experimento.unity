@@ -2783,7 +2783,7 @@ GameObject:
   - component: {fileID: 701293596}
   m_Layer: 5
   m_Name: Pirate Name
-  m_TagString: Untagged
+  m_TagString: Player_Info
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

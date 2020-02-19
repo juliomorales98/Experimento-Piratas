@@ -9,6 +9,7 @@ TagManager:
   - MiCamara
   - General
   - Barco_Pieza
+  - Player_Info
   layers:
   - Default
   - TransparentFX
