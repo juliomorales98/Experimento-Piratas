@@ -34,5 +34,11 @@ MonoBehaviour:
   - Fire
   - RespawnSpaceship
   - sendLine
+  - RPC_MovePiece
+  - RPC_OnMouseDrag
+  - RPC_RotatePiece
+  - RPC_SetKinematic
+  - RPC_DragPiece
+  - RPC_MandarPosicion
   DisableAutoOpenWizard: 1
   ShowSettings: 0
