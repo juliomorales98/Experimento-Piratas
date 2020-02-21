@@ -12,7 +12,7 @@ SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PunTeams
 7289f4b9a0dc296e26413244af6e0f86 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.DocLinkButton
 4d0187d1ee26ceba125a106f0dde0360 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.SmoothSyncMovement
-491277b6d6b8cf289c4e5eed74c17542 Assembly-CSharp.dll:.RoomController
+8898b8164e1381ae996eac2c1b722c66 Assembly-CSharp.dll:.RoomController
 562fe8fc054ae5066fc9ea51d224a672 Assembly-UnityScript.dll:.MouseLook
 691fc8f190e2bd7159b96f7b9ab9abc9 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RegionListView
 99a55d01d7d1f372f628c217f6792750 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.UserIdField
@@ -318,7 +318,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 ee8540d1efea9148410a914295c889e3 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.OnJoinedInstantiate
 fe180736ec3bd9cf69fd20bbec04acfb PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.PunBasics.LoaderAnime
-237d63813735fe91cf4a4ffac249c4ed Assembly-CSharp.dll:.CheckTimeOut
+748df4ca5997c371676687b8a753010c Assembly-CSharp.dll:.CheckTimeOut
 9b4f45a79d7b5750d181fe6f24b4b0fe Assembly-UnityScript.dll:.Menu_GUI
 d28ceb61785754e7d5567286586392b7 PhotonUnityNetworking.Demos.dll:.ScoreHelper
 e431d31333ee8da538bb41a55aca1f3e PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.SlotRacer.SlotLanes
@@ -384,3 +384,4 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
+603765be9a1e9bd1ceb193e9600c8d17 Assembly-CSharp.dll:.SetExperimentDuration

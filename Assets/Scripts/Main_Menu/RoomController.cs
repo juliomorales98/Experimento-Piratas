@@ -18,6 +18,8 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	[SerializeField]
 	private GameObject startButton;
 
+	[SerializeField] private GameObject timeInputField;
+
 	[SerializeField]
 	private Transform playersContainer;
 
@@ -53,9 +55,11 @@ public class RoomController : MonoBehaviourPunCallbacks {
 		//Si es host puede inicial el juego
 		if(PhotonNetwork.IsMasterClient){
 			startButton.SetActive(true);
+			timeInputField.SetActive(true);
 
 		}else{
 			startButton.SetActive(false);
+			timeInputField.SetActive(false);
 		}
 
 		ClearPlayerListing();
@@ -81,6 +85,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 	public void StartGame(){
 		if(PhotonNetwork.IsMasterClient){
+			SetExperimentDuration.SED.SetLength();
 			PhotonNetwork.CurrentRoom.IsOpen = true; //Si está en false, jugadores ya no podrán unirse iniciado el juego
 			PhotonNetwork.LoadLevel(multiPlayerSceneIndex);
 		}

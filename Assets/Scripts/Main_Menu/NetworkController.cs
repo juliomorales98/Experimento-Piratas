@@ -10,6 +10,8 @@ public class NetworkController : MonoBehaviourPunCallbacks {
 	public GameObject connectButton;	
 	
 	void Start () {
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 		//Validamos si estamos conectados
 		if( PhotonNetwork.CloudRegion != null){
 			//Significa que estamos conectados, por lo que primero nos desconectamos del actual servidor

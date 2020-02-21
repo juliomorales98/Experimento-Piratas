@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using Photon.Pun;
 
 ///<summary>
 ///Está revisando si ya han pasado 10 minutos y, si es así
@@ -12,20 +13,25 @@ using System;
 ///<summary>
 public class CheckTimeOut : MonoBehaviour {
 
-	public Text TimeText;
+	[SerializeField] private Text TimeText;
 
-	public IOConfig ioscript;
+	//public IOConfig ioscript;
 
 	private int tiempoMaximo;
 
 	void Start(){
 
-		ioscript.ReadConf();
-		tiempoMaximo = Int32.Parse(ioscript.parametres[2]);
+		//ioscript.ReadConf();
+		//tiempoMaximo = Int32.Parse(ioscript.parametres[2]);
+		tiempoMaximo = SetExperimentDuration.SED.getLength();
 		Debug.Log("Tiempo Máximo del juego: " + tiempoMaximo.ToString());
 	}
 	
 	void OnGUI(){
+
+		if(!PhotonNetwork.IsMasterClient)
+			return;
+
 		int tiempoActual = Int32.Parse(TimeText.text[16].ToString() + TimeText.text[17].ToString());
 
 		if(tiempoActual == tiempoMaximo){
@@ -42,9 +48,10 @@ public class CheckTimeOut : MonoBehaviour {
 	public IEnumerator DisconnectFromGame(){
 		
 		yield return new WaitForSeconds(5);
-		Network.Disconnect();
+		//Network.Disconnect();
 		//Application.LoadLevel(0);
-		SceneManager.LoadScene(0);
+		
+		PhotonNetwork.LoadLevel(0);
 
 	}
 

@@ -39,7 +39,7 @@ public class DragObject : MonoBehaviour {
             gameObject.GetComponent<Rigidbody>().useGravity = false;
         }
 
-        myPV.RPC("RPC_MandarPosicion",RpcTarget.All);
+        //myPV.RPC("RPC_MandarPosicion",RpcTarget.All);
     }
 
     [PunRPC]
