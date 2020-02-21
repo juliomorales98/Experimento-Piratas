@@ -370,7 +370,7 @@ e4d8d0426924417c1d988bac856764b4 PhotonUnityNetworking.Utilities.dll:Photon.Pun.
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomExpectedUsersProperty
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomIsOfflineProperty
 98653f885c8a07cefc431a59e5193539 Assembly-CSharp.dll:.setGrayMaterials
-9309def6b215ae7deda657bb870784fb Assembly-CSharp.dll:.SelectCharacter
+1a5de95bec7c560470ff5d9bb4c6d614 Assembly-CSharp.dll:.SelectCharacter
 d9a45f500670681f30ff59a69a580fa0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.WorldGenerator
 563daf171b5d1c7c75b1108951401223 Assembly-UnityScript-firstpass.dll:.CharacterMotor
 647c55fbaf51d7e66eed7cb525fded3d PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.Spaceship

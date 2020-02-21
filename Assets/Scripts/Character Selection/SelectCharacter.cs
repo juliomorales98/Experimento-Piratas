@@ -13,6 +13,8 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	public Text info;
 
 	public int characterSelected;
+
+	[SerializeField]private GameObject startButton;
 	
 	void Start () {
 		if(SelectCharacter.SC == null){
@@ -26,6 +28,13 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 
 		playerSelected.text = "";
 		info.text = "Selecciona un pirata.";
+
+		if(PhotonNetwork.IsMasterClient){
+			startButton.SetActive(true);
+
+		}else{
+			startButton.SetActive(false);
+		}
 	}
 	
 	
