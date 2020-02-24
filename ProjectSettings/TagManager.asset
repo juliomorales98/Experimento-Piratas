@@ -10,6 +10,7 @@ TagManager:
   - General
   - Barco_Pieza
   - Player_Info
+  - ChatObject
   layers:
   - Default
   - TransparentFX

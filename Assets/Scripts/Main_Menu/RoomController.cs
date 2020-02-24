@@ -3,7 +3,7 @@ using Photon.Realtime;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
+using System.IO;
 public class RoomController : MonoBehaviourPunCallbacks {
 
 	[SerializeField]
@@ -64,6 +64,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 		ClearPlayerListing();
 		ListPlayers();
+		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PlayerChat"),Vector3.zero, Quaternion.identity);
 	}
 
 	public override void OnPlayerEnteredRoom(Player newPlayer){

@@ -77,13 +77,16 @@
      <Compile Include="Assets\Scripts\Experimento\PhotonPlayer.cs" />
      <Compile Include="Assets\Scripts\Experimento\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\IOConfig.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\Chat.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\DeActivateGO.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\GetLocalIp.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\LobbyController.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\MenuSetup.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\NetworkController.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\RoomButton.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\RoomController.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\SetExperimentDuration.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\SyncChat.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\WriteReadConf.cs" />
      <Compile Include="Assets\Scripts\MovePoint2.cs" />
      <Compile Include="Assets\Scripts\RendererExtensions.cs" />
