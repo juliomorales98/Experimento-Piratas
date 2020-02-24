@@ -385,18 +385,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Experimento
+    - Assets/Scripts/Main_Menu
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Experimento
+  - Assets/Scripts/Main_Menu
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Admin\Documents\ServicioSocialJulioMorales\Experimento-Piratas
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 83}
-    m_SelectedIDs: a42e0000
-    m_LastClickedID: 11940
+    m_SelectedIDs: 642b0000
+    m_LastClickedID: 11108
     m_ExpandedIDs: 00000000002a00001a2a0000402c0000682c0000022d00005c3000007a3200007e3200005433000076330000aa36000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -620,9 +620,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0, y: 0, z: -0, w: -1}
   m_Size:
-    m_Target: 770.23975
+    m_Target: 1144.6495
     speed: 2
-    m_Value: 770.23975
+    m_Value: 1144.6495
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -663,23 +663,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 866a0000
-    m_LastClickedID: 27270
-    m_ExpandedIDs: d6d5ffff30dbffffeadbfffffcdeffffecdfffff2ce0ffff4cf4ffff8cfbffff000000000e6a00006a6a0000866a0000e66a00006c6b0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 04ebfcffd4ebfcffc0effcff9cf0fcffa0f0fcffce01fdff9e02fdff8a06fdff6607fdff6a07fdff9a21fdff6a22fdff5626fdff3227fdff3627fdff8cfbfffff4ffffff00000000243b0000663b0000c63b00004c3c00007c740000e47400006e750000b48100001c820000a6820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: InstruccionesText
+      m_OriginalName: InstruccionesText
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -130578
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 

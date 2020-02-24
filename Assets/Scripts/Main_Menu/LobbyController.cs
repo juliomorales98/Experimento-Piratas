@@ -29,6 +29,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	[SerializeField]
 	private GameObject roomListingPrefab;
 
+	[SerializeField]private Text chatText;
 	public override void OnConnectedToMaster(){
 		//lobbyConnectButton.SetActive(true);
 
@@ -124,6 +125,8 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 
 		
 		PhotonNetwork.CreateRoom(roomName, roomOps);
+		chatText.GetComponent<PhotonView>().RequestOwnership();
+		chatText.text = " ";
 	}
 
 	public override void OnCreateRoomFailed(short returnCode, string message){

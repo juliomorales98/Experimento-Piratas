@@ -29,6 +29,8 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	[SerializeField]
 	private Text roomNameDisplay;
 
+	[SerializeField]private Text chatText;
+
 	void ClearPlayerListing(){
 
 		for( int i = playersContainer.childCount - 1; i >= 0; i--){
@@ -65,6 +67,8 @@ public class RoomController : MonoBehaviourPunCallbacks {
 		ClearPlayerListing();
 		ListPlayers();
 		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PlayerChat"),Vector3.zero, Quaternion.identity);
+		chatText.GetComponent<PhotonView>().RequestOwnership();
+		chatText.text = " ";
 	}
 
 	public override void OnPlayerEnteredRoom(Player newPlayer){
@@ -82,6 +86,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 		if(PhotonNetwork.IsMasterClient){
 			startButton.SetActive(true);
 		}
+		
 	}
 
 	public void StartGame(){
@@ -108,4 +113,6 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 		StartCoroutine(rejoinLobby());
 	}
+
+	
 }
