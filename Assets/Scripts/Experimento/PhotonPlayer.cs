@@ -1,4 +1,10 @@
-﻿using Photon.Pun;
+﻿/*
+Entornos virtuales
+Creador: Julio Morales: juliocesar.mr@protonmail.com
+*/
+
+
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

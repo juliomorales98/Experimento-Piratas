@@ -1,4 +1,9 @@
-﻿using Photon.Pun;
+﻿/*
+Entornos virtuales
+Creador: Julio Morales: juliocesar.mr@protonmail.com
+*/
+
+using Photon.Pun;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;

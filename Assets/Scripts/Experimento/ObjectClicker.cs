@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Entornos virtuales
+Creador: Julio Morales: juliocesar.mr@protonmail.com
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
@@ -47,8 +52,8 @@ public class ObjectClicker : MonoBehaviour {
 
 			if(hit.transform && hit.rigidbody){	
 				hitPV = hit.transform.GetComponent<PhotonView>();
-				//Para hacer el drag				
-
+								
+				//Hacemos el drag.
 				if(Input.GetMouseButtonDown(0)){
 					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().MovePiece(myCamera);
@@ -56,52 +61,49 @@ public class ObjectClicker : MonoBehaviour {
 					//line.enabled = false;;
 				}
 
+				//------------------------------------------Línea--------------------------//
+				//Para trazar la línea.
 				if(Input.GetMouseButton(0)){
 					if(hit.transform.GetComponent<DragObject>().ValidarMovimiento()){
 						line.enabled = true;
 						line.SetPosition(0,transform.position);
 						line.SetPosition(1,hit.transform.position);
 					}				
-				}
-
+				}				
+				//Para dejar de dibujar la línea.
 				if(Input.GetMouseButtonUp(0)){
 					line.enabled = false;
 				}
+				//-----------------------------------------------------------------------//
 
-				//Para hacer que no se mueva ya
+
+				//Para hacer kinematic la pieza y que ya no se mueva.
 				if(Input.GetMouseButtonDown(1)){
 					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().SetKinematic(true);
 					
 					Input.GetMouseButtonDown(0).Equals(false);
 				}
+				
 
+				//---------------------------------------------Rotaciones---------------------------------------------//
 				if(Input.GetKey(KeyCode.Q)){
 					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().RotatePiece(1);
-					//hit.transform.GetComponent<DragObject>().SetKinematic(false);
-
 				}
 				
 				if(Input.GetKey(KeyCode.E)){
 					hitPV.RequestOwnership();
-					hit.transform.GetComponent<DragObject>().RotatePiece(2);
-					//hit.transform.GetComponent<DragObject>().SetKinematic(false);
+					hit.transform.GetComponent<DragObject>().RotatePiece(2);				
 				}
 
 				if(Input.GetKey(KeyCode.R)){
 					hitPV.RequestOwnership();
-					hit.transform.GetComponent<DragObject>().RotatePiece(3);
-					//hit.transform.GetComponent<DragObject>().SetKinematic(false);
+					hit.transform.GetComponent<DragObject>().RotatePiece(3);					
 				}
+				//-------------------------------------------------------------------------------------------------------//
 			}			
 		}		
 		
-	}
-
-	void OnMouseButtonUp(){
-		
-	}
-
-	
+	}	
 }

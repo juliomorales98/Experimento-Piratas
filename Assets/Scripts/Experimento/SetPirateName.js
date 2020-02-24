@@ -1,4 +1,10 @@
-﻿#pragma strict
+﻿/*
+Entornos virtuales
+Creador: Julio Morales: juliocesar.mr@protonmail.com
+*/
+
+
+#pragma strict
 
 import UnityEngine.UI;
 
