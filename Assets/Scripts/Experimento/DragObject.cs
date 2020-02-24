@@ -29,6 +29,7 @@ public class DragObject : MonoBehaviour {
         pieceSetted = false;
         mOffset = new Vector3(0,0,0);
         myPV.OwnershipTransfer = OwnershipOption.Takeover;
+        //myCamera = Camera.main;
     }
 
     void Update(){
@@ -48,7 +49,7 @@ public class DragObject : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().transform.position = transform.position;
     }
     
-    private bool ValidarMovimiento(){
+    public bool ValidarMovimiento(){
         //Validamos la condición de si es Pirata 2 y está tratando de modificar una pieza grande.
 
         GameObject[] infoPlayer = GameObject.FindGameObjectsWithTag("Player_Info");

@@ -19,12 +19,20 @@ public class ObjectClicker : MonoBehaviour {
 
 	private RaycastHit hit;
 	private Ray ray;
+
+	private LineRenderer line;
+
+	[SerializeField]private Material laserMaterial;
 	void Start(){
 		rotating = false;
 		toAddRotation = new Vector3(0,0,0);
 		myPV = gameObject.GetComponent<PhotonView>();
 		myCamera = transform.GetChild(0).GetComponent<Camera>();
-		
+		line = transform.GetComponent<LineRenderer>();
+		line.enabled = false;
+		line.material = laserMaterial;
+		line.SetWidth(0.05f, 0.1f);
+
 	}
 	void Update () {
 
@@ -37,13 +45,27 @@ public class ObjectClicker : MonoBehaviour {
 		
 		if(Physics.Raycast(ray,out hit, 100.0f)){			
 
-			if(hit.transform){	
+			if(hit.transform && hit.rigidbody){	
 				hitPV = hit.transform.GetComponent<PhotonView>();
-				//Para hacer el drag					
+				//Para hacer el drag				
+
 				if(Input.GetMouseButtonDown(0)){
 					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().MovePiece(myCamera);
-					//hit.transform.GetComponent<DragObject>().DragPiece();	
+					
+					//line.enabled = false;;
+				}
+
+				if(Input.GetMouseButton(0)){
+					if(hit.transform.GetComponent<DragObject>().ValidarMovimiento()){
+						line.enabled = true;
+						line.SetPosition(0,transform.position);
+						line.SetPosition(1,hit.transform.position);
+					}				
+				}
+
+				if(Input.GetMouseButtonUp(0)){
+					line.enabled = false;
 				}
 
 				//Para hacer que no se mueva ya
@@ -77,20 +99,9 @@ public class ObjectClicker : MonoBehaviour {
 		
 	}
 
-	/*void OnMouseDrag(){
-		if(!myPV.IsMine)
-			return;
-
-		RaycastHit hit2;
-		Ray ray2 = myCamera.ScreenPointToRay(Input.mousePosition);
-
-		if(Physics.Raycast(ray2,out hit2, 100.0f)){	
-			if(hit2.transform){
-				Debug.Log("Entró al drag");
-				hit.transform.GetComponent<DragObject>().DragPiece();
-			}
-		}
-	}*/
+	void OnMouseButtonUp(){
+		
+	}
 
 	
 }

@@ -5075,6 +5075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb1f8631ba183b4a948b4147f8e710d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserMaterial: {fileID: 2100000, guid: 78b1ae2be4c32f943b0240b6f49a2a8f, type: 2}
 --- !u!114 &114746757748498946
 MonoBehaviour:
   m_ObjectHideFlags: 1
