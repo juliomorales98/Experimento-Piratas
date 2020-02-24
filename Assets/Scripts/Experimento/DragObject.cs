@@ -28,6 +28,7 @@ public class DragObject : MonoBehaviour {
         beingTransformed = false;
         pieceSetted = false;
         mOffset = new Vector3(0,0,0);
+        myPV.OwnershipTransfer = OwnershipOption.Takeover;
     }
 
     void Update(){

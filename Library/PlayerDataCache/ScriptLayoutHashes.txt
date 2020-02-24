@@ -53,6 +53,7 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.CullingHandler
 d48366e0260992bf99b8e01d243db3ce Assembly-UnityScript.dll:.BajoElAgua
 2d15401e4cbef3a3b0bc1b3d8447d5e4 Assembly-CSharp.dll:.GameSetup
+ed74bb16d413a6c7eb5daada4ba63d40 Assembly-CSharp.dll:.MenuSetup
 1ca5c8dc66d7df193309010a6f864080 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Hub.DemoHubManager
 b8261af541f1825b68eab5eb406ae7c5 Assembly-UnityScript.dll:.ConsultTime
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -178,6 +179,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 1de5b0589e6fb98c8b8d7fcded724e3b PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.CullArea
 a42896af5d1f1ab8e532ebea73a7c0c9 Assembly-UnityScript.dll:.FadeInOut
 fc4c581d5c780cfbc749c132df4d5008 Assembly-CSharp.dll:.NamePickGui
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SyncChat
 f24d920cc4f70f11626a98f947e6104b Assembly-UnityScript.dll:.Logger
 8cbb5b630643a359e43cb0ec88f6c02c PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.OnClickRpc
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PunPlayerScores
@@ -187,6 +189,7 @@ d7c3cc9e6aeec9a00634f6abffbe35e2 PhotonUnityNetworking.Utilities.dll:Photon.Pun.
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 cd503a42be4ebaae4789453203d1d9dc Assembly-CSharp.dll:.DragRigidBodyLine
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PhotonPlayer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Chat
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -385,6 +388,3 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
-ed74bb16d413a6c7eb5daada4ba63d40 Assembly-CSharp.dll:.MenuSetup
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Chat
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SyncChat

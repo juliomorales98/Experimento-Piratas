@@ -13,6 +13,7 @@ public class ObjectClicker : MonoBehaviour {
 	private Vector3 toAddRotation;
 	
 	private PhotonView myPV;
+	private PhotonView hitPV;
 
 	private Camera myCamera;
 
@@ -37,34 +38,37 @@ public class ObjectClicker : MonoBehaviour {
 		if(Physics.Raycast(ray,out hit, 100.0f)){			
 
 			if(hit.transform){	
-
+				hitPV = hit.transform.GetComponent<PhotonView>();
 				//Para hacer el drag					
 				if(Input.GetMouseButtonDown(0)){
-
+					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().MovePiece(myCamera);
 					//hit.transform.GetComponent<DragObject>().DragPiece();	
 				}
 
 				//Para hacer que no se mueva ya
-				if(Input.GetMouseButton(1)){
+				if(Input.GetMouseButtonDown(1)){
+					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().SetKinematic(true);
 					
 					Input.GetMouseButtonDown(0).Equals(false);
 				}
 
 				if(Input.GetKey(KeyCode.Q)){
-					
+					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().RotatePiece(1);
 					//hit.transform.GetComponent<DragObject>().SetKinematic(false);
 
 				}
 				
 				if(Input.GetKey(KeyCode.E)){
+					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().RotatePiece(2);
 					//hit.transform.GetComponent<DragObject>().SetKinematic(false);
 				}
 
 				if(Input.GetKey(KeyCode.R)){
+					hitPV.RequestOwnership();
 					hit.transform.GetComponent<DragObject>().RotatePiece(3);
 					//hit.transform.GetComponent<DragObject>().SetKinematic(false);
 				}
