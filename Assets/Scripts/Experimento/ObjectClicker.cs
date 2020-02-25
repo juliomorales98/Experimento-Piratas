@@ -32,11 +32,11 @@ public class ObjectClicker : MonoBehaviour {
 	[SerializeField]private Material laserMaterial;
 
 	[PunRPC]
-	private void RPC_DrawLine(bool draw){
+	private void RPC_DrawLine(bool draw, Vector3 handPosition, Vector3 hitPosition){
 		if(draw){
 			line.enabled = true;
-			line.SetPosition(0,hand.transform.position);
-			line.SetPosition(1,hit.transform.position);
+			line.SetPosition(0,handPosition);
+			line.SetPosition(1,hitPosition);
 		}else{
 			line.enabled = false;
 		}
@@ -78,12 +78,12 @@ public class ObjectClicker : MonoBehaviour {
 				//Para trazar la línea.
 				if(Input.GetMouseButton(0)){
 					if(hit.transform.GetComponent<DragObject>().ValidarMovimiento()){
-						myPV.RPC("RPC_DrawLine", RpcTarget.All, true);
+						myPV.RPC("RPC_DrawLine", RpcTarget.All, true, hand.transform.position, hit.transform.position);
 					}				
 				}				
 				//Para dejar de dibujar la línea.
 				if(Input.GetMouseButtonUp(0)){
-					myPV.RPC("RPC_DrawLine", RpcTarget.All, false);
+					myPV.RPC("RPC_DrawLine", RpcTarget.All, false, hand.transform.position, hit.transform.position);
 				}
 				//-----------------------------------------------------------------------//
 

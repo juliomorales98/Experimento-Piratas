@@ -68,7 +68,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 		ListPlayers();
 		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PlayerChat"),Vector3.zero, Quaternion.identity);
 		chatText.GetComponent<PhotonView>().RequestOwnership();
-		chatText.text = " ";
+		chatText.text = " ";		
 	}
 
 	public override void OnPlayerEnteredRoom(Player newPlayer){
