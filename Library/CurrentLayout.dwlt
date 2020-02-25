@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 770
     width: 1367
     height: 178
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 44
+  controlID: 10
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 43
+  controlID: 152
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 81
+  controlID: 153
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,10 +394,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\Admin\Documents\ServicioSocialJulioMorales\Experimento-Piratas
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 83}
-    m_SelectedIDs: 66320000
-    m_LastClickedID: 12902
-    m_ExpandedIDs: 00000000002a00001a2a0000402c0000682c0000022d00005c3000007a3200007e3200005433000076330000aa36000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 411}
+    m_SelectedIDs: 9c320000
+    m_LastClickedID: 12956
+    m_ExpandedIDs: 00000000362a0000502a0000762c00009e2c0000382d000092300000b0320000b43200008a330000ac330000e036000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -425,7 +425,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000002a00001a2a0000402c0000682c0000022d00005c3000007a3200007e3200005433000076330000aa360000
+    m_ExpandedIDs: 00000000362a0000502a0000762c00009e2c0000382d000092300000b0320000b43200008a330000ac330000e0360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -453,7 +453,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 
+    m_ExpandedInstanceIDs: 4a340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -585,14 +585,14 @@ MonoBehaviour:
     height: 749
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 192.98583149628973
+  lastFramingTime: 193.36331151111798
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 621.4602, y: 356.4219, z: 0}
+    m_Target: {x: 1.8672057, y: 1.2624613, z: 0.2465663}
     speed: 2
-    m_Value: {x: 621.4602, y: 356.4219, z: 0}
+    m_Value: {x: 1.8672057, y: 1.2624613, z: 0.2465663}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -616,13 +616,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.022324001, y: -0.12414738, z: 0.002793751, w: -0.99200875}
     speed: 2
-    m_Value: {x: -0, y: 0, z: -0, w: -1}
+    m_Value: {x: -0.022324001, y: -0.12414738, z: 0.002793751, w: -0.99200875}
   m_Size:
-    m_Target: 1144.6495
+    m_Target: 4.9500003
     speed: 2
-    m_Value: 1144.6495
+    m_Value: 4.9500003
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -663,9 +663,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 14340000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 3633ffff4e41ffff8cfbffff00000000ac850000
+    m_ExpandedIDs: de49ffffe249ffff2080ffff2480ffff6ea1ffff72a1ffff06b3ffff0ab3fffff0eaffff86fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

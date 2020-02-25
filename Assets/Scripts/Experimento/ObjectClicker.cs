@@ -27,6 +27,8 @@ public class ObjectClicker : MonoBehaviour {
 
 	private LineRenderer line;
 
+	[SerializeField]private GameObject hand;
+
 	[SerializeField]private Material laserMaterial;
 	void Start(){
 		rotating = false;
@@ -66,7 +68,7 @@ public class ObjectClicker : MonoBehaviour {
 				if(Input.GetMouseButton(0)){
 					if(hit.transform.GetComponent<DragObject>().ValidarMovimiento()){
 						line.enabled = true;
-						line.SetPosition(0,transform.position);
+						line.SetPosition(0,hand.transform.position);
 						line.SetPosition(1,hit.transform.position);
 					}				
 				}				
