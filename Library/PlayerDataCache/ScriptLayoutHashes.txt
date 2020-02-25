@@ -153,7 +153,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 5dc04e627cc0a846ca76ba5fc502cf7b PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.SendRateOnSerializeField
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ObjectClicker
+48b9cf80a50330952fc5d083db7050c8 Assembly-CSharp.dll:.ObjectClicker
 8522a63b29f58cdb856046ee8a832464 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.TabViewManager
 58bb83f23a38f1962bddf96033a5bc5d PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.AsteroidsGameManager
 4c7dc8a4e3b464fa5ee10bb13be20d08 Assembly-UnityScript.dll:.gameGUI

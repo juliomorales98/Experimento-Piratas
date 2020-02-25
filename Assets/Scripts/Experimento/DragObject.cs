@@ -94,14 +94,15 @@ public class DragObject : MonoBehaviour {
         if(!pieceSetted)
             beingTransformed = false;
 
-        myPV.RPC("RPC_MovePiece", RpcTarget.AllBuffered);
+        //myPV.RPC("RPC_MovePiece", RpcTarget.AllBuffered);
     }
 
     void OnMouseDrag(){
         if(!ValidarMovimiento())
             return;
 
-        myPV.RPC("RPC_DragPiece", RpcTarget.AllBuffered);
+        //myPV.RPC("RPC_DragPiece", RpcTarget.AllBuffered);
+        gameObject.GetComponent<Rigidbody>().transform.position = GetMouseAsWorldPoint() + mOffset;
     }   
 
     [PunRPC]
@@ -114,8 +115,11 @@ public class DragObject : MonoBehaviour {
         if(!ValidarMovimiento())
             return;
         myCamera = _myCamera;
-        myPV.RPC("RPC_MovePiece", RpcTarget.AllBuffered);
+        //myPV.RPC("RPC_MovePiece", RpcTarget.AllBuffered);
         //myPV.RPC("RPC_DragPiece", RpcTarget.AllBuffered);
+         mZCoord = myCamera.WorldToScreenPoint(gameObject.transform.position).z;
+        
+        mOffset = gameObject.transform.position - GetMouseAsWorldPoint(); 
     }
 
     [PunRPC]
@@ -142,7 +146,14 @@ public class DragObject : MonoBehaviour {
         if(!ValidarMovimiento())
             return;
 
-        myPV.RPC("RPC_RotatePiece", RpcTarget.AllBuffered, op);
+        //myPV.RPC("RPC_RotatePiece", RpcTarget.AllBuffered, op);
+        if(op == 1){
+            gameObject.GetComponent<Rigidbody>().transform.rotation *= Quaternion.AngleAxis(4, new Vector3(1, 0, 0));
+        }else if (op == 2){
+            gameObject.GetComponent<Rigidbody>().transform.rotation *= Quaternion.AngleAxis(4, new Vector3(0, 1, 0));
+        }else if(op == 3){
+            gameObject.GetComponent<Rigidbody>().transform.rotation *= Quaternion.AngleAxis(4, new Vector3(0, 0, 1));
+        }
         
         
     }
@@ -166,7 +177,10 @@ public class DragObject : MonoBehaviour {
             return;
 
         
-        myPV.RPC("RPC_SetKinematic", RpcTarget.AllBuffered, var);
+        //myPV.RPC("RPC_SetKinematic", RpcTarget.AllBuffered, var);
+        pieceSetted = true;
+        gameObject.GetComponent<Rigidbody>().isKinematic = var;
+        gameObject.GetComponent<Rigidbody>().useGravity = !var;
         
     }
 

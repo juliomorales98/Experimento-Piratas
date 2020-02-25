@@ -40,5 +40,6 @@ MonoBehaviour:
   - RPC_SetKinematic
   - RPC_DragPiece
   - RPC_MandarPosicion
+  - RPC_DrawLine
   DisableAutoOpenWizard: 1
   ShowSettings: 0
