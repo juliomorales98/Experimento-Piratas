@@ -16,6 +16,7 @@ SceneListEnd?
 562fe8fc054ae5066fc9ea51d224a672 Assembly-UnityScript.dll:.MouseLook
 603765be9a1e9bd1ceb193e9600c8d17 Assembly-CSharp.dll:.SetExperimentDuration
 691fc8f190e2bd7159b96f7b9ab9abc9 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RegionListView
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.IsSelected
 99a55d01d7d1f372f628c217f6792750 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.UserIdField
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -388,4 +389,3 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovePoint2
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowPosition
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.IsSelected
