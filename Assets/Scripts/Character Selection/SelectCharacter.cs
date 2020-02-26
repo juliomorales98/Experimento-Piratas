@@ -63,6 +63,15 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 
 				GameObject hitGo = hit.collider.gameObject;
 
+				/*
+				Para la parte del selector se realizan los siguientes pasos:
+				1. Se valida si se ha dado click en un avatar de pirata.
+				2. Se le pide el ownership al objeto para poder cambiar los valores a través de la red.
+				3. Se valida si ya se ha seleccionado un pirata y si ese seleccionado es el mismo al que se le dió click.Si esto se cumple no realiza nada más.
+				4. Si el punto tres no se cumple, valida que el pirata no haya sido seleccionado. Si es así, primero quita el actual seleccionado (en caso de tener uno) y le asigna
+				el nuevo.Ilumina la plataforma también.				
+				*/
+
 				if(hit.collider.name == "_Character1"){
 					hitGo.GetComponent<PhotonView>().RequestOwnership();
 					if(HaveSelected() && hitGo.GetComponent<IsSelected>().GetOwner() == PhotonNetwork.NickName){
