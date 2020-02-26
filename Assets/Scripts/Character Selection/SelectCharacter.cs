@@ -21,6 +21,10 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	public int characterSelected;
 
 	[SerializeField]private GameObject startButton;
+
+	[SerializeField]private GameObject[] avatarsGlow;
+
+	private GameObject currentSelected;
 	
 	void Start () {
 		if(SelectCharacter.SC == null){
@@ -41,8 +45,105 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 		}else{
 			startButton.SetActive(false);
 		}
+
+		//Quitamos el glow de todos los avatares
+		InicializarGlow();
+
+		currentSelected = null;
 	}
 	
+	void Update(){
+		if(Input.GetMouseButtonUp(0)){
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			
+			if(Physics.Raycast(ray, out hit, 100.0f)){
+				if(!hit.transform)
+					return;
+
+				GameObject hitGo = hit.collider.gameObject;
+
+				if(hit.collider.name == "_Character1"){
+					hitGo.GetComponent<PhotonView>().RequestOwnership();
+					if(HaveSelected() && hitGo.GetComponent<IsSelected>().GetOwner() == PhotonNetwork.NickName){
+						Debug.Log("Ya es mío");
+					}else if(hitGo.GetComponent<IsSelected>().SetOwnership(PhotonNetwork.NickName)){
+						playerSelected.text = "Pirata 1";
+						characterSelected = 1;
+						if(currentSelected != null)
+							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
+						currentSelected = hitGo;
+						IluminatePlatform(0);
+						
+					}
+
+				}else if(hit.collider.name == "_Character2"){
+					hitGo.GetComponent<PhotonView>().RequestOwnership();
+					if(HaveSelected() && hitGo.GetComponent<IsSelected>().GetOwner() == PhotonNetwork.NickName){
+						Debug.Log("Ya es mío");
+					}else if(hitGo.GetComponent<IsSelected>().SetOwnership(PhotonNetwork.NickName)){
+						playerSelected.text = "Pirata 2";
+						characterSelected = 2;
+						if(currentSelected != null)
+							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
+						currentSelected = hitGo;
+						IluminatePlatform(1);
+						
+					}
+
+				}else if(hit.collider.name == "_Character3"){
+					hitGo.GetComponent<PhotonView>().RequestOwnership();
+					if(HaveSelected() && hitGo.GetComponent<IsSelected>().GetOwner() == PhotonNetwork.NickName){
+						Debug.Log("Ya es mío");
+					}else if(hitGo.GetComponent<IsSelected>().SetOwnership(PhotonNetwork.NickName)){
+						playerSelected.text = "Pirata 3";
+						characterSelected = 3;
+						if(currentSelected != null)
+							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
+						currentSelected = hitGo;
+						IluminatePlatform(2);
+						
+					}
+
+				}else if(hit.collider.name == "_Character4"){
+					hitGo.GetComponent<PhotonView>().RequestOwnership();
+					if(HaveSelected() && hitGo.GetComponent<IsSelected>().GetOwner() == PhotonNetwork.NickName){
+						Debug.Log("Ya es mío");
+					}else if(hitGo.GetComponent<IsSelected>().SetOwnership(PhotonNetwork.NickName)){
+						playerSelected.text = "Pirata 4";
+						characterSelected = 4;
+						if(currentSelected != null)
+							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
+						currentSelected = hitGo;
+						IluminatePlatform(3);
+						
+					}
+				}
+					
+			}
+		}
+
+		
+	}
+
+	private bool HaveSelected(){
+		if(currentSelected == null){
+			return false;
+		}
+
+		return true;
+	}
+
+	private void IluminatePlatform(int op){
+		InicializarGlow();
+		avatarsGlow[op].GetComponent<Renderer>().enabled = true;
+	}
+
+	private void InicializarGlow(){
+		foreach(GameObject go in avatarsGlow){
+			go.GetComponent<Renderer>().enabled = false;
+		}
+	}
 	
 	public void StartExperiment(){
 		if(playerSelected.text == ""){
@@ -55,19 +156,19 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	}
 
 	void OnGUI(){
-		if(playerSelected.text != ""){
-			if(playerSelected.text == "Pirata 1"){
+		if(characterSelected != 0){
+			if(characterSelected == 1){
 				info.text = "Las piezas del barco aparecen todas del mismo color. Esto no le permite saber cómo intercalarlas.";
-				characterSelected = 1;
-			}else if(playerSelected.text == "Pirata 2"){
+				
+			}else if(characterSelected == 2){
 				info.text = "No se le permite cargar objetos pesados (Proa, cubierta desde proa, popa y cubierta desde popa).";
-				characterSelected = 2;
-			}else if(playerSelected.text == "Pirata 3"){
+				
+			}else if(characterSelected == 3){
 				info.text = "Al navegar su avatar avanza más lentamente que el de los demás (le toma el doble de tiempo trasladarse).";
-				characterSelected = 3;
-			}else if(playerSelected.text == "Pirata 4"){
+				
+			}else if(characterSelected == 4){
 				info.text = "Su micrófono está desconectado, de tal forma que los otros jugadores no escuchan su voz.";
-				characterSelected = 4;
+				
 			}
 		}
 	}
