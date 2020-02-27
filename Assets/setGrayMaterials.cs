@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class setGrayMaterials : MonoBehaviour {
 
@@ -17,14 +18,17 @@ public class setGrayMaterials : MonoBehaviour {
 	
 	void Start () {
 
-		foreach( GameObject go in GameObject.FindGameObjectsWithTag("Barco_Pieza") ){			
+		if(transform.GetComponent<PhotonView>().IsMine){
+			foreach( GameObject go in GameObject.FindGameObjectsWithTag("Barco_Pieza") ){			
 			
-			render = go.GetComponent<Renderer>();
-			render.enabled = true;
+				render = go.GetComponent<Renderer>();
+				render.enabled = true;
 
-			render.sharedMaterial = grayMaterial;
+				render.sharedMaterial = grayMaterial;
 			
+			}
 		}
+		
 		
 	}
 	
