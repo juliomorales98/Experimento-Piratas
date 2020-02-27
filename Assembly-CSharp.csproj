@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\Main_Menu\SyncChat.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\WriteReadConf.cs" />
      <Compile Include="Assets\Scripts\MovePoint2.cs" />
+     <Compile Include="Assets\Scripts\NotificationManager.cs" />
      <Compile Include="Assets\Scripts\RendererExtensions.cs" />
      <Compile Include="Assets\Scripts\ScriptsConexion\Manipulador.cs" />
      <Compile Include="Assets\Scripts\ScriptsConexion\NetworkRigidbody.cs" />

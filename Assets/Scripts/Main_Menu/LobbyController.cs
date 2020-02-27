@@ -118,6 +118,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		//Validamos que tenga parámetros
 		if(string.IsNullOrEmpty(roomName)){
 			Debug.Log("No se puede crear el room sin los parámetros necesarios.");
+			NotificationManager.Instance.SetNewNotification("Se necesita un nombre del room") ;
 			return;
 		}
 
