@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Photon.Pun;
 public class ShowPosition : MonoBehaviour {
 
 	// Use this for initialization
@@ -20,9 +20,13 @@ public class ShowPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		positionsText[0].text = transform.position.x.ToString();
-		positionsText[1].text = transform.position.y.ToString();
-		positionsText[2].text = transform.position.z.ToString();
+
+		if(transform.GetComponent<PhotonView>().IsMine){
+			positionsText[0].text = transform.position.x.ToString();
+			positionsText[1].text = transform.position.y.ToString();
+			positionsText[2].text = transform.position.z.ToString();
+		}
+		
 	}
 
 	void OnGUI(){

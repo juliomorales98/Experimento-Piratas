@@ -18,6 +18,7 @@ SceneListEnd?
 691fc8f190e2bd7159b96f7b9ab9abc9 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RegionListView
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.IsSelected
 99a55d01d7d1f372f628c217f6792750 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.UserIdField
+9759dd00da88d5200fdf458ae95f9690 Assembly-CSharp.dll:.NotificationManager
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
