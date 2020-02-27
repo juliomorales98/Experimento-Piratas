@@ -52,7 +52,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	public override void OnJoinedRoom(){
 		roomPanel.SetActive(true);
 		lobbyPanel.SetActive(false);
-		roomNameDisplay.text = PhotonNetwork.CurrentRoom.Name;
+		roomNameDisplay.text = "Room " + PhotonNetwork.CurrentRoom.Name;
 
 		//Si es host puede inicial el juego
 		if(PhotonNetwork.IsMasterClient){

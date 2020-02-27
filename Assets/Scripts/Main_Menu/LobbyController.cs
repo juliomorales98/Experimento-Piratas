@@ -30,6 +30,8 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	private GameObject roomListingPrefab;
 
 	[SerializeField]private Text chatText;
+
+	[SerializeField]private Text playerNameText;
 	public override void OnConnectedToMaster(){
 		//lobbyConnectButton.SetActive(true);
 
@@ -61,6 +63,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		mainPanel.SetActive(false);
 		lobbyPanel.SetActive(true);
 		PhotonNetwork.JoinLobby();//Se intenta conectar a un room existente
+		playerNameText.text = PhotonNetwork.NickName;
 	}
 
 	//---------------------------Entramos en un lobby...........................\\
@@ -113,11 +116,11 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	}
 
 	public void CreateRoom(){
-		Debug.Log("Creando room...");
+		//Debug.Log("Creando room...");
 
 		//Validamos que tenga parámetros
 		if(string.IsNullOrEmpty(roomName)){
-			Debug.Log("No se puede crear el room sin los parámetros necesarios.");
+			//Debug.Log("No se puede crear el room sin los parámetros necesarios.");
 			NotificationManager.Instance.SetNewNotification("Se necesita un nombre del room") ;
 			return;
 		}
@@ -126,12 +129,15 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 
 		
 		PhotonNetwork.CreateRoom(roomName, roomOps);
+
+
 		chatText.GetComponent<PhotonView>().RequestOwnership();
 		chatText.text = " ";
 	}
 
 	public override void OnCreateRoomFailed(short returnCode, string message){
-		Debug.Log("Error al crear room, intenta cambiar el nombre");
+		//Debug.Log("Error al crear room, intenta cambiar el nombre");
+		NotificationManager.Instance.SetNewNotification("Error al crear room.") ;
 	}
 
 	public void MatchmakingCancel(){
