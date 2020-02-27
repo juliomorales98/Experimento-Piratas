@@ -64,6 +64,7 @@ public class DragObject : MonoBehaviour {
             if(g.name == "Pirate Name"){
                 if(g.GetComponent<Text>().text == "Pirata 2" && (gameObject.name == "Popa_Prefab" || gameObject.name == "Proa_Prefab")){
                     //Debug.Log("No puede cargar esta pieza.");
+                    NotificationManager.Instance.SetNewNotification("Pirata 2 no puede cargar esta pieza.");
                     return false;
                 }
             }else if(g.name == "PlayerPosition"){
@@ -76,8 +77,11 @@ public class DragObject : MonoBehaviour {
                 float distance = Vector3.Distance(new Vector3(playerX,playerY,playerZ),transform.position);
                 //Debug.Log("Distance= " + distance);
 
-                if(distance >= 16)
+                if(distance >= 16){
+                    NotificationManager.Instance.SetNewNotification("Pieza demasiado lejos.");
                     return false;
+                }
+                    
                 
                 
             }
@@ -87,10 +91,18 @@ public class DragObject : MonoBehaviour {
     }
 
     void OnMouseDown(){
+        if(!ValidarMovimiento()){
+            return;
+        }
+
         beingTransformed = true;
         pieceSetted = false;
     }
     void OnMouseUp(){
+        if(!ValidarMovimiento()){
+            return;
+        }
+
         if(!pieceSetted)
             beingTransformed = false;
 

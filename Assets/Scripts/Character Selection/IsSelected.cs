@@ -36,7 +36,8 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 			owner = newOwner;
 			return true;
 		}else{
-			Debug.Log("Pirata ya está seleccionado por " + owner);
+			//Debug.Log("Pirata ya está seleccionado por " + owner);
+			NotificationManager.Instance.SetNewNotification("Este pirata ya está seleccionado por " + owner);
 		}
 		return false;
 	}
