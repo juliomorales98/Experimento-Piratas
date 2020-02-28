@@ -1629,6 +1629,7 @@ GameObject:
   - component: {fileID: 124506258673749828}
   - component: {fileID: 114785814903833186}
   - component: {fileID: 114602263708041414}
+  - component: {fileID: 81396645224115926}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -4648,6 +4649,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!81 &81396645224115926
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684021638894412}
+  m_Enabled: 1
 --- !u!95 &95019610844895860
 Animator:
   serializedVersion: 3
