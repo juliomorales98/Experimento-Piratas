@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.Events;
 
 public class Chat : MonoBehaviour {
 	private string message;
@@ -46,5 +47,8 @@ public class Chat : MonoBehaviour {
 		msgInput.text = "";
 		messages.GetComponent<PhotonView>().RequestOwnership();
 		messages.text +=  message;
+
+		//Hacemos que quede el focus en el chat
+		msgInput.ActivateInputField();
 	}
 }
