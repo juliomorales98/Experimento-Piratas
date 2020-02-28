@@ -11,6 +11,7 @@ TagManager:
   - Barco_Pieza
   - Player_Info
   - ChatObject
+  - CharacterToSelect
   layers:
   - Default
   - TransparentFX

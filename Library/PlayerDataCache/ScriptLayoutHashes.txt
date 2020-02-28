@@ -140,7 +140,7 @@ d79de92723477d704d7beb523a6d339a Assembly-UnityScript-firstpass.dll:.ThirdPerson
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Hub.ToDemoHubButton
 977c873f67252ed523aa425f8e3d6284 PhotonUnityNetworking.dll:Photon.Pun.PhotonHandler
 20f60d981c32663fea72ce8599ffcdb8 Assembly-UnityScript.dll:.SetPirateName
-998537f2fb7cf97e0912026704c7ea4f Assembly-CSharp.dll:.LobbyController
+72d205a7792e861a63bd28ce969bcef6 Assembly-CSharp.dll:.LobbyController
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.Block
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack

@@ -156,10 +156,25 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	
 	public void StartExperiment(){
 		if(playerSelected.text == ""){
-			Debug.Log("No se ha seleccionado ningún pirata");
+			//Debug.Log("No has seleccionado ningún pirata");
+			NotificationManager.Instance.SetNewNotification("No has seleccionado ningún pirata");
 			return;
 		}
 
+		GameObject[] characters = GameObject.FindGameObjectsWithTag("CharacterToSelect");
+		int playersSelected = 0;
+		foreach(GameObject go in characters){
+			if(go.transform.GetComponent<IsSelected>().GetIsSelected()){
+				playersSelected += 1;
+			}
+				
+		}
+
+		if(PhotonNetwork.PlayerList.Length > playersSelected){
+			NotificationManager.Instance.SetNewNotification("No todos los jugadores han seleccionado a un pirata.");
+			Debug.Log(PhotonNetwork.PlayerList.Length + " < " + playersSelected);
+			return;
+		}
 		
 		PhotonNetwork.LoadLevel(2);
 	}
