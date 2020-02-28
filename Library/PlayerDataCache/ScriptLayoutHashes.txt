@@ -90,8 +90,6 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 aa13baec1c19c8fa869cb21cb01a3767 Assembly-CSharp-firstpass.dll:.WaterBase
 ab3103ec9fda8f4d5da8a71c4ea7c413 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.SlotRacer.Utils.BezierSpline
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty
