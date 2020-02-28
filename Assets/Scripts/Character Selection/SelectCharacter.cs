@@ -161,6 +161,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 			return;
 		}
 
+		//---------------------------------Validación de si todos los jugadores han seleccionado un pirata.-------------\\
 		GameObject[] characters = GameObject.FindGameObjectsWithTag("CharacterToSelect");
 		int playersSelected = 0;
 		foreach(GameObject go in characters){
@@ -175,7 +176,9 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 			Debug.Log(PhotonNetwork.PlayerList.Length + " < " + playersSelected);
 			return;
 		}
-		
+		//------------------------------------------------------------------------------------------------------------------\\
+
+
 		PhotonNetwork.LoadLevel(2);
 	}
 
