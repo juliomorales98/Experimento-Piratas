@@ -92,7 +92,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	public void StartGame(){
 		if(PhotonNetwork.IsMasterClient){
 			SetExperimentDuration.SED.SetLength();
-			PhotonNetwork.CurrentRoom.IsOpen = true; //Si está en false, jugadores ya no podrán unirse iniciado el juego
+			PhotonNetwork.CurrentRoom.IsOpen = false; //Si está en false, jugadores ya no podrán unirse iniciado el juego
 			PhotonNetwork.LoadLevel(multiPlayerSceneIndex);
 		}
 	}
