@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 44
+  controlID: 10
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 471}
   m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
-  controlID: 43
+  controlID: 63
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 471}
   m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
-  controlID: 77
+  controlID: 99
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,18 +413,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Main_Menu
+    - Assets/Images
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Main_Menu
+  - Assets/Images
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Admin\Documents\ServicioSocialJulioMorales\Experimento-Piratas
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 51}
-    m_SelectedIDs: 682b0000
-    m_LastClickedID: 11112
+    m_SelectedIDs: e8360000
+    m_LastClickedID: 14056
     m_ExpandedIDs: 00000000042a00001e2a0000462c00006e2c0000082d000064300000863200006033000082330000b636000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 001affff6821ffff1022ffff0a25ffffe825ffff1826ffffb239ffffd64cffffa854ffff5455ffff5059ffff365affff3a5affff4292ffff3893ffff3897ffff2298ffff2a98ffff96a3ffff8ca4ffff8ca8ffff76a9ffff7ea9ffff4ec3fffff8c3fffff8c7ffffe2c8ffffeac8ffffb0d1ffffa4d2ffffa4d6ffff8ed7ffff96d7ffff8cfbffff00000000803b0000fe800000d28100000282000098a6000008a7000094a70000
+    m_ExpandedIDs: 2c86ffff2c87ffff2c8bffff168cffff1e8cffffd895ffffd896ffffd89affffc29bffffca9bffffb6a4ffff6ea5ffff6aa9ffff50aaffff54aaffff8cfbffff00000000803b00004c3c00007c3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
