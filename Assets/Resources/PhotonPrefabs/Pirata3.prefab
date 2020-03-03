@@ -792,6 +792,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1310283001670426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4391023013685246}
+  m_Layer: 0
+  m_Name: HandAux
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1318931608214500
 GameObject:
   m_ObjectHideFlags: 1
@@ -1842,21 +1857,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1728619582785500
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4622243843042796}
-  m_Layer: 0
-  m_Name: Right hand_end
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1741206080188962
 GameObject:
   m_ObjectHideFlags: 1
@@ -2077,21 +2077,6 @@ GameObject:
   - component: {fileID: 4789081995197752}
   m_Layer: 0
   m_Name: Character1_LeftHandThumb3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1845270780634376
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4220006804323574}
-  m_Layer: 0
-  m_Name: Right hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2849,20 +2834,6 @@ Transform:
   m_Father: {fileID: 4232227872296442}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4220006804323574
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1845270780634376}
-  m_LocalRotation: {x: -0.07506596, y: -0.050621968, z: 0.026676236, w: 0.9955355}
-  m_LocalPosition: {x: 0.237, y: 0.908, z: -0.109}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
-  m_Children:
-  - {fileID: 4622243843042796}
-  m_Father: {fileID: 4775930972912976}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4224565197267690
 Transform:
   m_ObjectHideFlags: 1
@@ -3190,6 +3161,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4775930972912976}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4391023013685246
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310283001670426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.218, y: 0.904, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4775930972912976}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4391120442129362
 Transform:
@@ -3812,19 +3796,6 @@ Transform:
   m_Father: {fileID: 4811824450845452}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4622243843042796
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1728619582785500}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.0068219863, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4220006804323574}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4640234271184120
 Transform:
   m_ObjectHideFlags: 1
@@ -4191,7 +4162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614181034439650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.23576, y: 9.397121, z: 17.27734}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4257238880737254}
@@ -4199,7 +4170,7 @@ Transform:
   - {fileID: 4240517480328968}
   - {fileID: 4390509903732400}
   - {fileID: 4724117696406102}
-  - {fileID: 4220006804323574}
+  - {fileID: 4391023013685246}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4814,7 +4785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb1f8631ba183b4a948b4147f8e710d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 1959010919324484}
+  hand: {fileID: 1310283001670426}
   laserMaterial: {fileID: 2100000, guid: 895236708cc322542a2b7168ab6bfae0, type: 2}
 --- !u!114 &114274688390799638
 MonoBehaviour:

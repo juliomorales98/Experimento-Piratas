@@ -592,6 +592,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1274176493767420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4600899201818448}
+  m_Layer: 0
+  m_Name: HandAux
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1279796773296224
 GameObject:
   m_ObjectHideFlags: 1
@@ -3778,6 +3793,19 @@ Transform:
   m_Father: {fileID: 4527820672219758}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4600899201818448
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274176493767420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.226, y: 0.939, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4793491259041148}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4611279790150014
 Transform:
   m_ObjectHideFlags: 1
@@ -4220,6 +4248,7 @@ Transform:
   - {fileID: 4588574848886998}
   - {fileID: 4106914137211952}
   - {fileID: 4849138653908792}
+  - {fileID: 4600899201818448}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4699,7 +4728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb1f8631ba183b4a948b4147f8e710d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 1568401833589606}
+  hand: {fileID: 1274176493767420}
   laserMaterial: {fileID: 2100000, guid: db84be73cedf0494abf2f598d9dd6265, type: 2}
 --- !u!114 &114280013385464962
 MonoBehaviour:
