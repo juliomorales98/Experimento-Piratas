@@ -15,8 +15,11 @@ public class GameController : MonoBehaviour {
 	[SerializeField]
 	private GameObject menuPanel;
 
-	private bool inMenu = false;
+	private bool inMenu;
 
+	void Start(){
+		inMenu = false;
+	}
 	void Update(){
 
 		
@@ -36,6 +39,12 @@ public class GameController : MonoBehaviour {
 				inMenu = false;
 			}
 			
+		}
+
+		if(!inMenu){
+			
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 
