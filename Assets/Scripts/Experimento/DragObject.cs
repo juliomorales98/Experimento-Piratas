@@ -43,7 +43,7 @@ public class DragObject : MonoBehaviour {
             gameObject.GetComponent<Rigidbody>().isKinematic = false;
             gameObject.GetComponent<Rigidbody>().useGravity = true;
         }else{
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            //gameObject.GetComponent<Rigidbody>().isKinematic = true;
             gameObject.GetComponent<Rigidbody>().useGravity = false;
             transform.GetComponent<Rigidbody>().freezeRotation = true;
         }
