@@ -288,6 +288,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 650c1e412dac0323d37ae3023565f947 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PointedAtGameObjectInfo
 783bf6d659235f53a950684dd61ab5b9 Assembly-CSharp-firstpass.dll:.MouseLook
 71b949d44ebd93b1a54c5df9f2c45da5 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ResetPosition
 2c844a256bd2c095f8f5ea7a99459761 Assembly-CSharp-firstpass.dll:.Water
 755add5ef3f03f1ba2f6bdb228dae24c PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyMainPanel
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.Cluster
