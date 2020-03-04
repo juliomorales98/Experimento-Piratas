@@ -45,6 +45,7 @@ public class DragObject : MonoBehaviour {
         }else{
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
             gameObject.GetComponent<Rigidbody>().useGravity = false;
+            transform.GetComponent<Rigidbody>().freezeRotation = true;
         }
 
         //myPV.RPC("RPC_MandarPosicion",RpcTarget.All);

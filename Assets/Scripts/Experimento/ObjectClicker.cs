@@ -81,11 +81,7 @@ public class ObjectClicker : MonoBehaviour {
 						myPV.RPC("RPC_DrawLine", RpcTarget.All, true, hand.transform.position, hit.transform.position);
 					}				
 				}				
-				//Para dejar de dibujar la línea.
-				if(Input.GetMouseButtonUp(0)){
-					myPV.RPC("RPC_DrawLine", RpcTarget.All, false, hand.transform.position, hit.transform.position);
-				}
-				//-----------------------------------------------------------------------//
+				
 
 
 				//Para hacer kinematic la pieza y que ya no se mueva.
@@ -117,8 +113,12 @@ public class ObjectClicker : MonoBehaviour {
 		}	
 
 			
-		
-	}	
+		//Para dejar de dibujar la línea.
+				if(Input.GetMouseButtonUp(0)){
+					myPV.RPC("RPC_DrawLine", RpcTarget.All, false, hand.transform.position, hit.transform.position);
+				}
+				//-----------------------------------------------------------------------//
+	}	//fin update
 
 	
 }
