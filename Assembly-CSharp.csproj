@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\Experimento\ObjectClicker.cs" />
      <Compile Include="Assets\Scripts\Experimento\PhotonPlayer.cs" />
      <Compile Include="Assets\Scripts\Experimento\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Experimento\ResetPosition.cs" />
      <Compile Include="Assets\Scripts\IOConfig.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Chat.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\DeActivateGO.cs" />
