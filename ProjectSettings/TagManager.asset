@@ -12,6 +12,8 @@ TagManager:
   - Player_Info
   - ChatObject
   - CharacterToSelect
+  - Scripter
+  - ChatManager
   layers:
   - Default
   - TransparentFX

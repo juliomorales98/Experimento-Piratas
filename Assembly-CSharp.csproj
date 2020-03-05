@@ -84,6 +84,7 @@
      <Compile Include="Assets\Scripts\Main_Menu\GetLocalIp.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\LobbyController.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\MenuSetup.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\MessagesList.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\NetworkController.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\RoomButton.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\RoomController.cs" />

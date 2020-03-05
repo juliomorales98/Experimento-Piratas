@@ -43,11 +43,12 @@ public class Chat : MonoBehaviour {
 		if(msgInput.text == "")
 			return;
 
-		message = "\n(" + PhotonNetwork.NickName + "): " + msgInput.text;
+		message = "(" + PhotonNetwork.NickName + "): " + msgInput.text;
 		msgInput.text = "";
-		messages.GetComponent<PhotonView>().RequestOwnership();
-		messages.text +=  message;
-
+		/*messages.GetComponent<PhotonView>().RequestOwnership();
+		messages.text +=  message;*/
+		GameObject aux = GameObject.FindGameObjectWithTag("ChatManager");
+		aux.GetComponent<MessagesList>().AddMessage(message);
 		//Hacemos que quede el focus en el chat
 		msgInput.ActivateInputField();
 	}
