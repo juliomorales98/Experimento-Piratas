@@ -12,15 +12,20 @@ public class MessagesList : MonoBehaviour {
 	[SerializeField]private Transform msgText;
 	[SerializeField]private GameObject scrollBarGO;
 
+	private float scrollBarSize;
 	void Start(){
 		msgList = new List<string>();
 		myPv = transform.GetComponent<PhotonView>();
+		scrollBarSize = 1;
+		scrollBarGO.GetComponent<Scrollbar>().value = 0;
 	}
+	
 
 	public void AddMessage(string msg){
 		msgList.Add(msg);
 		//Limpiamos msg
-		for(int i = msgText.childCount - 1; i >= 0; i--){
+		int i;
+		for(i = msgText.childCount - 1; i >= 0; i--){
 			Destroy(msgText.GetChild(i).gameObject);
 		}
 		//Añadimos mensajes 
@@ -29,13 +34,12 @@ public class MessagesList : MonoBehaviour {
 			tempMsg.transform.GetComponent<Text>().text = s;
 
 		}*/
-		for(int i = 0; i < msgList.Count; i++){
+		
+		for(i = 0; i < msgList.Count; i++){
 			GameObject tempMsg = Instantiate(messageListPrefab, msgText);
 			tempMsg.transform.GetComponent<Text>().text = msgList[i];
-			if(i >= 13)
-				scrollBarGO.GetComponent<Scrollbar>().value -= 	0.0006f;
-;
+			
 		}
-		//scrollBarGO.GetComponent<Scrollbar>().value = 0;
+		scrollBarGO.GetComponent<Scrollbar>().value = 0;
 	}
 }
