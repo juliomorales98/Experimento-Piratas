@@ -35,21 +35,20 @@ public class Chat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKey(KeyCode.Return) && msgInput.text != ""){
-			SendMessage();
+			//SendChatMessage("(" + PhotonNetwork.NickName + "): " + msgInput.text);
+			myPV.RPC("SendChatMessage", RpcTarget.All, "(" + PhotonNetwork.NickName + "): " + msgInput.text);
+			//Hacemos que quede el focus en el chat
+			msgInput.text = "";
+			msgInput.ActivateInputField();
 		}
 	}
 
-	private void SendMessage(){
-		if(msgInput.text == "")
-			return;
-
-		message = "(" + PhotonNetwork.NickName + "): " + msgInput.text;
-		msgInput.text = "";
-		/*messages.GetComponent<PhotonView>().RequestOwnership();
-		messages.text +=  message;*/
+	[PunRPC]
+	private void SendChatMessage(string msg){
+		/*if(msgInput.text == "")
+			return;*/
 		GameObject aux = GameObject.FindGameObjectWithTag("ChatManager");
-		aux.GetComponent<MessagesList>().AddMessage(message);
-		//Hacemos que quede el focus en el chat
-		msgInput.ActivateInputField();
+		aux.GetComponent<MessagesList>().AddMessage(msg);
+		
 	}
 }
