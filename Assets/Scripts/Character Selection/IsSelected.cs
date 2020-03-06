@@ -14,6 +14,9 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 	private bool isSelected;
 	private string owner;
 
+	[SerializeField]private GameObject networkGlow;
+	
+
 	// Use this for initialization
 	void Start () {
 		myPV = GetComponent<PhotonView>();
@@ -21,6 +24,16 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 		myPV.OwnershipTransfer = OwnershipOption.Takeover;
 		isSelected = false;
 		owner = "";
+	}
+
+	void Update(){
+		if(isSelected){
+			
+			networkGlow.GetComponent<Renderer>().enabled = true;
+			
+		}else{			
+			networkGlow.GetComponent<Renderer>().enabled = false;
+		}
 	}
 	
 	public bool GetIsSelected(){
@@ -34,6 +47,7 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 		if(!isSelected){
 			isSelected = true;
 			owner = newOwner;
+			networkGlow.GetComponent<Renderer>().enabled = true;
 			return true;
 		}else{
 			//Debug.Log("Pirata ya está seleccionado por " + owner);
@@ -45,6 +59,7 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 	public void RemoveOwnership(){
 		isSelected = false;
 		owner = "";
+		networkGlow.GetComponent<Renderer>().enabled = false;
 	}
 
 	public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info){
