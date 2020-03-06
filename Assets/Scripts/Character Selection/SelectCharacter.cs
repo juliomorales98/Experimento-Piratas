@@ -82,7 +82,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 						if(currentSelected != null)
 							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
 						currentSelected = hitGo;
-						//IluminatePlatform(0);
+						IluminatePlatform(0);
 						
 					}
 
@@ -96,7 +96,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 						if(currentSelected != null)
 							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
 						currentSelected = hitGo;
-						//IluminatePlatform(1);
+						IluminatePlatform(1);
 						
 					}
 
@@ -110,7 +110,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 						if(currentSelected != null)
 							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
 						currentSelected = hitGo;
-						//IluminatePlatform(2);
+						IluminatePlatform(2);
 						
 					}
 
@@ -124,7 +124,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 						if(currentSelected != null)
 							currentSelected.GetComponent<IsSelected>().RemoveOwnership();
 						currentSelected = hitGo;
-						//IluminatePlatform(3);
+						IluminatePlatform(3);
 						
 					}
 				}
@@ -146,6 +146,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	private void IluminatePlatform(int op){
 		InicializarGlow();
 		avatarsGlow[op].GetComponent<Renderer>().enabled = true;
+		Debug.Log("Puso glow");
 	}
 
 	private void InicializarGlow(){
