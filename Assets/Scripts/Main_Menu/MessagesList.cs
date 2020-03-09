@@ -8,7 +8,7 @@ public class MessagesList : MonoBehaviour {
 
 	private List<string> msgList;
 	private PhotonView myPv;
-	[SerializeField]private GameObject messageListPrefab;
+	[SerializeField]private GameObject[] messageListPrefab;
 	[SerializeField]private Transform msgText;
 	[SerializeField]private GameObject scrollBarGO;
 
@@ -36,7 +36,18 @@ public class MessagesList : MonoBehaviour {
 		}*/
 		
 		for(i = 0; i < msgList.Count; i++){
-			GameObject tempMsg = Instantiate(messageListPrefab, msgText);
+			GameObject tempMsg;
+			if(msgList[i].Length <= 39){
+				
+				tempMsg = Instantiate(messageListPrefab[0], msgText);
+			}else if(msgList[i].Length <= 78){
+				
+				tempMsg = Instantiate(messageListPrefab[1], msgText);
+			}else{
+				
+				tempMsg = Instantiate(messageListPrefab[2], msgText);
+			}
+			
 			tempMsg.transform.GetComponent<Text>().text = msgList[i];
 			
 		}

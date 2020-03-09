@@ -5395,8 +5395,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18868d31ad2b12441b1f4f0586531e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageListPrefab: {fileID: 1904102450568212, guid: a2229e2428e91da438cd53e355ce7d87,
-    type: 2}
+  messageListPrefab:
+  - {fileID: 1343348239618856, guid: 11cef10dc9195594ebfe7894df1a3f55, type: 2}
+  - {fileID: 1151525509021714, guid: 93e0eca52ff972a4599391815488925d, type: 2}
+  - {fileID: 1354033510825812, guid: 3ee5148209d99564096fa1de3e183e55, type: 2}
   msgText: {fileID: 623981145}
   scrollBarGO: {fileID: 1677083243}
 --- !u!1 &1802336460
