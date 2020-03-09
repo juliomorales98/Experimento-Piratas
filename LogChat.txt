@@ -1,0 +1,6 @@
+Sala: qwer
+Servidor: us/*
+Duración: 10
+Jugadores:
+	Sofía
+Plan de elaboración:

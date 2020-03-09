@@ -3,75 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using Photon.Pun;
 
 public class IOConfig : MonoBehaviour {
 
-	private string path = "conf.txt";
-
-	public InputField time; 
-	public InputField name;
-	public InputField remoteIP;
-	public Text localIP;
-
+	[SerializeField] private Transform playerList;
+	[SerializeField] private Transform messageList;
+	[SerializeField] private Text roomName;
 	
+	public void GuardarLogChat()
+	{
+		//Guardamos los mensajes
+		string path = "LogChat.txt";
+		if (File.Exists(path))
+		{
+			File.Delete(path);
+		}
 
-	public List<string> parametres = new List<string>();
-	public void WriteConf(int op){
-
-		//Primero validamos si existe y lo eliminamos si es cierto
-		if(File.Exists(path)){
-			File.Delete(path);			
-		}			
-
-		//Escribimos la configuración
 		StreamWriter writer = new StreamWriter(path, true);
+		
+		writer.WriteLine(roomName.text);
+		writer.WriteLine("Servidor: " + PhotonNetwork.CloudRegion);
 
-		writer.WriteLine(name.text);
 
-		if(op == 0){
-			//Escribimos parametros de host 			
-			writer.WriteLine("127.0.0.1");
-			writer.WriteLine(time.text);
+		//Duración
+		SetExperimentDuration.SED.SetLength();
+		writer.WriteLine("Duración: " + SetExperimentDuration.SED.getLength());
 
-		}else if(op == 1){
-			//Escribimos para client			
-			writer.WriteLine(remoteIP.text);
-			
+		//Jugadores en la sala
+		writer.WriteLine("Jugadores:");
+		for (int i = 0; i < playerList.childCount; i++)
+		{
+			writer.WriteLine("\t" + playerList.GetChild(i).GetChild(0).gameObject.GetComponent<Text>().text);
 		}
 
-		
+
+		writer.WriteLine("Plan de elaboración:");
+		//Escribimos mensajes
+		//for (int i = messageList.childCount - 1; i >= 0; i--)
+		for(int i = 0; i < messageList.childCount; i++){
+			//Destroy(playersContainer.GetChild(i).gameObject);
+			writer.WriteLine("\t" + messageList.GetChild(i).gameObject.GetComponent<Text>().text);
+		}
+
+
 		writer.Close();
-
-		
-	}
-
-	public void ReadConf(){
-
-		//Validamos que el archivo de configuración existe
-		if(!File.Exists(path)){
-			Debug.Log("No se pudo leer el archivo de configuración");
-			return;
-		}
-
-		//Leemos el archivo
-		StreamReader reader = new StreamReader(path, true);
-		string cadena;
-		
-
-		while( (cadena = reader.ReadLine()) != null){
-			parametres.Add(cadena);
-		}
-
-		reader.Close();
-
-		//Si falta algún parámetro
-		if(parametres.Count < 1){
-			Debug.Log("Archivo dañado, no se reconocen los parámetros");
-			return;
-		}
-
-		//Primer parámetro es la duración del experimento, por lo que debería de tratarse de un int
-		Debug.Log(parametres[0]);
-
 	}
 }

@@ -1936,6 +1936,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 891496974}
+        m_MethodName: GuardarLogChat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 891496971}
         m_MethodName: StartGame
         m_Mode: 1
@@ -3191,6 +3202,7 @@ GameObject:
   - component: {fileID: 891496970}
   - component: {fileID: 891496971}
   - component: {fileID: 891496972}
+  - component: {fileID: 891496974}
   m_Layer: 0
   m_Name: Scripter
   m_TagString: Untagged
@@ -3250,6 +3262,7 @@ MonoBehaviour:
     type: 2}
   roomNameDisplay: {fileID: 1993774410}
   chatText: {fileID: 1516785144}
+  messageList: {fileID: 623981145}
 --- !u!114 &891496972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,6 +3289,20 @@ MonoBehaviour:
   loginPanel: {fileID: 2029515955}
   lobbyPanel: {fileID: 1132230544}
   roomPanel: {fileID: 2044180582}
+--- !u!114 &891496974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 891496968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d04273b43f960a4ba00405888f22530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList: {fileID: 859579441}
+  messageList: {fileID: 623981145}
+  roomName: {fileID: 1993774410}
 --- !u!1 &1044868366
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,7 +5268,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 364784166}
   m_Direction: 2
   m_Value: 0.9999998
-  m_Size: 0.092716664
+  m_Size: 0.09271666
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
