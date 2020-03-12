@@ -1,4 +1,4 @@
-Sala: qewr
+Sala: qwer
 Servidor: us/*
 Duración: 10
 Jugadores:
