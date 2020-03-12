@@ -1,6 +1,6 @@
-Sala: qwer
+Sala: qewr
 Servidor: us/*
 Duración: 10
 Jugadores:
-	julio
+	unity
 Plan de elaboración:
