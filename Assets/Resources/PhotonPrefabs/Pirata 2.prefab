@@ -1850,6 +1850,7 @@ GameObject:
   - component: {fileID: 120668049413059042}
   - component: {fileID: 114104147312304798}
   - component: {fileID: 114817442555727166}
+  - component: {fileID: 114050120387133652}
   m_Layer: 0
   m_Name: Pirata 2
   m_TagString: Untagged
@@ -4702,6 +4703,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114050120387133652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774967933043858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5cc441ac8356d34b950345642fee914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114060196372039568
 MonoBehaviour:
   m_ObjectHideFlags: 1

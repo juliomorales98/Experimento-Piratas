@@ -14,8 +14,11 @@ public class ResetPosition : MonoBehaviour {
 	void Update () {
 		if(transform.position.y > 45 || transform.position.y < -2f || transform.position.z > 260f || transform.position.z < -200f || transform.position.x > 270f || transform.position.x < -200f){
 			transform.position = initialPosition;
-			transform.GetComponent<Rigidbody>().isKinematic = true;
-			transform.GetComponent<Rigidbody>().isKinematic = false;
+			if(transform.GetComponent<Rigidbody>() != null){
+				transform.GetComponent<Rigidbody>().isKinematic = true;
+				transform.GetComponent<Rigidbody>().isKinematic = false;
+			}
+			
 
 		}
 	}
