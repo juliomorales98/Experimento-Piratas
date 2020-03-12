@@ -20,6 +20,9 @@ public class MessagesList : MonoBehaviour {
 		scrollBarGO.GetComponent<Scrollbar>().value = 0;
 	}
 	
+	public void DeleteMessages(){
+		msgList = new List<string>();
+	}
 
 	public void AddMessage(string msg){
 		msgList.Add(msg);

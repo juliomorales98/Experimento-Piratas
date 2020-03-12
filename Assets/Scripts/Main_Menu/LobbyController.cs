@@ -120,6 +120,13 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		//roomSize = int.Parse(sizeIn);
 	}
 
+	public void LeaveLobbyClick(){//Salimos del lobby al login
+
+		mainPanel.SetActive(true);
+		lobbyPanel.SetActive(false);
+		PhotonNetwork.LeaveLobby();
+	}
+
 	public void CreateRoom(){
 		//Debug.Log("Creando room...");
 
