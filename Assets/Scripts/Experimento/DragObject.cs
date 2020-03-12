@@ -65,7 +65,7 @@ public class DragObject : MonoBehaviour {
             if(g.name == "Pirate Name"){
                 if(g.GetComponent<Text>().text == "Pirata 2" && (gameObject.name == "Popa_Prefab" || gameObject.name == "Proa_Prefab")){
                     //Debug.Log("No puede cargar esta pieza.");
-                    NotificationManager.Instance.SetNewNotification("Pirata 2 no puede cargar esta pieza.");
+                    NotificationManager.Instance.SetNewNotification("No se puede interactuar con esta pieza.");
                     return false;
                 }
             }else if(g.name == "PlayerPosition"){

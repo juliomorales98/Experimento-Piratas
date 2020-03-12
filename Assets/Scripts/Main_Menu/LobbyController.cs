@@ -41,13 +41,13 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		if(PlayerPrefs.HasKey("NickName")){
 			if(PlayerPrefs.GetString("NickName") == ""){
 				//Le asignamos un nombre random
-				PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
+				//PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
 			}else{
 				PhotonNetwork.NickName = PlayerPrefs.GetString("NickName");
 			}
 		}else{
 			//Le asignamos un nombre random
-			PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
+			//PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
 		}
 
 		playerNameInput.text = PhotonNetwork.NickName; //Ponemos el nombre en el campo text
@@ -60,6 +60,11 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	}
 
 	public void JoinLobbyOnClick(){
+		if(PhotonNetwork.NickName == ""){
+			//NotificationManager.Instance.SetNewNotification("Se debe ingresar un nombre de jugador.") ;
+			PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
+			//return;
+		}
 		mainPanel.SetActive(false);
 		lobbyPanel.SetActive(true);
 		PhotonNetwork.JoinLobby();//Se intenta conectar a un room existente
@@ -121,7 +126,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		//Validamos que tenga parámetros
 		if(string.IsNullOrEmpty(roomName)){
 			//Debug.Log("No se puede crear el room sin los parámetros necesarios.");
-			NotificationManager.Instance.SetNewNotification("Se necesita un nombre del room") ;
+			NotificationManager.Instance.SetNewNotification("Se debe ingresar un nombre para la sala.") ;
 			return;
 		}
 
@@ -137,7 +142,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 
 	public override void OnCreateRoomFailed(short returnCode, string message){
 		//Debug.Log("Error al crear room, intenta cambiar el nombre");
-		NotificationManager.Instance.SetNewNotification("Error al crear room.") ;
+		NotificationManager.Instance.SetNewNotification("Error al crear la sala. Cambia el nombre o intentalo más tarde.") ;
 	}
 
 	public void MatchmakingCancel(){
