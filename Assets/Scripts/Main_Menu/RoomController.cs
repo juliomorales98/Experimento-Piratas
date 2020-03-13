@@ -29,11 +29,14 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	[SerializeField]
 	private Text roomNameDisplay;
 
-	[SerializeField]private Text chatText;
+	//[SerializeField]private Text chatText;
 
 	[SerializeField]private Transform messageList;
 
 	[SerializeField]private GameObject messageManager;
+
+	[SerializeField]
+	private Transform roomsContainer; //contenedor para tener la lista de rooms
 
 	void ClearPlayerListing(){
 
@@ -71,8 +74,8 @@ public class RoomController : MonoBehaviourPunCallbacks {
 		ClearPlayerListing();
 		ListPlayers();
 		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PlayerChat"),Vector3.zero, Quaternion.identity);
-		chatText.GetComponent<PhotonView>().RequestOwnership();
-		chatText.text = " ";
+		//chatText.GetComponent<PhotonView>().RequestOwnership();
+		//chatText.text = " ";
 		
 
 		for( int i = messageList.childCount - 1; i >= 0; i--){
@@ -115,7 +118,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	}
 
 	public void BackOnClick(){
-		//Para evitar errores con el host al regresar al room
+		//Para evitar errores con el host al regresar al lobby
 
 		lobbyPanel.SetActive(true);
 		roomPanel.SetActive(false);
@@ -125,7 +128,12 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 		StartCoroutine(rejoinLobby());
 
+
 		messageManager.GetComponent<MessagesList>().DeleteMessages();
+
+		for( int i = roomsContainer.childCount - 1; i >= 0; i--){
+			Destroy(roomsContainer.GetChild(i).gameObject);
+		}
 	}
 
 	

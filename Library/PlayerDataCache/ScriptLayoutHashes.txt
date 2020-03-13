@@ -12,7 +12,7 @@ SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PunTeams
 7289f4b9a0dc296e26413244af6e0f86 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.DocLinkButton
 4d0187d1ee26ceba125a106f0dde0360 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.SmoothSyncMovement
-2bc6d6c5775bad9b4d41aa098ca88f5f Assembly-CSharp.dll:.RoomController
+52f97b79f6274e9384e0d2c4e1e7d65d Assembly-CSharp.dll:.RoomController
 562fe8fc054ae5066fc9ea51d224a672 Assembly-UnityScript.dll:.MouseLook
 603765be9a1e9bd1ceb193e9600c8d17 Assembly-CSharp.dll:.SetExperimentDuration
 691fc8f190e2bd7159b96f7b9ab9abc9 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RegionListView

@@ -1,6 +1,17 @@
-Sala: qwr
+Sala: 789
 Servidor: us/*
-Duración: 10
+Duración: 45 minutos.
 Jugadores:
-	julio
+	María
 Plan de elaboración:
+	(María): k
+	(María): l
+	(María): ñ
+	(María): p
+	(María): o
+	(María): i
+	(María): u
+	(María): j
+	(María): m
+	(María): n 
+	(María): b

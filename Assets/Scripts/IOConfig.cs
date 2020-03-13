@@ -28,7 +28,7 @@ public class IOConfig : MonoBehaviour {
 
 		//Duración
 		SetExperimentDuration.SED.SetLength();
-		writer.WriteLine("Duración: " + SetExperimentDuration.SED.getLength());
+		writer.WriteLine("Duración: " + SetExperimentDuration.SED.getLength() + " minutos.");
 
 		//Jugadores en la sala
 		writer.WriteLine("Jugadores:");
@@ -41,10 +41,15 @@ public class IOConfig : MonoBehaviour {
 		writer.WriteLine("Plan de elaboración:");
 		//Escribimos mensajes
 		//for (int i = messageList.childCount - 1; i >= 0; i--)
-		for(int i = 0; i < messageList.childCount; i++){
-			//Destroy(playersContainer.GetChild(i).gameObject);
-			writer.WriteLine("\t" + messageList.GetChild(i).gameObject.GetComponent<Text>().text);
+		if(messageList.childCount == 0){
+			writer.WriteLine("\tNinguno.");
+		}else{
+			for(int i = 0; i < messageList.childCount; i++){
+				//Destroy(playersContainer.GetChild(i).gameObject);
+				writer.WriteLine("\t" + messageList.GetChild(i).gameObject.GetComponent<Text>().text);
+			}
 		}
+		
 
 
 		writer.Close();

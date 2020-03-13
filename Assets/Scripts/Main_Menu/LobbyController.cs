@@ -69,10 +69,12 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		lobbyPanel.SetActive(true);
 		PhotonNetwork.JoinLobby();//Se intenta conectar a un room existente
 		playerNameText.text = PhotonNetwork.NickName;
+		
 	}
 
 	//---------------------------Entramos en un lobby...........................\\
 
+	
 	static System.Predicate<RoomInfo> ByName(string name){
 
 		return delegate (RoomInfo room){
@@ -91,6 +93,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 
 	public override void OnRoomListUpdate(List<RoomInfo> roomList){
 		int tempIndex;
+		
 
 		foreach(RoomInfo room in roomList){
 
@@ -143,8 +146,8 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		PhotonNetwork.CreateRoom(roomName, roomOps);
 
 
-		chatText.GetComponent<PhotonView>().RequestOwnership();
-		chatText.text = " ";
+		/*chatText.GetComponent<PhotonView>().RequestOwnership();
+		chatText.text = " ";*/
 	}
 
 	public override void OnCreateRoomFailed(short returnCode, string message){
