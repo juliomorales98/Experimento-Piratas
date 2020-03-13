@@ -19,7 +19,7 @@ using Photon.Pun;
 ///<summary>
 public class CheckTimeOut : MonoBehaviour {
 
-	[SerializeField] private Text TimeText;
+	private Text TimeText;
 
 	//public IOConfig ioscript;
 
@@ -30,7 +30,8 @@ public class CheckTimeOut : MonoBehaviour {
 		//ioscript.ReadConf();
 		//tiempoMaximo = Int32.Parse(ioscript.parametres[2]);
 		tiempoMaximo = SetExperimentDuration.SED.getLength();
-		Debug.Log("Tiempo Máximo del juego: " + tiempoMaximo.ToString());
+		//Debug.Log("Tiempo Máximo del juego: " + tiempoMaximo.ToString());
+		TimeText = GameObject.FindGameObjectWithTag("Info_Display").GetComponent<Text>();
 	}
 	
 	void OnGUI(){
@@ -45,12 +46,17 @@ public class CheckTimeOut : MonoBehaviour {
 			GUIStyle style =new GUIStyle();
 			style.fontSize = 22;
 			style.normal.textColor = Color.white;
-			GUI.Label(new Rect (Screen.width * 0.35f,Screen.height * 0.2f,500,20),"Tiempo Terminado, será regresado al menú principal...",style);
-			StartCoroutine(DisconnectFromGame());
+			//GUI.Label(new Rect (Screen.width * 0.35f,Screen.height * 0.2f,500,20),"Tiempo Terminado, será regresado al menú principal...",style);
+			gameObject.GetComponent<PhotonView>().RPC("EndOfTime", RpcTarget.All);
 			
 		}
 	}
 	
+	[PunRPC]
+	public void EndOfTime(){
+		NotificationManager.Instance.SetNewNotification("Tiempo terminado, serás enviado al log in.");
+		StartCoroutine(DisconnectFromGame());
+	}
 	public IEnumerator DisconnectFromGame(){
 		
 		yield return new WaitForSeconds(5);

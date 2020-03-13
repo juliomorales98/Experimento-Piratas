@@ -1651,6 +1651,7 @@ GameObject:
   - component: {fileID: 114157059331271480}
   - component: {fileID: 114402316070474844}
   - component: {fileID: 114489920350967528}
+  - component: {fileID: 114823939425467872}
   m_Layer: 0
   m_Name: Pirata3
   m_TagString: Player
@@ -4927,6 +4928,18 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &114823939425467872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614181034439650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c751d9db0a1f99b4d94b1dce2d31a000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeText: {fileID: 0}
 --- !u!114 &114977909680320326
 MonoBehaviour:
   m_ObjectHideFlags: 1

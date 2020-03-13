@@ -40,10 +40,10 @@ public class MessagesList : MonoBehaviour {
 		
 		for(i = 0; i < msgList.Count; i++){
 			GameObject tempMsg;
-			if(msgList[i].Length <= 51){
+			if(msgList[i].Length <= 45){
 				
 				tempMsg = Instantiate(messageListPrefab[0], msgText);
-			}else if(msgList[i].Length <= 102){
+			}else if(msgList[i].Length <= 90){
 				
 				tempMsg = Instantiate(messageListPrefab[1], msgText);
 			}else{

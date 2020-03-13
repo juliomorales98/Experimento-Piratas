@@ -1851,6 +1851,7 @@ GameObject:
   - component: {fileID: 114104147312304798}
   - component: {fileID: 114817442555727166}
   - component: {fileID: 114050120387133652}
+  - component: {fileID: 114460174661440374}
   m_Layer: 0
   m_Name: Pirata 2
   m_TagString: Untagged
@@ -4749,6 +4750,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hand: {fileID: 1484175920574040}
   laserMaterial: {fileID: 2100000, guid: 46e274b7fab6ae44c8c0c3c435e3e8cb, type: 2}
+--- !u!114 &114460174661440374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774967933043858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c751d9db0a1f99b4d94b1dce2d31a000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeText: {fileID: 0}
 --- !u!114 &114602263708041414
 MonoBehaviour:
   m_ObjectHideFlags: 1
