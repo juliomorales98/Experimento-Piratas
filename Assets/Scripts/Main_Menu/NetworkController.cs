@@ -1,6 +1,9 @@
 ﻿/*
 Entornos virtuales
 Creador: Julio Morales: juliocesar.mr@protonmail.com
+
+Genera la conexión al mejor servidor o al servidor que se haya especificado en unity.
+Si ya existe una conexión al iniciar la escena, nos desconectamos de esta y volvemos a conectar.
 */
 
 
@@ -30,6 +33,7 @@ public class NetworkController : MonoBehaviourPunCallbacks {
 	}	
 	
 	public override void OnConnectedToMaster(){
+		
 		Debug.Log("Nos conectamos a " + PhotonNetwork.CloudRegion);
 		connectButton.SetActive(true);
 		PhotonNetwork.AutomaticallySyncScene = true;

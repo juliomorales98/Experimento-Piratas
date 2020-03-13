@@ -1,4 +1,10 @@
-﻿using Photon.Pun;
+﻿/*
+juliocesar.mr@protonmail.com
+
+Manager para las funciones del lobby, como lo es el listado de salas y creación de estas.
+*/
+
+using Photon.Pun;
 using Photon.Realtime;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,21 +39,19 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 
 	[SerializeField]private Text playerNameText;
 	public override void OnConnectedToMaster(){
-		//lobbyConnectButton.SetActive(true);
+		
 
 		roomListings = new List<RoomInfo>();
 
-		//validamos el nombre del jguador
+		//Validamos el nombre del jguador
 		if(PlayerPrefs.HasKey("NickName")){
 			if(PlayerPrefs.GetString("NickName") == ""){
-				//Le asignamos un nombre random
-				//PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
+				
 			}else{
 				PhotonNetwork.NickName = PlayerPrefs.GetString("NickName");
 			}
 		}else{
-			//Le asignamos un nombre random
-			//PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
+			
 		}
 
 		playerNameInput.text = PhotonNetwork.NickName; //Ponemos el nombre en el campo text
@@ -60,11 +64,11 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	}
 
 	public void JoinLobbyOnClick(){
-		if(PhotonNetwork.NickName == ""){
-			//NotificationManager.Instance.SetNewNotification("Se debe ingresar un nombre de jugador.") ;
-			PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
-			//return;
+		if(PhotonNetwork.NickName == ""){	//Si no se ingresó un nombre, le generamos uno random.			
+			PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);			
 		}
+
+		//Activamos los paneles del lobby
 		mainPanel.SetActive(false);
 		lobbyPanel.SetActive(true);
 		PhotonNetwork.JoinLobby();//Se intenta conectar a un room existente
@@ -91,7 +95,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		}
 	}
 
-	public override void OnRoomListUpdate(List<RoomInfo> roomList){
+	public override void OnRoomListUpdate(List<RoomInfo> roomList){	//Se manda a llamar automáticamente por photon cuando la información de las salas cambia.
 		int tempIndex;
 		
 
@@ -119,9 +123,7 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		roomName = nameIn;
 	}
 
-	public void OnRoomSizeChanged(string sizeIn){
-		//roomSize = int.Parse(sizeIn);
-	}
+	public void OnRoomSizeChanged(string sizeIn){}
 
 	public void LeaveLobbyClick(){//Salimos del lobby al login
 
@@ -131,27 +133,24 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	}
 
 	public void CreateRoom(){
-		//Debug.Log("Creando room...");
+		
 
-		//Validamos que tenga parámetros
+		//Validamos que haya ingresado un nombre
 		if(string.IsNullOrEmpty(roomName)){
-			//Debug.Log("No se puede crear el room sin los parámetros necesarios.");
+			
 			NotificationManager.Instance.SetNewNotification("Se debe ingresar un nombre para la sala.") ;
 			return;
 		}
 
+		//Opciones de sala: visible, abierta para los jugadores y con un máximo de 4 jugadores.
 		RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)4 };
-
 		
 		PhotonNetwork.CreateRoom(roomName, roomOps);
 
-
-		/*chatText.GetComponent<PhotonView>().RequestOwnership();
-		chatText.text = " ";*/
 	}
 
 	public override void OnCreateRoomFailed(short returnCode, string message){
-		//Debug.Log("Error al crear room, intenta cambiar el nombre");
+		//Normalmente se tiene un nombre duplicado de sala.
 		NotificationManager.Instance.SetNewNotification("Error al crear la sala. Cambia el nombre o intentalo más tarde.") ;
 	}
 

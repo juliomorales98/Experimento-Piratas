@@ -1,6 +1,9 @@
 ﻿/*
 Entornos virtuales
 Creador: Julio Morales: juliocesar.mr@protonmail.com
+
+Nos ayuda a manejar la selección del caracter al darle propiedades al avatar a través de la red.
+Si está seleccionado, se activa el glow rojo, en todos los clientes.El glow naranja no se activa en este script.
 */
 
 using System.Collections;
@@ -17,7 +20,7 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 	[SerializeField]private GameObject networkGlow;
 	
 
-	// Use this for initialization
+	
 	void Start () {
 		myPV = GetComponent<PhotonView>();
 
@@ -50,7 +53,7 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 			networkGlow.GetComponent<Renderer>().enabled = true;
 			return true;
 		}else{
-			//Debug.Log("Pirata ya está seleccionado por " + owner);
+			
 			NotificationManager.Instance.SetNewNotification("Este pirata ya está seleccionado por " + owner);
 		}
 		return false;
@@ -62,7 +65,7 @@ public class IsSelected : MonoBehaviour, IPunObservable {
 		networkGlow.GetComponent<Renderer>().enabled = false;
 	}
 
-	public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info){
+	public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info){	//Para sincronizar la información actual a través de todos los clientes.
 
 		if(stream.IsWriting){
 			stream.SendNext(isSelected);

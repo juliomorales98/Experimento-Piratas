@@ -1,6 +1,9 @@
 ﻿/*
 Entornos virtuales
 Creador: Julio Morales: juliocesar.mr@protonmail.com
+
+Instancia para determinar la duración del juego en escenas posteriores.
+Guardamos el tiempo en una variable y en el experimento la comparamos con el tiempo actual.
 */
 
 
@@ -17,6 +20,8 @@ public class SetExperimentDuration : MonoBehaviour {
 
 	private int length;
 	void Start () {
+
+		//Creamos instancia del script
 		if(SetExperimentDuration.SED == null){
 			SetExperimentDuration.SED = this;
 		}else if( SetExperimentDuration.SED != this){
@@ -25,7 +30,7 @@ public class SetExperimentDuration : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
+	
 	public void SetLength () {
 		if(timeText.text == ""){
 			length = 10;

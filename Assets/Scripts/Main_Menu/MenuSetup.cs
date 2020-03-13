@@ -1,6 +1,8 @@
 ﻿/*
 Entornos virtuales
 Creador: Julio Morales: juliocesar.mr@protonmail.com
+
+Inicializa las ventanas en su orden correcto al iniciar la aplicación, facilitando la edición en unity.
 */
 
 

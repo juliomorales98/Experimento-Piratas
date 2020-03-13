@@ -1,9 +1,18 @@
-﻿using System.Collections;
+﻿/*
+juliocesar.mr@protonmail.com
+
+Script para manejar el estar mandando notificaciones a través del juego.
+Solamente se llama la función "SetNewNotification" con el mensaje de la notificación.
+Este script tiene que estar añadido a un objeto de nombre "NotificationManager" dentro del juego, el cual puede ser un prefab.
+	Aquí es donde se mostrará el mensaje, por lo que puede ser acomodado donde sea mejor.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class NotificationManager : MonoBehaviour {
 
+	
 	private static NotificationManager instance;
 
 	[SerializeField] private Text notificationText;
@@ -49,7 +58,7 @@ public class NotificationManager : MonoBehaviour {
 		if(notificationCoroutine != null){
 			StopCoroutine(notificationCoroutine);
 		}
-
+		//Hacemos que vaya desapareciendo poco a poco
 		notificationCoroutine = FadeOutNotification(message);
 		StartCoroutine(notificationCoroutine);
 	}

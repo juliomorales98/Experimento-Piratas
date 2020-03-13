@@ -1,4 +1,10 @@
-﻿using Photon.Pun;
+﻿/*
+juliocesar.mr@protonmail.com
+
+Manager para todas las opciones del room excepto el chat.
+*/
+
+using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 using System.Collections;
@@ -38,7 +44,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	[SerializeField]
 	private Transform roomsContainer; //contenedor para tener la lista de rooms
 
-	void ClearPlayerListing(){
+	void ClearPlayerListing(){	//Limpiamos lista de jugadores conectados a la sala.
 
 		for( int i = playersContainer.childCount - 1; i >= 0; i--){
 			Destroy(playersContainer.GetChild(i).gameObject);
@@ -46,7 +52,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 	}
 
-	void ListPlayers(){
+	void ListPlayers(){	//Agregamos los jugadores a la lista de la sala.
 		foreach(Player player in PhotonNetwork.PlayerList){
 			GameObject tempListing = Instantiate(playerListingPrefab, playersContainer);
 			Text tempText = tempListing.transform.GetChild(0).GetComponent<Text>();
@@ -57,8 +63,11 @@ public class RoomController : MonoBehaviourPunCallbacks {
 	}
 
 	public override void OnJoinedRoom(){
+		//Activamos panel de sala
 		roomPanel.SetActive(true);
 		lobbyPanel.SetActive(false);
+
+		//Ponemos el nombre de la sala en el título
 		roomNameDisplay.text = "Sala: " + PhotonNetwork.CurrentRoom.Name;
 
 		//Si es host puede inicial el juego
@@ -73,11 +82,13 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 		ClearPlayerListing();
 		ListPlayers();
-		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PlayerChat"),Vector3.zero, Quaternion.identity);
-		//chatText.GetComponent<PhotonView>().RequestOwnership();
-		//chatText.text = " ";
-		
 
+		//Prefab para poder interactuar con el chat, teniendo una conexión con este
+		PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs","PlayerChat"),Vector3.zero, Quaternion.identity);
+		
+		
+		//Cuando ingresemos a la sala, eliminamos los mensajes si es que hay, evitando que
+		//si salimos y entramos a otra sala se vean los mensajes anteriores.
 		for( int i = messageList.childCount - 1; i >= 0; i--){
 			Destroy(messageList.GetChild(i).gameObject);
 		}
@@ -106,7 +117,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 	public void StartGame(){
 		if(PhotonNetwork.IsMasterClient){			
-			//SetExperimentDuration.SED.SetLength();
+			
 			PhotonNetwork.CurrentRoom.IsOpen = false; //Si está en false, jugadores ya no podrán unirse iniciado el juego
 			PhotonNetwork.LoadLevel(multiPlayerSceneIndex);
 		}
@@ -117,7 +128,7 @@ public class RoomController : MonoBehaviourPunCallbacks {
 		PhotonNetwork.JoinLobby();
 	}
 
-	public void BackOnClick(){
+	public void BackOnClick(){	//Salimos de la sala
 		//Para evitar errores con el host al regresar al lobby
 
 		lobbyPanel.SetActive(true);
@@ -128,9 +139,9 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 		StartCoroutine(rejoinLobby());
 
-
+		//Eliminamos salas para que se actualizen sin repetirse
 		messageManager.GetComponent<MessagesList>().DeleteMessages();
-
+		
 		for( int i = roomsContainer.childCount - 1; i >= 0; i--){
 			Destroy(roomsContainer.GetChild(i).gameObject);
 		}

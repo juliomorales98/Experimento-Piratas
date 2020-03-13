@@ -1,6 +1,8 @@
 ﻿/*
 Entornos virtuales
 Creador: Julio Morales: juliocesar.mr@protonmail.com
+
+Manejamos las validaciones de la escena, así como poner el glow naranja localmente y cambiar las propiedades de los avatares cuando se seleccionan
 */
 
 
@@ -27,6 +29,8 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	private GameObject currentSelected;
 	
 	void Start () {
+
+		//Creamos instancia de script
 		if(SelectCharacter.SC == null){
 			SC = this;
 		}else if(SelectCharacter.SC != this){
@@ -144,9 +148,10 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	}
 
 	private void IluminatePlatform(int op){
+		//Quitamos el glow naranja de todos los piratas y activamos el del indíce de argumento
 		InicializarGlow();
 		avatarsGlow[op].GetComponent<Renderer>().enabled = true;
-		Debug.Log("Puso glow");
+		
 	}
 
 	private void InicializarGlow(){
@@ -156,8 +161,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	}
 	
 	public void StartExperiment(){
-		if(playerSelected.text == ""){
-			//Debug.Log("No has seleccionado ningún pirata");
+		if(playerSelected.text == ""){	//Si el host no ha seleccionado algún pirata
 			NotificationManager.Instance.SetNewNotification("No has seleccionado ningún pirata");
 			return;
 		}
@@ -184,6 +188,7 @@ public class SelectCharacter : MonoBehaviourPunCallbacks {
 	}
 
 	void OnGUI(){
+		//Dependiendo del pirata seleccionado, la descripción que aparece en pantalla de este cambiará.
 		if(characterSelected != 0){
 			if(characterSelected == 1){
 				info.text = "Las piezas del barco aparecen todas del mismo color. Esto no le permite saber cómo intercalarlas.";

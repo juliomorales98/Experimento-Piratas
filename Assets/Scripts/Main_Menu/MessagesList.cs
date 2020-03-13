@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*juliocesar.mr@protonmail.com
+	Se encarga de almacenar los mansajes enviados y de instsanciarlos como objetos hijos en el displayer
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
@@ -25,35 +29,32 @@ public class MessagesList : MonoBehaviour {
 	}
 
 	public void AddMessage(string msg){
+
+		//Agregamos mensaje a la lista de mensajes
 		msgList.Add(msg);
-		//Limpiamos msg
+		
+		//limpiamos mensaje
 		int i;
 		for(i = msgText.childCount - 1; i >= 0; i--){
 			Destroy(msgText.GetChild(i).gameObject);
 		}
-		//Añadimos mensajes 
-		/*foreach(string s in msgList){
-			GameObject tempMsg = Instantiate(messageListPrefab, msgText);
-			tempMsg.transform.GetComponent<Text>().text = s;
-
-		}*/
 		
 		for(i = 0; i < msgList.Count; i++){
 			GameObject tempMsg;
-			if(msgList[i].Length <= 45){
-				
+			//Dependiendo del tamaño del mensaje, instanciamos un prefab u otro para que se visualize correctamente según su tamaño
+
+			if(msgList[i].Length <= 45){				
 				tempMsg = Instantiate(messageListPrefab[0], msgText);
-			}else if(msgList[i].Length <= 90){
-				
+			}else if(msgList[i].Length <= 90){				
 				tempMsg = Instantiate(messageListPrefab[1], msgText);
-			}else{
-				
+			}else{				
 				tempMsg = Instantiate(messageListPrefab[2], msgText);
 			}
 			
 			tempMsg.transform.GetComponent<Text>().text = msgList[i];
 			
 		}
+
 		scrollBarGO.GetComponent<Scrollbar>().value = 0;
 	}
 }

@@ -1,6 +1,8 @@
 ﻿/*
 Entornos virtuales
 Creador: Julio Morales: juliocesar.mr@protonmail.com
+
+Valida si el jugador intenta mandar un mensaje, si es así llama función RPC para que se instancie en todos los clientes.
 */
 
 using System.Collections;
@@ -19,7 +21,6 @@ public class Chat : MonoBehaviour {
 
 	private PhotonView myPV;
 
-	// Use this for initialization
 	void Start () {
 		myPV = gameObject.GetComponent<PhotonView>();
 		foreach(GameObject go in GameObject.FindGameObjectsWithTag("ChatObject")){
@@ -32,11 +33,12 @@ public class Chat : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 		if(Input.GetKey(KeyCode.Return) && msgInput.text != ""){
-			//SendChatMessage("(" + PhotonNetwork.NickName + "): " + msgInput.text);
+			
 			myPV.RPC("SendChatMessage", RpcTarget.All, "(" + PhotonNetwork.NickName + "): " + msgInput.text);
+
 			//Hacemos que quede el focus en el chat
 			msgInput.text = "";
 			msgInput.ActivateInputField();
@@ -45,8 +47,7 @@ public class Chat : MonoBehaviour {
 
 	[PunRPC]
 	private void SendChatMessage(string msg){
-		/*if(msgInput.text == "")
-			return;*/
+		
 		GameObject aux = GameObject.FindGameObjectWithTag("ChatManager");
 		aux.GetComponent<MessagesList>().AddMessage(msg);
 		
