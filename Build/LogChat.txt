@@ -1,0 +1,7 @@
+Sala: Pruebas
+Servidor: us/*
+Duración: 10 minutos.
+Jugadores:
+	Marco
+Plan de elaboración:
+	Ninguno.
