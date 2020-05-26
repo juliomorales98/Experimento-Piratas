@@ -29,32 +29,25 @@ public class MessagesList : MonoBehaviour {
 	}
 
 	public void AddMessage(string msg){
-
 		//Agregamos mensaje a la lista de mensajes
-		msgList.Add(msg);
-		
+		msgList.Add(msg);		
 		//limpiamos mensaje
 		int i;
 		for(i = msgText.childCount - 1; i >= 0; i--){
 			Destroy(msgText.GetChild(i).gameObject);
-		}
-		
+		}		
 		for(i = 0; i < msgList.Count; i++){
 			GameObject tempMsg;
 			//Dependiendo del tamaño del mensaje, instanciamos un prefab u otro para que se visualize correctamente según su tamaño
-
 			if(msgList[i].Length <= 45){				
 				tempMsg = Instantiate(messageListPrefab[0], msgText);
 			}else if(msgList[i].Length <= 90){				
 				tempMsg = Instantiate(messageListPrefab[1], msgText);
 			}else{				
 				tempMsg = Instantiate(messageListPrefab[2], msgText);
-			}
-			
-			tempMsg.transform.GetComponent<Text>().text = msgList[i];
-			
+			}			
+			tempMsg.transform.GetComponent<Text>().text = msgList[i];			
 		}
-
 		scrollBarGO.GetComponent<Scrollbar>().value = 0;
 	}
 }

@@ -1,7 +1,9 @@
-Sala: Pruebas
+Sala: Prueba
 Servidor: us/*
 Duración: 10 minutos.
 Jugadores:
-	Sofía
+	july
 Plan de elaboración:
-	Ninguno.
+	(july): hola
+	(july): cópmo estás madafaca
+	(july): Chinga tu madre con tu chile

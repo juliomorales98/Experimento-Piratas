@@ -117,7 +117,6 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 	public void StartGame(){
 		if(PhotonNetwork.IsMasterClient){			
-			
 			PhotonNetwork.CurrentRoom.IsOpen = false; //Si está en false, jugadores ya no podrán unirse iniciado el juego
 			PhotonNetwork.LoadLevel(multiPlayerSceneIndex);
 		}
@@ -130,18 +129,13 @@ public class RoomController : MonoBehaviourPunCallbacks {
 
 	public void BackOnClick(){	//Salimos de la sala
 		//Para evitar errores con el host al regresar al lobby
-
 		lobbyPanel.SetActive(true);
 		roomPanel.SetActive(false);
-
 		PhotonNetwork.LeaveRoom();
 		PhotonNetwork.LeaveLobby();
-
 		StartCoroutine(rejoinLobby());
-
 		//Eliminamos salas para que se actualizen sin repetirse
-		messageManager.GetComponent<MessagesList>().DeleteMessages();
-		
+		messageManager.GetComponent<MessagesList>().DeleteMessages();		
 		for( int i = roomsContainer.childCount - 1; i >= 0; i--){
 			Destroy(roomsContainer.GetChild(i).gameObject);
 		}

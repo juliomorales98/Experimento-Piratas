@@ -67,13 +67,11 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 		if(PhotonNetwork.NickName == ""){	//Si no se ingresó un nombre, le generamos uno random.			
 			PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);			
 		}
-
 		//Activamos los paneles del lobby
 		mainPanel.SetActive(false);
 		lobbyPanel.SetActive(true);
 		PhotonNetwork.JoinLobby();//Se intenta conectar a un room existente
-		playerNameText.text = PhotonNetwork.NickName;
-		
+		playerNameText.text = PhotonNetwork.NickName;		
 	}
 
 	//---------------------------Entramos en un lobby...........................\\
@@ -97,21 +95,16 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 
 	public override void OnRoomListUpdate(List<RoomInfo> roomList){	//Se manda a llamar automáticamente por photon cuando la información de las salas cambia.
 		int tempIndex;
-		
-
 		foreach(RoomInfo room in roomList){
-
 			if(roomListings != null){
 				tempIndex = roomListings.FindIndex(ByName(room.Name));
 			}else{
 				tempIndex = -1;
 			}
-
 			if(tempIndex != -1){
 				roomListings.RemoveAt(tempIndex);
 				Destroy(roomsContainer.GetChild(tempIndex).gameObject);
 			}
-
 			if(room.PlayerCount > 0){
 				roomListings.Add(room);
 				ListRoom(room);
@@ -126,27 +119,20 @@ public class LobbyController : MonoBehaviourPunCallbacks {
 	public void OnRoomSizeChanged(string sizeIn){}
 
 	public void LeaveLobbyClick(){//Salimos del lobby al login
-
 		mainPanel.SetActive(true);
 		lobbyPanel.SetActive(false);
 		PhotonNetwork.LeaveLobby();
 	}
 
 	public void CreateRoom(){
-		
-
 		//Validamos que haya ingresado un nombre
-		if(string.IsNullOrEmpty(roomName)){
-			
+		if(string.IsNullOrEmpty(roomName)){			
 			NotificationManager.Instance.SetNewNotification("Se debe ingresar un nombre para la sala.") ;
 			return;
 		}
-
 		//Opciones de sala: visible, abierta para los jugadores y con un máximo de 4 jugadores.
-		RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)4 };
-		
+		RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)4 };		
 		PhotonNetwork.CreateRoom(roomName, roomOps);
-
 	}
 
 	public override void OnCreateRoomFailed(short returnCode, string message){

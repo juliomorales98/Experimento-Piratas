@@ -35,10 +35,8 @@ public class Chat : MonoBehaviour {
 	
 	
 	void Update () {
-		if(Input.GetKey(KeyCode.Return) && msgInput.text != ""){
-			
+		if(Input.GetKey(KeyCode.Return) && msgInput.text != ""){			
 			myPV.RPC("SendChatMessage", RpcTarget.All, "(" + PhotonNetwork.NickName + "): " + msgInput.text);
-
 			//Hacemos que quede el focus en el chat
 			msgInput.text = "";
 			msgInput.ActivateInputField();
@@ -46,8 +44,7 @@ public class Chat : MonoBehaviour {
 	}
 
 	[PunRPC]
-	private void SendChatMessage(string msg){
-		
+	private void SendChatMessage(string msg){		
 		GameObject aux = GameObject.FindGameObjectWithTag("ChatManager");
 		aux.GetComponent<MessagesList>().AddMessage(msg);
 		
